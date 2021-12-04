@@ -1,0 +1,60 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block menu%}
+		<div class="hero-white">
+			<div class="header clearfix">
+				<a href="index.html" class="logo"></a>
+				{%include 'main/inc/inc_main_menu.html'%}
+			</div>
+		</div>
+{%endblock%}
+{%block content%}
+		<div class="details">
+			<div class="links clearfix">
+				{%include 'main/inc/inc_categories_menu.html'%}
+			</div>
+			<div class="details-products">
+				<div class="details-slider">
+					<div class="slider-product">
+						<img src="{{product.image}}" height="500px">
+					</div>
+				</div>
+
+				<div class="description">
+					<h3 class="big-bold">{{product.category}}</h3>
+					<h3 class="red">{{product.name}}</h3>
+					<p class="price"> {{product.price}} <span>руб</span></p>
+					<a href="{%url 'basket:add' product.pk%}" class="red-button">
+						заказать <i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</a>
+					<div class="description-text">
+						<p>{{product.name}}</p>
+						<p>{{product.type}} серии {{product.series}} Прекрасно дополнит
+						и подчеркнет изысканый стиль Вашего интерьера. Цвет - {{product.color}},
+							количество ламп - {{product.lamps}} шт. ({{product.lamps_type}})
+							мощьность {{product.power}} Вт
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="related">
+				<div class="title clearfix">
+					<h2>Похожие продукты</h2>
+					<a class="explore" href="http://127.0.0.1:8000/products/category/0/">показать все <img src="/static/img/arrow.png" alt=""></a>
+				</div>
+				<div class="related-products clearfix">
+					{%for product in same_product%}
+						<div class="block">
+							<a href="{%url 'products:product' product.pk%}"><img src="{{product.image}}" alt="{{product.name}}" height="300px">
+								<div class="text">
+									<img src="/static/img/icon-hover.png" alt="img">
+									<h4>{{product.name}}</h4>
+									<p>{{product.price}}</p>
+								</div>
+							</a>
+						</div>
+					{%endfor%}
+				</div>
+			</div>
+		</div>
+{%endblock%}

@@ -1,0 +1,46 @@
+{%extends 'main/base.html'%}
+{%load static%}
+<!DOCTYPE html>
+	{%block menu%}
+		<div class="slider">
+			<div class="header clearfix">
+				<a class="logo">ЛУЧИ СВЕТА</a>
+				{%include 'main/inc/inc_main_menu.html'%}
+			</div>
+			<div class="text-slider">
+				<h3 class="green">выбирай</h3>
+				<h3 class="big"> Лучшие люстры</h3>
+
+				<a href="{%url 'products:product' 992 %}" class="button-order">заказать <img src="/static/img/arrow.png" alt=""></a>
+			</div>	
+			<div class="navi">
+				{%for product in products%}
+				<a href="#"></a><a href="#"></a><a href="#"></a>
+				{%endfor%}
+			</div>
+		</div>
+	{%endblock%}
+{%block content%}
+		<div class="featured">
+			<div class="featured-menu">
+					<a class="active" href="#">Популярные</a>
+			</div>
+			<a class="explore" href="{%url 'products:category' 0%}">показать все <img src="{%static 'img/arrow.png'%}" alt=""></a>
+			<div class="clearfix">
+			</div>
+			<div class="tab-content">
+				{%for random_product in random_products%}
+				<div class="block">
+						<a href="{%url 'products:product' random_product.pk%}"><img src="{{random_product.image}}" alt="{{random_product.name}}" width="267px" height="267px">
+							<div class="text">
+								<h3> {{random_product.category.name}}</h3>
+								<h4>{{random_product.name}}</h4>
+								<p>{{random_product.price}}</p>
+							</div>
+						</a>
+				</div>
+				{%endfor%}
+			</div>
+		</div>
+{%endblock%}
+		
