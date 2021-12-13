@@ -2,5 +2,6 @@ venv
 env
 *.pyc
 media/
-ssh-keys-new
+db.sqlite3
 ssh-keys-new.pub
+ssh-keys-new
