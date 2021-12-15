@@ -3,5 +3,3 @@ env
 *.pyc
 media/
 db.sqlite3
-ssh-keys-new.pub
-ssh-keys-new
