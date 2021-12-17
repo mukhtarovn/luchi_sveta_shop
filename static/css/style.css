@@ -152,7 +152,7 @@ html, body {
 }
 
 .products_list {
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .products_list .new_product {
@@ -587,6 +587,7 @@ html, body {
 .category-products .block {
 	float: left;
 	margin-right: 30px;
+	margin-bottom: 50px;
 	display: block;
 	height: 370px;
 	width: 370px;
@@ -711,9 +712,14 @@ html, body {
 
 .logo {
 	background-image: url(/static/img/logo1.png);
+	background-repeat: no-repeat;
+    background-position: 210px -35px;;
+    background-size: 100px;
+	font-family: 'Neucha', cursive;
+	font-size: 55px;
 	margin-top: 63px;
-	width: 185px;
-	height: 22px;
+	width: 385px;
+	height: 52px;
 	float: left;
 }
 
@@ -1542,7 +1548,6 @@ td:first-child {
 
 .links {
 	height: 70px;
-	background-color: #f4f4f4;
 	position: relative;
 	padding-left: px;
 }
@@ -1551,9 +1556,11 @@ td:first-child {
 	position: absolute;
 }
 .links-menu li {
-	float: left;
 	list-style-type: none;
-	padding-right: 42px;
+    margin-left: -141px;
+    background-color: #f4f4f4;
+	list-style-type: none;
+	padding-bottom: 10px;
 }
 .links-menu li a {
 	text-decoration: none;
