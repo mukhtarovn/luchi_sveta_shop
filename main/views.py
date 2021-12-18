@@ -13,7 +13,7 @@ from basketapp.models import Basket
 from main.models import Product, ProductCategory
 
 def main(request):
-    title = 'главная'
+    title = 'лучи света'
     products = Product.objects.all()
     random_products = random.sample(list(products), 3)
     content = {

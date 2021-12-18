@@ -152,7 +152,7 @@ html, body {
 }
 
 .products_list {
-    margin-left: 100px;
+    margin-left: 166px;
 }
 
 .products_list .new_product {
@@ -586,7 +586,6 @@ html, body {
 }
 .category-products .block {
 	float: left;
-	margin-right: 30px;
 	margin-bottom: 50px;
 	display: block;
 	height: 370px;
@@ -1547,18 +1546,20 @@ td:first-child {
 }
 
 .links {
-	height: 70px;
-	position: relative;
-	padding-left: px;
+    height: 606px;
+    width: 12%;
+    margin-right: 10px;
+    float: left;
+    display: block;
+    background-color: #f4f4f4;
+    position: relative;
+    padding-left: px;
 }
 .links-menu {
 	margin:	17px auto 0px;
 	position: absolute;
 }
 .links-menu li {
-	list-style-type: none;
-    margin-left: -141px;
-    background-color: #f4f4f4;
 	list-style-type: none;
 	padding-bottom: 10px;
 }
