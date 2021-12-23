@@ -78,17 +78,9 @@ AUTH_USER_MODEL = 'authapp.ShopUser'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    #'default': {
-     #   'ENGINE': 'django.db.backends.sqlite3',
-      #  'NAME': BASE_DIR / 'db.sqlite3',
-        
-    #}
     'default': {
-        'NAME': 'nariman',
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'nariman',
-        'PASSWORD': 'sarvan030511',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 
 }
