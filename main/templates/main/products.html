@@ -20,7 +20,7 @@
 			<div class="details-products">
 				<div class="details-slider">
 					<div class="slider-product">
-						<img src="/media/{{hot_product.image}}" height="500px">
+						<img src="{{hot_product.image}}" height="500px">
 					</div>
 				</div>
 
@@ -50,7 +50,7 @@
 				<div class="related-products clearfix">
 					{%for product in same_product%}
 						<div class="block">
-							<a href="{%url 'products:product' product.pk%}"><img src="/media/{{product.image}}" alt="{{product.name}}"
+							<a href="{%url 'products:product' product.pk%}"><img src="{{product.image}}" alt="{{product.name}}"
 																				 height="300px">
 								<div class="text">
 									<img src="/static/img/icon-hover.png" alt="img">
