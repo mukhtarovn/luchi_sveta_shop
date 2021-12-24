@@ -35,6 +35,10 @@ def get_hot_product():
 
     return random.sample(list(_products), 1)[0]
 
+def get_product_by_price(pk=None):
+    products = Product.objects.filter(category__pk=pk).order_by('price')
+    return products
+
 def get_same_products(hot_product):
     _same_products = Product.objects.filter(category=hot_product.category).\
         exclude(pk=hot_product.pk)[:3]
@@ -46,11 +50,11 @@ def products(request, pk=None, page=1):
 
     if pk is not None:
         if pk == 0:
-            products = Product.objects.all().order_by('price')
+            products = Product.objects.all()
             category = {'pk':0, 'name':'все'}
         else:
             category = get_object_or_404(ProductCategory, pk=pk)
-            products = Product.objects.filter(category__pk=pk).order_by('price')
+            products = Product.objects.filter(category__pk=pk)
 
         paginator = Paginator(products, 12)
         try:

@@ -45,7 +45,7 @@
 			<div class="related">
 				<div class="title clearfix">
 					<h2>Похожие продукты</h2>
-					<a class="explore" href="{%url 'products:product' hot_product.pk%}">показать все <img src="/static/img/arrow.png" alt=""></a>
+					<a class="explore" href="{%url 'products:category' hot_product.category.pk%}">показать все <img src="/static/img/arrow.png" alt=""></a>
 				</div>
 				<div class="related-products clearfix">
 					{%for product in same_product%}
