@@ -133,7 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 LOGIN_URL = '/auth/login/'
 
-DOMAIN_NAME = 'http://localhost:8000'
+#DOMAIN_NAME = 'http://localhost:8000'
 
 #EMAIL_HOST = 'localhost'
 #EMAIL_PORT = '25'
@@ -145,7 +145,7 @@ DOMAIN_NAME = 'http://localhost:8000'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-#DOMAIN_NAME = 'https://luchi-sveta.ru'
+DOMAIN_NAME = 'https://luchi-sveta.ru'
 
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = '2525'
