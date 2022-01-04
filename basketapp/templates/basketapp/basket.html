@@ -8,4 +8,9 @@
         <button class="btn btn-round">
             <a href="{%url 'main'%}">на главную</a>
         </button>
+        <button class="btn btn-round">
+            <a href="{% url 'orderapp:order_create' %}">
+Оформить заказ
+       </a>
+        </button>
 {%endblock%}

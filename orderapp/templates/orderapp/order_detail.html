@@ -8,7 +8,7 @@
        {% for item in object.orderitem.select_related %}
        {{object.orderitems.select_related}}
            <div class="basket_record">
-               <img src="/media/{{item.product.image}}"
+               <img src="{{item.product.image}}"
                     alt="{{ item.product.short_desc }}">
                <span class="category_name">
                    {{ item.product.category.name }}

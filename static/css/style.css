@@ -167,7 +167,6 @@ html, body {
     width: 135px;
     padding: 0 15px;
 }
-
 .products_list a {
     color: #555;
     text-decoration: none;
@@ -1546,7 +1545,7 @@ td:first-child {
 }
 
 .links {
-    height: 606px;
+    height: 500px;
     width: 12%;
     margin-right: 10px;
     float: left;
@@ -1556,8 +1555,9 @@ td:first-child {
     padding-left: px;
 }
 .links-menu {
-	margin:	17px auto 0px;
+	margin:	17px 17px 0px;
 	position: absolute;
+	padding-left: 0px;
 }
 .links-menu li {
 	list-style-type: none;

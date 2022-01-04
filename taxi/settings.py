@@ -135,10 +135,24 @@ LOGIN_URL = '/auth/login/'
 
 DOMAIN_NAME = 'http://localhost:8000'
 
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = '25'
+#EMAIL_HOST = 'localhost'
+#EMAIL_PORT = '25'
 #EMAIL_HOST_USER = 'luchisveta@gmail.local'
 #EMAIL_HOST_PASSWORD = 'nariman'
-EMAIL_USE_SSL = False
+#MAIL_USE_SSL = False
 
-EMAIL_HOST_USER, EMAIL_HOST_PASSWORD = None, None
+#EMAIL_HOST_USER, EMAIL_HOST_PASSWORD = None, None
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+#DOMAIN_NAME = 'https://luchi-sveta.ru'
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = '2525'
+EMAIL_HOST_USER = 'luchi_sveta@list.ru'
+EMAIL_HOST_PASSWORD = '7MR98cRGXC5ktYakJatH'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+

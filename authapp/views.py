@@ -12,10 +12,10 @@ from authapp.models import ShopUser
 def send_varification_email(user):
     verify_link = reverse('auth:verify', args=[user.email, user.activation_key])
 
-    subject = f'Активация пользователя{user.username}'
+    subject = f'Активация пользователя {user.username}'
     message = f'Для подтверждения перейдите по ссылке\n {settings.DOMAIN_NAME}{verify_link}'
 
-    return send_mail (subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=False)
+    return send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=False)
 
 
 def verify(request, email, activation_key):
@@ -53,7 +53,7 @@ def login(request):
 
 def logout (request):
     auth.logout(request)
-    return HttpResponseRedirect (reverse ('main'))
+    return HttpResponseRedirect (reverse('main'))
 
 def register (request):
     title = 'Регистарция'
@@ -63,7 +63,7 @@ def register (request):
             user = register_form.save()
             if send_varification_email(user):
                 print('success')
-                return HttpResponseRedirect (reverse ('auth:login'))
+                return HttpResponseRedirect (reverse('auth:login'))
             print('error')
             return HttpResponseRedirect(reverse('auth:login'))
     else:
