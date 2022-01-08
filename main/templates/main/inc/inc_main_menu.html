@@ -20,6 +20,11 @@
                        заказы
             </a>
         </li>
+        <li>
+            {%if user.is_superuser%}
+            <a href="/admin/">админ</a>
+            {%endif%}
+        </li>
 
         <li><a href="{% url 'auth:logout'%}">Выход</a></li>
     {%else%}
