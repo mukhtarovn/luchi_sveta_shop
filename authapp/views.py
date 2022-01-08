@@ -15,7 +15,7 @@ def send_varification_email(user):
     subject = f'Активация пользователя {user.username}'
     message = f'Для подтверждения перейдите по ссылке\n {settings.DOMAIN_NAME}{verify_link}'
 
-    return send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=True)
+    return send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=False)
 
 
 def verify(request, email, activation_key):

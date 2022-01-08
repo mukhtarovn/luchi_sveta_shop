@@ -1,3 +1,4 @@
+from django.core.mail import send_mail
 from django.db import transaction
 from django.forms import inlineformset_factory
 from django.http import HttpResponseRedirect
@@ -111,6 +112,10 @@ def order_forming_complete(request, pk):
    order = get_object_or_404(Order, pk=pk)
    order.status = Order.SENT_TO_PROCEED
    order.save()
+   send_mail('НОВЫЙ ЗАКАЗ', f'Поступил новый заказ {order.id} от {request.user}',
+             'luchi_sveta@list.ru', ['luchi_sveta@list.ru','mukhtarov.n@gmail.com'],
+             fail_silently=False,)
 
    return HttpResponseRedirect(reverse('orderapp:order_list'))
+
 

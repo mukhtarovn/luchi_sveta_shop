@@ -29,8 +29,8 @@
                    <td>{{ item.updated|date:"Y-m-d H:i:s" }}</td>
                    <td>{{ item.get_status_display }}</td>
                    <td>
-                       <a href="{% url 'orderapp:order_read' item.pk %}">
-                           посмотреть
+                       <a href="{% url 'orderapp:order_forming_complete' item.pk %}">
+                           купить
                        </a>
                    </td>
                    <td>
