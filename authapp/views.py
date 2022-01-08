@@ -30,10 +30,10 @@ def verify(request, email, activation_key):
             print(f'error{email}')
             return request(request,'authapp/verification.html')
     except Exception as e:
-        print(e.args)
         user.is_active = True
-        #return HttpResponseRedirect(reverse('main'))
-        return render (request, "authapp/verification.html")
+        user.save ()
+        print(e.args)
+        return request(request,'authapp/verification.html')
 
 
 def login(request):
