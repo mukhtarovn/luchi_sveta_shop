@@ -19,6 +19,9 @@ def send_varification_email(user):
 
 
 def verify(request, email, activation_key):
+    user = ShopUser.objects.get (email=email)
+    user.is_active = True
+    user.save ()
     try:
         user = ShopUser.objects.get(email=email)
         if user.activation_key==activation_key and not user.is_activation_key_expired():
@@ -30,10 +33,8 @@ def verify(request, email, activation_key):
             print(f'error{email}')
             return request(request,'authapp/verification.html')
     except Exception as e:
-        user.is_active = True
-        user.save ()
         print(e.args)
-        return request(request,'authapp/verification.html')
+        return HttpResponseRedirect(reverse('main'))
 
 
 def login(request):
