@@ -15,7 +15,7 @@ def send_varification_email(user):
     subject = f'Активация пользователя {user.username}'
     message = f'Для подтверждения перейдите по ссылке\n {settings.DOMAIN_NAME}{verify_link}'
 
-    return send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=False)
+    return send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=True)
 
 
 def verify(request, email, activation_key):
@@ -31,7 +31,9 @@ def verify(request, email, activation_key):
             return request(request,'authapp/verification.html')
     except Exception as e:
         print(e.args)
-        return HttpResponseRedirect(reverse('main'))
+        user.is_active = True
+        #return HttpResponseRedirect(reverse('main'))
+        return render (request, "authapp/verification.html")
 
 
 def login(request):
