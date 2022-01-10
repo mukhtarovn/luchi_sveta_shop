@@ -6,9 +6,11 @@ from datetime import datetime
 
 from django.conf import settings
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.db.models import Q
 from django.shortcuts import render, get_object_or_404
 
-# Create your views here.
+from django.views.generic import ListView
+
 from basketapp.models import Basket
 from main.models import Product, ProductCategory
 
@@ -113,3 +115,15 @@ def product(request, pk):
         'same_product': get_same_products(product_item)
     }
     return render(request, 'main/product.html', content)
+
+def search_result(request):
+    query = request.GET.get ('search')
+    products_item = Product.objects.filter(Q(name__icontains=query) | Q(category__name__icontains=query)
+                                        |Q(article__icontains= query))
+
+    content = {
+        'title': 'Поиск',
+        'result': products_item
+    }
+    return render(request, 'main/search_results.html', content)
+

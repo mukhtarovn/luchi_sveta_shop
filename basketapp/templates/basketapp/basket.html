@@ -5,10 +5,10 @@
         {%include 'basketapp/inc/inc_basket.html'%}
     </div>
 
-        <button class="btn btn-round">
-            <a href="{%url 'main'%}">на главную</a>
+        <button class="btn btn-outline-primary">
+            <a href="{%url 'main'%}">На главную</a>
         </button>
-        <button class="btn btn-round">
+        <button type="button" class="btn btn-outline-success">
             <a href="{% url 'orderapp:order_create' %}">
 Оформить заказ
        </a>

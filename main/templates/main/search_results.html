@@ -1,0 +1,39 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block menu%}
+		<div class="hero-white">
+			<div class="header clearfix">
+				<p class="logo">ЛУЧИ СВЕТА</p>
+				{%include 'main/inc/inc_main_menu.html'%}
+			</div>
+		</div>
+{%endblock%}
+{%block content%}
+<div class="table">
+<h3>Результат поиска</h3>
+	<div>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Бренд</th>
+      <th scope="col">Модель</th>
+      <th scope="col">Артукул</th>
+      <th scope="col">Цена</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%for res in result%}
+    <tr class="table_search">
+      <td><a href="{%url 'products:product' res.pk%}">{{res.category}}</a></td>
+      <td id="td_name"><a href="{%url 'products:product' res.pk%}">{{res.name}}</a></td>
+      <td id="td_article"><a href="{%url 'products:product' res.pk%}">{{res.article}}</a></td>
+      <td><a href="{%url 'products:product' res.pk%}">{{res.price}} руб.</a></td>
+      <td><button type="button" class="btn btn-outline-success">
+          <a href="{%url 'basket:add' res.pk%}">В корзину</a></button></td>
+    </tr>
+  {%endfor%}
+  </tbody>
+</table>
+</div>
+</div>
+{%endblock%}

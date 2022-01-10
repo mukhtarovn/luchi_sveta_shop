@@ -29,22 +29,30 @@
                    <td>{{ item.updated|date:"Y-m-d H:i:s" }}</td>
                    <td>{{ item.get_status_display }}</td>
                    <td>
+                       {% if item.status == 'FM' %}
+                       <button type="button" class="btn btn-success">
                        <a href="{% url 'orderapp:order_forming_complete' item.pk %}">
                            купить
                        </a>
+                       {%endif%}
+                           </button>
                    </td>
                    <td>
                        {% if item.status == 'FM' %}
+                       <button type="button" class="btn btn-secondary">
                          <a href="{% url 'orderapp:order_update' item.pk %}">
                            редактировать
                          </a>
+                           </button>
                        {% endif %}
                    </td>
                    <td>
                        {% if item.status == 'FM' %}
+                       <button type="button" class="btn btn-danger">
                          <a href="{% url 'orderapp:order_delete' item.pk %}">
                              удалить
                          </a>
+                           </button>
                        {% endif %}
                    </td>
                </tr>
