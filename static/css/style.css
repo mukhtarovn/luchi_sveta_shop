@@ -762,7 +762,7 @@ html, body {
 	position: absolute;
 	top: 63px;
 	/*left: 1176px;*/
-	left: 1151px;
+	left: 84%;
 }
 .basket {
 	display: block;
@@ -772,7 +772,7 @@ html, body {
 	position: absolute;
 	top: 63px;
 	/*left: 1210px;*/
-	left: 1185px;
+	left: 87%;
     text-decoration: none;
     color: #555;
 }
@@ -1545,7 +1545,7 @@ td:first-child {
 }
 
 .links {
-    height: 500px;
+    height: 565px;
     width: 12%;
     margin-right: 10px;
     float: left;
@@ -1591,6 +1591,7 @@ td:first-child {
 	margin-top: 98px;
 	height: 651px;
 	height: 551px;
+	margin-bottom:20px;
 }
 .details-slider {
 	width: 570px;
@@ -1629,6 +1630,7 @@ td:first-child {
 }
 
 .description {
+    padding-top:50px;
 	width: 535px;
 	float: right;
 	/*padding-left: 35px*/
@@ -1795,4 +1797,10 @@ margin-bottom: 30px;
 a {
     text-decoration: none;
     color:#555 !important;
+}
+
+#table_description {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 15%;
 }
