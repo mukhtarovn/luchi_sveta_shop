@@ -695,7 +695,9 @@ html, body {
 	margin: 0 auto;
 	min-height: 100%;
 }
-
+.collapse:not(.show) {
+    display:block;
+}
 .slider {
 	height: 800px;
 	background-image: url(https://onec-dev.s3.amazonaws.com/upload/media/76098183-a1ac-4f9c-8b3f-cdc2f7ac9c6f/s/MOD312PL-08GCH_on_w_standard.jpeg);
