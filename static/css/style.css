@@ -698,10 +698,10 @@ html, body {
 
 .slider {
 	height: 800px;
-	background-image: url(/static/img/20435.jpg);
-	background-size:700px;
+	background-image: url(https://onec-dev.s3.amazonaws.com/upload/media/76098183-a1ac-4f9c-8b3f-cdc2f7ac9c6f/s/MOD312PL-08GCH_on_w_standard.jpeg);
+	background-size:850px;
 	background-repeat: no-repeat;
-	background-position: 600px 100px;
+	background-position: 500px 100px;
 	/*padding-left: 98px;*/
 	padding-left: 78px;
 	padding-right: 211px;
@@ -760,7 +760,7 @@ html, body {
 	height: 23px;	
 	background-image: url(/static/img/search.png);
 	position: absolute;
-	top: 63px;
+	top: 85px;
 	/*left: 1176px;*/
 	left: 84%;
 }
@@ -770,9 +770,9 @@ html, body {
 	height: 23px;	
 	background-image: url(/static/img/basket.png);
 	position: absolute;
-	top: 63px;
+	top: 85px;
 	/*left: 1210px;*/
-	left: 87%;
+	left: 88%;
     text-decoration: none;
     color: #555;
 }

@@ -2,6 +2,10 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.template.loader import render_to_string
+from django.urls import reverse_lazy
+from django.views.generic import DeleteView
+
+from authapp.models import ShopUser
 from basketapp.models import Basket
 from main.models import Product
 
@@ -9,7 +13,6 @@ from main.models import Product
 def basket(request):
     title = 'Корзина'
     basket_items = Basket.objects.filter(user=request.user).order_by('product__category')
-
     content = {
         'title': title,
         'basket_items': basket_items
@@ -28,7 +31,7 @@ def basket_add(request, pk):  #pk - Product
 
 @login_required
 def basket_remove(request, pk):  #pk - basket
-    basket_record = get_object_or_404(Basket, pk=pk)
+    basket_record = Basket.objects.filter(pk=pk)
     basket_record.delete()
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 

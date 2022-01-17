@@ -12,6 +12,8 @@ class ShopUser(AbstractUser):
     activation_key = models.CharField(max_length=128, blank=True)
     activation_key_expires = models.DateTimeField(default=(now() +
                                             timedelta(hours=24)))
+    address = models.CharField(max_length=256, blank=True, verbose_name='Адрес доставки')
+    phone = models.IntegerField(verbose_name='Номер телефона', null=True)
 
     class Meta:
         verbose_name = 'Пользователь'

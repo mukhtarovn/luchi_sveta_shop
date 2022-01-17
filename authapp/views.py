@@ -1,3 +1,5 @@
+import random
+
 from django.conf import settings
 from django.contrib import auth
 
@@ -88,5 +90,21 @@ def edit (request):
 
     return render (request, 'authapp/edit.html', content)
 
+def anonym(request):
+    username = f'Anonym{random.randint(1,100)}'
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    address = request.POST.get('address')
+    password = 'shopuser12345'
+    if request.method == 'POST':
+        if name != None:
+            if phone != None:
+                phone = 111111
+                ShopUser.objects.create_user (first_name=name, address=address, phone=phone, username=username, password=password)
+            user = auth.authenticate (username=username, password=password)
+            if user and user.is_active:
+                auth.login (request, user)
+                return HttpResponseRedirect (reverse ('main'))
+    return render(request, 'authapp/anonym.html')
 
 
