@@ -1401,7 +1401,7 @@ td:first-child {
 	font-size: 62px;
 	font-weight: 100;
 	text-align: left;
-	margin-top: 142px;
+	margin-top: 80px;
 	text-transform: uppercase;
 	/*text-transform: capitalize;*/
 }
@@ -1805,4 +1805,10 @@ a {
     width: 500px;
     margin-top: 10px;
     margin-left: 15%;
+}
+
+.info-text {
+    color: #555;
+    font-size: large;
+    text-align:justify;
 }

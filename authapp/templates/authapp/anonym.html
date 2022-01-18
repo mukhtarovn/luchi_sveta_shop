@@ -3,8 +3,9 @@
 
 {% block content %}
 
-<form class="form-signin" action="{% url 'auth:anonym' %}" method="post">
+<form class="form-signin shadow-lg p-3 mb-5 bg-body rounded" action="{% url 'auth:anonym' %}" method="post">
   {%csrf_token%}
+        <h3 class="h3 mb-3 fw-normal" style="text-align: center">Введите данные для заказа</h3>
       <div class="mb-3">
       <label for="formGroupExampleInput2" class="form-label">Имя</label>
       <input name="name" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Иванов Иван">
@@ -20,6 +21,9 @@
 </form>
 <div>
     <a href="{%url 'main'%}">на главную</a>
+</div>
+<div style="padding-top: 20px; font-size: small;">
+    <p class="mb-3 fw-normal" style="text-align: center">В ближайшее время наш менеджер свяжется с Вами для уточнения деталей заказа</p>
 </div>
 
 {%endblock%}

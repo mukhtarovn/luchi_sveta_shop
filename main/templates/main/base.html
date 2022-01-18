@@ -38,10 +38,13 @@
 		<div class="footer">
 			<div class="clearfix">
 				<div class="text-footer">
-					<h3>контакты</h3>
+					<h3><a href="{% url 'contacts'%}" >контакты</a></h3>
+					<p style="margin: 1px;">+7-929-601-1776</p>
+					<p>+7-995-787-1776</p>
+					<p>luchi_sveta@list.ru</p>
 				</div>
 				<div class="text-footer">
-					<h3>полезная информация</h3>
+					<h3><a href="{%url 'main:info'%}">полезная информация</a></h3>
 				</div>
 				<div class="text-footer clearfix">
 					<h3>Оставайтесь на связи</h3>
@@ -59,7 +62,11 @@
 				<a href="#" class="social3"></a>
 				<a href="#" class="social4"></a>
 			</div>
-			<p class="small">Положения &amp; Условия  /  Конфиденциальность &amp; Cookies</p>
+
+			<p class="small"><a href="{%url 'main:info'%}">Положения &amp; Условия  /  Конфиденциальность &amp; Cookies</a></p>
+			<p class="small" style="text-align: justify;font-size: 10px; margin-top: 12px; line-height: 10px;">Вся представленная на сайте информация, касающаяся наличия, комплектации, технических характеристик, цветовых сочетаний, а также стоимости носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ. Для получения подробной информации обращайтесь к менеджерам Интернет-Магазин по тел. +7(929)601-17-76.
+				Опубликованная на сайте информация может быть изменена в любое время без предварительного уведомления.</p></div>
+
 		</div>
 	{%endblock%}
 </body>

@@ -127,3 +127,10 @@ def search_result(request):
     }
     return render(request, 'main/search_results.html', content)
 
+
+def info(request):
+    title = 'Информация'
+    content = {
+        'title': title,
+    }
+    return render (request, 'main/info.html', content)

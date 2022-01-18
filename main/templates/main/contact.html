@@ -11,25 +11,23 @@
 {%endblock%}
 {%block content%}
 		<div class="location">
-			{%for location in locations%}
 			<div class="location-1">
 				<i class="fa fa-map-marker fa-5x"></i>
-				<h4>{{location.city}}</h4>
+				<h4>Москва</h4>
 				<div class="contacts">
 					<h5>Телефон</h5>
-					<p>{{location.phone}}</p>
-					<p>{{location.phone2}}</p>
+					<p>+7-929-601-1776</p>
+					<p>+7-995-787-1776</p>
 				</div>
 				<div class="contacts">
 					<h5>Email</h5>
-					<p>{{location.email}}</p>
+					<p>luchi_sveta@list.ru</p>
 				</div>
 				<div class="contacts">
 					<h5>Адрес</h5>
-					<p>{{location.address}}</p>
+					<p>Москва, пос. Коммунарка, ул. Липовый парк, д.6</p>
 				</div>
 			</div>
-			{%endfor%}
 		</div>
 
 		<div class="clr"></div>
