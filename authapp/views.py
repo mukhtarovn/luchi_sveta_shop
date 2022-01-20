@@ -23,14 +23,14 @@ def send_varification_email(user):
 def verify(request, email, activation_key):
     try:
         user = ShopUser.objects.get(email=email)
-        if user.activation_key==activation_key and not user.is_activation_key_expired():
-            user.is_active=True
+        if user.activation_key == activation_key and not user.is_activation_key_expired():
+            user.is_active = True
             user.save()
             auth.login(request, user)
             return render(request, "authapp/verification.html")
         else:
             print(f'error{email}')
-            return request(request,'authapp/verification.html')
+            return request(request, 'authapp/verification.html')
     except Exception as e:
         print(e.args)
         return HttpResponseRedirect(reverse('main'))
@@ -38,7 +38,6 @@ def verify(request, email, activation_key):
 
 def login(request):
     title = 'вход'
-
     login_form = ShopUserLoginForm(data=request.POST)
     if request.method == 'POST' and login_form.is_valid():
         username = request.POST['username']
@@ -46,26 +45,26 @@ def login(request):
 
         user = auth.authenticate(username=username, password=password)
         if user and user.is_active:
-            auth.login(request,user)
+            auth.login(request, user)
             return render(request, 'main/index.html')
     content = {
         'title': title,
         'login_form': login_form}
     return render(request, 'authapp/login.html', content)
 
-def logout (request):
+def logout(request):
     auth.logout(request)
-    return HttpResponseRedirect (reverse('main'))
+    return HttpResponseRedirect(reverse('main'))
 
-def register (request):
+def register(request):
     title = 'Регистарция'
     if request.method == 'POST':
-        register_form = ShopUserRegisterForm (request.POST, request.FILES)
+        register_form = ShopUserRegisterForm(request.POST, request.FILES)
         if register_form.is_valid():
             user = register_form.save()
             if send_varification_email(user):
                 print('success')
-                return HttpResponseRedirect (reverse('auth:login'))
+                return HttpResponseRedirect(reverse('auth:login'))
             print('error')
             return HttpResponseRedirect(reverse('auth:login'))
     else:
@@ -76,19 +75,19 @@ def register (request):
     return render(request, 'authapp/register.html', content)
 
 
-def edit (request):
+def edit(request):
     title = 'Редактирование'
     if request.method == 'POST':
         edit_form = ShopUserEditForm(request.POST, request.FILES, instance=request.user)
-        if edit_form.is_valid ():
-            edit_form.save ()
-            return HttpResponseRedirect (reverse ('auth:edit'))
+        if edit_form.is_valid():
+            edit_form.save()
+            return HttpResponseRedirect(reverse('auth:edit'))
     else:
-        edit_form = ShopUserEditForm (instance=request.user)
+        edit_form = ShopUserEditForm(instance=request.user)
     content = {
         'title': title, 'edit_form': edit_form}
 
-    return render (request, 'authapp/edit.html', content)
+    return render(request, 'authapp/edit.html', content)
 
 def anonym(request):
     username = f'Anonym{random.randint(1,100)}'
@@ -97,14 +96,13 @@ def anonym(request):
     address = request.POST.get('address')
     password = 'shopuser12345'
     if request.method == 'POST':
-        if name != None:
-            if phone != None:
+        if name is not None:
+            if phone is not None:
                 phone = 111111
-                ShopUser.objects.create_user(first_name=name, address=address, phone=phone, username=username, password=password)
+                ShopUser.objects.create_user(first_name=name, address=address, phone=phone,
+                                             username=username, password=password)
             user = auth.authenticate(username=username, password=password)
             if user and user.is_active:
                 auth.login(request, user)
                 return render(request, 'main/index.html')
     return render(request, 'authapp/anonym.html')
-
-
