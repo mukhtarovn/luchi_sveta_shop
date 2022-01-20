@@ -47,7 +47,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user and user.is_active:
             auth.login(request,user)
-            return HttpResponseRedirect(reverse('main'))
+            return render(request, 'main/index.html')
     content = {
         'title': title,
         'login_form': login_form}
@@ -104,7 +104,8 @@ def anonym(request):
             user = auth.authenticate (username=username, password=password)
             if user and user.is_active:
                 auth.login (request, user)
-                return HttpResponseRedirect (reverse ('main'))
+                print('*'*100)
+                return render(request, 'main/index.html')
     return render(request, 'authapp/anonym.html')
 
 
