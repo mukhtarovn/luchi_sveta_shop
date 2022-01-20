@@ -100,11 +100,10 @@ def anonym(request):
         if name != None:
             if phone != None:
                 phone = 111111
-                ShopUser.objects.create_user (first_name=name, address=address, phone=phone, username=username, password=password)
-            user = auth.authenticate (username=username, password=password)
+                ShopUser.objects.create_user(first_name=name, address=address, phone=phone, username=username, password=password)
+            user = auth.authenticate(username=username, password=password)
             if user and user.is_active:
-                auth.login (request, user)
-                print('*'*100)
+                auth.login(request, user)
                 return render(request, 'main/index.html')
     return render(request, 'authapp/anonym.html')
 
