@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 
 class ProductCategory(models.Model):
     name = models.CharField(verbose_name='имя', max_length=64, unique=True)
@@ -41,6 +43,9 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
+
+    def get_absolute_url(self):
+        return 'https://luchi-sveta.ru/products/product/' +str(self.pk)
 
     def __str__(self):
         return f'{self.name} ({self.category.name})'
