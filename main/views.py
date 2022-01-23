@@ -16,7 +16,8 @@ from main.models import Product, ProductCategory
 
 def main(request):
     title = 'лучи света'
-    products = Product.objects.all()
+    products = Product.objects.exclude(category__name='Technical'). \
+        exclude(category__name='Voltega').exclude(category__name='Outdoor')
     random_products = random.sample(list(products), 3)
     content = {
         'title': title,
@@ -33,7 +34,8 @@ def get_basket(user):
         return []
 
 def get_hot_product():
-    _products = Product.objects.all()
+    _products = Product.objects.exclude(category__name='Technical'). \
+        exclude(category__name='Voltega')
 
     return random.sample(list(_products), 1)[0]
 
@@ -52,7 +54,7 @@ def products(request, pk=None, page=1):
 
     if pk is not None:
         if pk == 0:
-            products = Product.objects.all()
+            products = Product.objects.all().exclude(quantity=True)
             category = {'pk':0, 'name':'все'}
         else:
             category = get_object_or_404(ProductCategory, pk=pk)

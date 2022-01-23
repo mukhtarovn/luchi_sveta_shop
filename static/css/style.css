@@ -173,7 +173,7 @@ html, body {
 }
 
 .product_record {
-    height: 125px;
+    height: 137px;
     margin: 15px auto;
     position: relative;
 }
@@ -185,7 +185,7 @@ html, body {
 .product_record .product_name {
     display: block;
     float: left;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 25px;
     width: 250px;
     font-size: 150%;

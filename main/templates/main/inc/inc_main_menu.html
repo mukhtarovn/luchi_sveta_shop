@@ -39,7 +39,7 @@
     <li style="margin-bottom: 10px;"><a href="{% url 'orderapp:order_list' %}">
                        заказы
             </a></li>
-      {%if superuser%}
+      {%if user.is_superuser%}
       <li style="margin-bottom: 10px;"><a href="/admin/">админ</a>
       {%endif%}
     <li style="margin-bottom: 10px;"><li><a href="{% url 'auth:logout'%}">Выход</a></li>
