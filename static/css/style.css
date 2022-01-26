@@ -1547,7 +1547,7 @@ td:first-child {
 }
 
 .links {
-    height: 565px;
+    height: 910px;
     width: 12%;
     margin-right: 10px;
     float: left;
@@ -1711,7 +1711,7 @@ td:first-child {
 }
 
 .related {
-	padding: 0px 98px;
+	padding: 0px 30px;
 }
 .related .title {
 	/*height: 343px;*/

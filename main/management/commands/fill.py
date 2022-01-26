@@ -33,9 +33,16 @@ class Command(BaseCommand):
         products = load_from_json("products_new")
         for prod in products:
             cat_name = prod["category"]
-            _cat = ProductCategory.objects.get (name=cat_name)
+            _cat = ProductCategory.objects.get(name=cat_name)
             prod["category"] = _cat
             Product.objects.create (**prod)
 
+        products = load_from_json("products_all")
+        for prod in products:
+            cat_name = prod["category"]
+            _cat = ProductCategory.objects.get (name=cat_name)
+            prod["category"] = _cat
+            Product.objects.create(**prod)
+
     ShopUser.objects.all().delete()
-    ShopUser.objects.create_superuser(username='nariman', password='sarvan030511', age=30)
+    ShopUser.objects.create_superuser(username='nariman', password='sarvan030511', age=30, first_name='Нариман', )

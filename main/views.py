@@ -35,7 +35,7 @@ def get_basket(user):
 
 def get_hot_product():
     _products = Product.objects.exclude(category__name='Technical'). \
-        exclude(category__name='Voltega')
+        exclude(category__name='Voltega').exclude(category__name='Efapel')
 
     return random.sample(list(_products), 1)[0]
 
@@ -60,7 +60,7 @@ def products(request, pk=None, page=1):
             category = get_object_or_404(ProductCategory, pk=pk)
             products = Product.objects.filter(category__pk=pk)
 
-        paginator = Paginator(products, 12)
+        paginator = Paginator(products, 15)
         try:
             product_paginator = paginator.page(page)
         except PageNotAnInteger:
