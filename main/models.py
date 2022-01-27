@@ -29,7 +29,7 @@ class Product(models.Model):
     width = models.CharField(verbose_name='ширина', max_length=16, null=True)
     height = models.CharField(verbose_name='высота', max_length=16, null=True)
     diameter = models.CharField(verbose_name='диаметр', max_length=16, null=True)
-    size = models.CharField(verbose_name='размер', blank=True, max_length=32, null=True)
+    size = models.CharField(verbose_name='размер', blank=True, max_length=64, null=True)
     weight = models.CharField(verbose_name='вес', max_length=16, blank=True, null=True)
     image = models.ImageField(verbose_name='фото', upload_to='products_images', blank=True, null=True)
     image_2 = models.ImageField(verbose_name='фото-2', upload_to='products_images', blank=True, null=True)
