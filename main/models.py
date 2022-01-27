@@ -19,7 +19,7 @@ class Product(models.Model):
     series = models.CharField(verbose_name='серия', max_length= 64, blank=True, null=True)
     type = models.CharField(verbose_name='тип светильника', max_length= 32, blank=True, null=True)
     type_2 = models.CharField(verbose_name='подтип', max_length= 32, blank=True, null=True)
-    material = models.CharField(verbose_name='метериал', max_length= 32, blank=True, null=True)
+    material = models.CharField(verbose_name='метериал', max_length= 64, blank=True, null=True)
     color = models.CharField(verbose_name='цвет', max_length= 32, blank=True, null=True)
     price = models.PositiveIntegerField(verbose_name='цена', null=True)
     lamps = models.PositiveIntegerField (verbose_name='количество ламп', null=True)
