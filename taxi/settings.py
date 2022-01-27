@@ -85,10 +85,10 @@ DATABASES = {
     
     'default': {
         'NAME': 'luchi_sveta',
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'nariman',
         'PASSWORD': 'sarvan030511',
-        'PORT': '5433',
+        'HOST': 'localhost',
     }
 }
 
