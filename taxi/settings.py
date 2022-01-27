@@ -87,7 +87,8 @@ DATABASES = {
         'NAME': 'luchi_sveta',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'nariman',
-        'PASSWORD': 'sarvan030511'
+        'PASSWORD': 'sarvan030511',
+
     }
 }
 
