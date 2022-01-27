@@ -84,7 +84,7 @@ DATABASES = {
     #}
     
     'default': {
-        'NAME': 'luchi_saveta',
+        'NAME': 'luchi_sveta',
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'nariman',
         'PASSWORD': 'sarvan030511'
