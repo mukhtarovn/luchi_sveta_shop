@@ -46,6 +46,9 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user and user.is_active:
             auth.login(request, user)
+            send_mail ('Клиент вошел в ЛК', f'{request.user} вошел в личный кабинет',
+                       'luchi_sveta@list.ru', ['luchi_sveta@list.ru', 'mukhtarov.n@gmail.com'],
+                       fail_silently=False, )
             return render(request, 'main/index.html')
     content = {
         'title': title,
@@ -64,6 +67,9 @@ def register(request):
             user = register_form.save()
             if send_varification_email(user):
                 print('success')
+                send_mail ('Зарегестрировался новый клиент', f'Зарегестрировался новый клиент {request.user}',
+                           'luchi_sveta@list.ru', ['luchi_sveta@list.ru', 'mukhtarov.n@gmail.com'],
+                           fail_silently=False, )
                 return HttpResponseRedirect(reverse('auth:login'))
             print('error')
             return HttpResponseRedirect(reverse('auth:login'))

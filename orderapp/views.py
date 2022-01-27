@@ -114,7 +114,7 @@ def order_forming_complete(request, pk):
    order.status = Order.SENT_TO_PROCEED
    order.save()
    send_mail('НОВЫЙ ЗАКАЗ', f'Поступил новый заказ {order.id} от {request.user}',
-             'luchi_sveta@list.ru', ['luchi_sveta@list.ru','mukhtarov.n@gmail.com'],
+             'luchi_sveta@list.ru', ['luchi_sveta@list.ru', 'mukhtarov.n@gmail.com'],
              fail_silently=False,)
 
    return HttpResponseRedirect(reverse('orderapp:order_list'))
