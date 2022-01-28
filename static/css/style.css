@@ -1541,8 +1541,8 @@ td:first-child {
 .hero-white {
 	background-color: #fff;
 	height: 119px;
-	padding-left: 98px;
-	padding-right: 211px;
+	padding-left: 5%;
+	padding-right: 17%;
 	position: relative;
 }
 
