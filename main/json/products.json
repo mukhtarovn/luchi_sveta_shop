@@ -1,6 +1,7 @@
 [
     {
         "article": "BZ/K/2/K",
+        "quantity": 1,
         "image": "/media/products_images/BZ-K-2-K.jpg",
         "category": "Kemar",
         "name": "Kemar BELIZE BZ/K/2/K настенный светильник",
@@ -22,6 +23,7 @@
     },
     {
         "article": "G/2",
+        "quantity": 3,
         "image": "/media/products_images/G-2.jpg",
         "category": "Kemar",
         "name": "Kemar GALEGOS G/2 потолочный светильник",
@@ -43,6 +45,7 @@
     },
     {
         "article": "G/1/M",
+        "quantity": 2,
         "image": "/media/products_images/G-1-M.jpg",
         "category": "Kemar",
         "name": "Kemar GALEGOS G/1/M потолочный светильник",
@@ -64,6 +67,7 @@
     },
     {
         "article": "G/5",
+        "quantity": 4,
         "image": "/media/products_images/G-5.jpg",
         "category": "Kemar",
         "name": "Kemar GALEGOS G/5 потолочный светильник",
@@ -85,6 +89,7 @@
     },
     {
         "article": "KR/6/B",
+        "quantity": 1,
         "image": "/media/products_images/KR-6-B.jpg",
         "category": "Kemar",
         "name": "Kemar KORENTO KR/6/B потолочный светильник",
@@ -127,6 +132,7 @@
     },
     {
         "article": "SG/KU/1/WH",
+        "quantity": 2,
         "image": "/media/products_images/SG-KU-1-WH.jpg",
         "category": "Kemar",
         "name": "Kemar KULE SG/KU/1/WH потолочный светильник",
@@ -148,6 +154,7 @@
     },
     {
         "article": "KW/10/B",
+        "quantity": 2,
         "image": "/media/products_images/KW-10-B.jpg",
         "category": "Kemar",
         "name": "Kemar KWINERO BRAZ KW/10/B потолочный светильник",
@@ -169,6 +176,7 @@
     },
     {
         "article": "KW/10/K",
+        "quantity": 1,
         "image": "/media/products_images/KW-10-K.jpg",
         "category": "Kemar",
         "name": "Kemar KWINERO KREM KW/10/K потолочный светильник",
@@ -211,6 +219,7 @@
     },
     {
         "article": "LR/5/BM",
+        "quantity": 2,
         "image": "/media/products_images/LR-5-BM.jpg",
         "category": "Kemar",
         "name": "Kemar LABRADO LR/5/BM светильник потолочный",
@@ -253,6 +262,7 @@
     },
     {
         "article": "LR/3/BM",
+        "quantity": 1,
         "image": "/media/products_images/LR-3-BM.jpg",
         "category": "Kemar",
         "name": "Kemar LABRADO LR/3/BM светильник потолочный",
@@ -274,6 +284,7 @@
     },
     {
         "article": "LR/70",
+        "quantity": 1,
         "image": "/media/products_images/LR-70.jpg",
         "category": "Kemar",
         "name": "Kemar LORETTO LR/70 потолочный светильник",
@@ -295,6 +306,7 @@
     },
     {
         "article": "MT/10/AK",
+        "quantity": 1,
         "image": "/media/products_images/MT-10-AK.jpg",
         "category": "Kemar",
         "name": "Kemar Montaro MT/10/AK потолочный светильник",
@@ -337,6 +349,7 @@
     },
     {
         "article": "NP/7/G/B",
+        "quantity": 2,
         "image": "/media/products_images/NP-7-G-B.jpg",
         "category": "Kemar",
         "name": "Kemar NAPO NP/7/G/B светильник подвесной",
@@ -379,6 +392,7 @@
     },
     {
         "article": "N/SV",
+        "quantity": 1,
         "image": "/media/products_images/N-SV.jpg",
         "category": "Kemar",
         "name": "Kemar NITI N/SV светильник подвесной",
@@ -400,6 +414,7 @@
     },
     {
         "article": "LSA25/O/P/R",
+        "quantity": 1,
         "image": "/media/products_images/LSA25-O-P-R.jpg",
         "category": "Kemar",
         "name": "Kemar OURO LSA25/O/P/R напольный светильник",
@@ -421,6 +436,7 @@
     },
     {
         "article": "OW50",
+        "quantity": 1,
         "image": "/media/products_images/OW50.jpg",
         "category": "Kemar",
         "name": "Kemar OURO GOLD OW50 потолочный светильник",
@@ -442,6 +458,7 @@
     },
     {
         "article": "OW150",
+        "quantity": 4,
         "image": "/media/products_images/OW150.jpg",
         "category": "Kemar",
         "name": "Kemar OURO GOLD OW150 потолочный светильник",
@@ -463,6 +480,7 @@
     },
     {
         "article": "P/LSA",
+        "quantity": 1,
         "image": "/media/products_images/P-LSA.jpg",
         "category": "Kemar",
         "name": "Kemar PRETO P/LSA напольный светильник",
@@ -484,6 +502,7 @@
     },
     {
         "article": "RF/2/R",
+        "quantity": 1,
         "image": "/media/products_images/RF-2-R.jpg",
         "category": "Kemar",
         "name": "Kemar RIFFTA RF/2/R потолочный светильник",
@@ -505,6 +524,7 @@
     },
     {
         "article": "RF/6/R",
+        "quantity": 1,
         "image": "/media/products_images/RF-6-R.jpg",
         "category": "Kemar",
         "name": "Kemar RIFFTA RF/6/R потолочный светильник",
@@ -547,6 +567,7 @@
     },
     {
         "article": "RF/6/V",
+        "quantity": 2,
         "image": "/media/products_images/RF-6-V.jpg",
         "category": "Kemar",
         "name": "Kemar RIFFTA RF/6/V потолочный светильник",
@@ -568,6 +589,7 @@
     },
     {
         "article": "RF/4/B",
+        "quantity": 1,
         "image": "/media/products_images/RF-4-B.jpg",
         "category": "Kemar",
         "name": "Kemar RIFFTA RF/4/B потолочный светильник",
@@ -589,6 +611,7 @@
     },
     {
         "article": "RF/6/B",
+        "quantity": 1,
         "image": "/media/products_images/RF-6-B.jpg",
         "category": "Kemar",
         "name": "Kemar RIFFTA RF/6/B потолочный светильник",
@@ -610,6 +633,7 @@
     },
     {
         "article": "RI/8/L",
+        "quantity": 1,
         "image": "/media/products_images/RI-8-L.jpg",
         "category": "Kemar",
         "name": "Kemar RINAMA 2 RI/8/L потолочный светильник",
@@ -631,6 +655,7 @@
     },
     {
         "article": "T/D/P Brown",
+        "quantity": 1,
         "image": "/media/products_images/T-D-P Brown.jpg",
         "category": "Kemar",
         "name": "Kemar TANAJA Brown T/D/P потолочный светильник",
@@ -652,6 +677,7 @@
     },
     {
         "article": "T/9 Green",
+        "quantity": 1,
         "image": "/media/products_images/T-9 Green.jpg",
         "category": "Kemar",
         "name": "Kemar TANAJA Green T/9 потолочный светильник",
@@ -673,6 +699,7 @@
     },
     {
         "article": "T/6 Green",
+        "quantity": 1,
         "image": "/media/products_images/T-6 Green.jpg",
         "category": "Kemar",
         "name": "Kemar TANAJA Green T/6 потолочный светильник",
@@ -694,6 +721,7 @@
     },
     {
         "article": "T/Z Green",
+        "quantity": 2,
         "image": "/media/products_images/T-Z Green.jpg",
         "category": "Kemar",
         "name": "Kemar TANAJA Green T/Z потолочный светильник",
@@ -715,6 +743,7 @@
     },
     {
         "article": "T/M/P Red",
+        "quantity": 1,
         "image": "/media/products_images/T-M-P Red.jpg",
         "category": "Kemar",
         "name": "Kemar TANAJA Red T/M/P потолочный светильник",
@@ -736,6 +765,7 @@
     },
     {
         "article": "16610",
+        "quantity": 10,
         "image": "/media/products_images/16610.jpg",
         "category": "Alfa",
         "name": "Alfa ABAKA BEZ 16610 настенный светильник",
@@ -757,6 +787,7 @@
     },
     {
         "article": "16615",
+        "quantity": 10,
         "image": "/media/products_images/16615.jpg",
         "category": "Alfa",
         "name": "Alfa ABAKA BEZ 16615 потолочный светильник",
@@ -778,6 +809,7 @@
     },
     {
         "article": "23635",
+        "quantity": 4,
         "image": "/media/products_images/23635.jpg",
         "category": "Alfa",
         "name": "Alfa ADELINA 23635 потолочный светильник",
@@ -799,6 +831,7 @@
     },
     {
         "article": "1011",
+        "quantity": 4,
         "image": "/media/products_images/1011.jpg",
         "category": "Alfa",
         "name": "Alfa AISHA 1011 потолочный светильник",
@@ -841,6 +874,7 @@
     },
     {
         "article": "23740",
+        "quantity": 2,
         "image": "/media/products_images/23740.jpg",
         "category": "Alfa",
         "name": "Alfa AMARILLO CHROM 23740 настенный светильник",
@@ -862,6 +896,7 @@
     },
     {
         "article": "23745",
+        "quantity": 10,
         "image": "/media/products_images/23745.jpg",
         "category": "Alfa",
         "name": "Alfa AMARILLO CHROM 23745 потолочный светильник",
@@ -883,6 +918,7 @@
     },
     {
         "article": "23750",
+        "quantity": 10,
         "image": "/media/products_images/23750.jpg",
         "category": "Alfa",
         "name": "Alfa AMARILLO PATYNA 23750 настенный светильник",
@@ -904,6 +940,7 @@
     },
     {
         "article": "23755",
+        "quantity": 4,
         "image": "/media/products_images/23755.jpg",
         "category": "Alfa",
         "name": "Alfa AMARILLO PATYNA 23755 потолочный светильник",
@@ -925,6 +962,7 @@
     },
     {
         "article": "5522",
+        "quantity": 5,
         "image": "/media/products_images/5522.jpg",
         "category": "Alfa",
         "name": "Alfa AMELIA 5522 потолочный светильник",
@@ -946,6 +984,7 @@
     },
     {
         "article": "9648 ( стекло 80400 )",
+        "quantity": 10,
         "image": "/media/products_images/9648 ( стекло 80400 ).jpg",
         "category": "Alfa",
         "name": "Alfa ANJA 9648 ( стекло 80400 ) потолочный светильник",
@@ -967,6 +1006,7 @@
     },
     {
         "article": "9649",
+        "quantity": 1,
         "image": "/media/products_images/9649.jpg",
         "category": "Alfa",
         "name": "Alfa ANJA 9649 потолочный светильник",
@@ -988,6 +1028,7 @@
     },
     {
         "article": "20783",
+        "quantity": 10,
         "image": "/media/products_images/20783.jpg",
         "category": "Alfa",
         "name": "Alfa ARETA 20783 потолочный светильник",
@@ -1009,6 +1050,7 @@
     },
     {
         "article": "26226",
+        "quantity": 1,
         "image": "/media/products_images/26226.jpg",
         "category": "Alfa",
         "name": "Alfa ARNO 26226 потолочный светильник",
@@ -1030,6 +1072,7 @@
     },
     {
         "article": "3421",
+        "quantity": 6,
         "image": "/media/products_images/3421.jpg",
         "category": "Alfa",
         "name": "Alfa ASTORIA 3421 потолочный светильник",
@@ -1051,6 +1094,7 @@
     },
     {
         "article": "1321",
+        "quantity": 1,
         "image": "/media/products_images/1321.jpg",
         "category": "Alfa",
         "name": "Alfa ASTORIA 1321 потолочный светильник",
@@ -1072,6 +1116,7 @@
     },
     {
         "article": "2321",
+        "quantity": 10,
         "image": "/media/products_images/2321.jpg",
         "category": "Alfa",
         "name": "Alfa ASTORIA 2321 настенный светильник",
@@ -1093,6 +1138,7 @@
     },
     {
         "article": "3321",
+        "quantity": 8,
         "image": "/media/products_images/3321.jpg",
         "category": "Alfa",
         "name": "Alfa ASTORIA 3321 потолочный светильник",
@@ -1135,6 +1181,7 @@
     },
     {
         "article": "5321",
+        "quantity": 10,
         "image": "/media/products_images/5321.jpg",
         "category": "Alfa",
         "name": "Alfa ASTORIA 5321 потолочный светильник",
@@ -1177,6 +1224,7 @@
     },
     {
         "article": "60621",
+        "quantity": 8,
         "image": "/media/products_images/60621.jpg",
         "category": "Alfa",
         "name": "Alfa ASTORIA  60621  потолочный светильник",
@@ -1219,6 +1267,7 @@
     },
     {
         "article": "146",
+        "quantity": 7,
         "image": "/media/products_images/146.jpg",
         "category": "Alfa",
         "name": "Alfa ASTRA 146 потолочный светильник",
@@ -1261,6 +1310,7 @@
     },
     {
         "article": "26123",
+        "quantity": 6,
         "image": "/media/products_images/26123.jpg",
         "category": "Alfa",
         "name": "Alfa BAFIA 26123 потолочный светильник",
@@ -1282,6 +1332,7 @@
     },
     {
         "article": "18520",
+        "quantity": 4,
         "image": "/media/products_images/18520.jpg",
         "category": "Alfa",
         "name": "Alfa BALI WHITE 18520 настенный светильник",
@@ -1303,6 +1354,7 @@
     },
     {
         "article": "18525",
+        "quantity": 8,
         "image": "/media/products_images/18525.jpg",
         "category": "Alfa",
         "name": "Alfa BALI WHITE 18525 потолочный светильник",
@@ -1345,6 +1397,7 @@
     },
     {
         "article": "11488",
+        "quantity": 1,
         "image": "/media/products_images/11488.jpg",
         "category": "Alfa",
         "name": "Alfa BARON 11488 настольный светильник",
@@ -1366,6 +1419,7 @@
     },
     {
         "article": "11480 (Абажур 83139)",
+        "quantity": 3,
         "image": "/media/products_images/11480 (Абажур 83139).jpg",
         "category": "Alfa",
         "name": "Alfa BARON SILVER 11480 (Абажур 83139) настенный светильник",
@@ -1387,6 +1441,7 @@
     },
     {
         "article": "11485 (Абажур 83139)",
+        "quantity": 1,
         "image": "/media/products_images/11485 (Абажур 83139).jpg",
         "category": "Alfa",
         "name": "Alfa BARON SILVER 11485 (Абажур 83139) потолочный светильник",
@@ -1408,6 +1463,7 @@
     },
     {
         "article": "11420",
+        "quantity": 2,
         "image": "/media/products_images/11420.jpg",
         "category": "Alfa",
         "name": "Alfa BARONET 11420 настенный светильник",
@@ -1429,6 +1485,7 @@
     },
     {
         "article": "15813",
+        "quantity": 1,
         "image": "/media/products_images/15813.jpg",
         "category": "Alfa",
         "name": "Alfa BLUSZCZ 15813 потолочный светильник",
@@ -1450,6 +1507,7 @@
     },
     {
         "article": "15811",
+        "quantity": 10,
         "image": "/media/products_images/15811.jpg",
         "category": "Alfa",
         "name": "Alfa BLUSZCZ 15811 потолочный светильник",
@@ -1471,6 +1529,7 @@
     },
     {
         "article": "9638",
+        "quantity": 10,
         "image": "/media/products_images/9638.jpg",
         "category": "Alfa",
         "name": "Alfa BONIEK 9638 потолочный светильник",
@@ -1492,6 +1551,7 @@
     },
     {
         "article": "24305",
+        "quantity": 4,
         "image": "/media/products_images/24305.jpg",
         "category": "Alfa",
         "name": "Alfa BRIDGE WHITE 24305 потолочный светильник",
@@ -1534,6 +1594,7 @@
     },
     {
         "article": "16388",
+        "quantity": 1,
         "image": "/media/products_images/16388.jpg",
         "category": "Alfa",
         "name": "Alfa MOCCA 16388 настольный светильник",
@@ -1555,6 +1616,7 @@
     },
     {
         "article": "27000",
+        "quantity": 10,
         "image": "/media/products_images/27000.jpg",
         "category": "Alfa",
         "name": "Alfa BUSHWICK 27000 настенный светильник",
@@ -1576,6 +1638,7 @@
     },
     {
         "article": "27005",
+        "quantity": 10,
         "image": "/media/products_images/27005.jpg",
         "category": "Alfa",
         "name": "Alfa BUSHWICK 27005 потолочный светильник",
@@ -1597,6 +1660,7 @@
     },
     {
         "article": "25180",
+        "quantity": 6,
         "image": "/media/products_images/25180.jpg",
         "category": "Alfa",
         "name": "Alfa BUSHWICK 25180 настенный светильник",
@@ -1618,6 +1682,7 @@
     },
     {
         "article": "25185",
+        "quantity": 7,
         "image": "/media/products_images/25185.jpg",
         "category": "Alfa",
         "name": "Alfa BUSHWICK 25185 потолочный светильник",
@@ -1639,6 +1704,7 @@
     },
     {
         "article": "60206",
+        "quantity": 1,
         "image": "/media/products_images/60206.jpg",
         "category": "Alfa",
         "name": "Alfa CALIFORNIA  60206 потолочный светильник",
@@ -1681,6 +1747,7 @@
     },
     {
         "article": "9244",
+        "quantity": 10,
         "image": "/media/products_images/9244.jpg",
         "category": "Alfa",
         "name": "Alfa CASTLE 9244 напольный светильник",
@@ -1702,6 +1769,7 @@
     },
     {
         "article": "60623",
+        "quantity": 10,
         "image": "/media/products_images/60623.jpg",
         "category": "Alfa",
         "name": "Alfa Chee 60623 потолочный светильник",
@@ -1723,6 +1791,7 @@
     },
     {
         "article": "60624",
+        "quantity": 9,
         "image": "/media/products_images/60624.jpg",
         "category": "Alfa",
         "name": "Alfa Chee 60624 потолочный светильник",
@@ -1744,6 +1813,7 @@
     },
     {
         "article": "60625",
+        "quantity": 10,
         "image": "/media/products_images/60625.jpg",
         "category": "Alfa",
         "name": "Alfa Chee 60625 потолочный светильник",
@@ -1765,6 +1835,7 @@
     },
     {
         "article": "9246",
+        "quantity": 10,
         "image": "/media/products_images/9246.jpg",
         "category": "Alfa",
         "name": "Alfa CLARA 9246 напольный светильник",
@@ -1786,6 +1857,7 @@
     },
     {
         "article": "26570",
+        "quantity": 2,
         "image": "/media/products_images/26570.jpg",
         "category": "Alfa",
         "name": "Alfa CONSUL 26570 настенный светильник",
@@ -1807,6 +1879,7 @@
     },
     {
         "article": "26575",
+        "quantity": 1,
         "image": "/media/products_images/26575.jpg",
         "category": "Alfa",
         "name": "Alfa CONSUL 26575 потолочный светильник",
@@ -1828,6 +1901,7 @@
     },
     {
         "article": "21360",
+        "quantity": 3,
         "image": "/media/products_images/21360.jpg",
         "category": "Alfa",
         "name": "Alfa CONSUL VENGE 21360 настенный светильник",
@@ -1849,6 +1923,7 @@
     },
     {
         "article": "772",
+        "quantity": 4,
         "image": "/media/products_images/772.jpg",
         "category": "Alfa",
         "name": "Alfa CZAJKA 772 потолочный светильник",
@@ -1891,6 +1966,7 @@
     },
     {
         "article": "12900",
+        "quantity": 2,
         "image": "/media/products_images/12900.jpg",
         "category": "Alfa",
         "name": "Alfa CZAJKA VENGE 12900 настенный светильник",
@@ -1912,6 +1988,7 @@
     },
     {
         "article": "24285",
+        "quantity": 4,
         "image": "/media/products_images/24285.jpg",
         "category": "Alfa",
         "name": "Alfa DANTONA  24285 потолочный светильник",
@@ -1933,6 +2010,7 @@
     },
     {
         "article": "60284",
+        "quantity": 1,
         "image": "/media/products_images/60284.jpg",
         "category": "Alfa",
         "name": "Alfa DROP 60284 потолочный светильник",
@@ -1954,6 +2032,7 @@
     },
     {
         "article": "60292",
+        "quantity": 9,
         "image": "/media/products_images/60292.jpg",
         "category": "Alfa",
         "name": "Alfa DROP 60292 потолочный светильник",
@@ -1975,6 +2054,7 @@
     },
     {
         "article": "25030",
+        "quantity": 8,
         "image": "/media/products_images/25030.jpg",
         "category": "Alfa",
         "name": "Alfa DYNAMO 25030 настенный светильник",
@@ -2017,6 +2097,7 @@
     },
     {
         "article": "21603",
+        "quantity": 8,
         "image": "/media/products_images/21603.jpg",
         "category": "Alfa",
         "name": "Alfa EMMA 21603 потолочный светильник",
@@ -2038,6 +2119,7 @@
     },
     {
         "article": "21605",
+        "quantity": 3,
         "image": "/media/products_images/21605.jpg",
         "category": "Alfa",
         "name": "Alfa EMMA 21605 потолочный светильник",
@@ -2059,6 +2141,7 @@
     },
     {
         "article": "21606",
+        "quantity": 5,
         "image": "/media/products_images/21606.jpg",
         "category": "Alfa",
         "name": "Alfa EMMA 21606 настольный светильник",
@@ -2080,6 +2163,7 @@
     },
     {
         "article": "21600",
+        "quantity": 2,
         "image": "/media/products_images/21600.jpg",
         "category": "Alfa",
         "name": "Alfa EMMA 21600 настенный светильник",
@@ -2101,6 +2185,7 @@
     },
     {
         "article": "26173",
+        "quantity": 10,
         "image": "/media/products_images/26173.jpg",
         "category": "Alfa",
         "name": "Alfa EMPA 26173 потолочный светильник",
@@ -2122,6 +2207,7 @@
     },
     {
         "article": "17076",
+        "quantity": 3,
         "image": "/media/products_images/17076.jpg",
         "category": "Alfa",
         "name": "Alfa ESTERA NEW 17076 потолочный светильник",
@@ -2143,6 +2229,7 @@
     },
     {
         "article": "17070",
+        "quantity": 10,
         "image": "/media/products_images/17070.jpg",
         "category": "Alfa",
         "name": "Alfa ESTERA NEW 17070 настенный светильник",
@@ -2164,6 +2251,7 @@
     },
     {
         "article": "10338",
+        "quantity": 10,
         "image": "/media/products_images/10338.jpg",
         "category": "Alfa",
         "name": "Alfa EWA VENGE 10338 настольный светильник",
@@ -2185,6 +2273,7 @@
     },
     {
         "article": "10339",
+        "quantity": 8,
         "image": "/media/products_images/10339.jpg",
         "category": "Alfa",
         "name": "Alfa EWA VENGE 10339 напольный светильник",
@@ -2206,6 +2295,7 @@
     },
     {
         "article": "60123",
+        "quantity": 10,
         "image": "/media/products_images/60123.jpg",
         "category": "Alfa",
         "name": "Alfa FOG MELANŻ 60123 (абажур 83189) потолочный светильник",
@@ -2227,6 +2317,7 @@
     },
     {
         "article": "16229",
+        "quantity": 1,
         "image": "/media/products_images/16229.jpg",
         "category": "Alfa",
         "name": "Alfa FROZEN 16229 напольный светильник",
@@ -2269,6 +2360,7 @@
     },
     {
         "article": "27405",
+        "quantity": 7,
         "image": "/media/products_images/27405.jpg",
         "category": "Alfa",
         "name": "Alfa GRACE 27405 потолочный светильник",
@@ -2290,6 +2382,7 @@
     },
     {
         "article": "27041",
+        "quantity": 1,
         "image": "/media/products_images/27041.jpg",
         "category": "Alfa",
         "name": "Alfa GRACJA  BEZ  27041  настенный светильник",
@@ -2311,6 +2404,7 @@
     },
     {
         "article": "20890",
+        "quantity": 4,
         "image": "/media/products_images/20890.jpg",
         "category": "Alfa",
         "name": "Alfa GRACJA VIGO 20890 настенный светильник",
@@ -2332,6 +2426,7 @@
     },
     {
         "article": "20895",
+        "quantity": 1,
         "image": "/media/products_images/20895.jpg",
         "category": "Alfa",
         "name": "Alfa GRACJA VIGO 20895 потолочный светильник",
@@ -2353,6 +2448,7 @@
     },
     {
         "article": "60214",
+        "quantity": 4,
         "image": "/media/products_images/60214.jpg",
         "category": "Alfa",
         "name": "Alfa RURA 60214 потолочный светильник",
@@ -2374,6 +2470,7 @@
     },
     {
         "article": "1450",
+        "quantity": 4,
         "image": "/media/products_images/1450.jpg",
         "category": "Alfa",
         "name": "Alfa HAK CHROM 1450 потолочный светильник",
@@ -2395,6 +2492,7 @@
     },
     {
         "article": "1450",
+        "quantity": 4,
         "image": "/media/products_images/1450.jpg",
         "category": "Alfa",
         "name": "Alfa HAK CHROM 1450 (стекло 88661) потолочный светильник",
@@ -2416,6 +2514,7 @@
     },
     {
         "article": "1455",
+        "quantity": 8,
         "image": "/media/products_images/1455.jpg",
         "category": "Alfa",
         "name": "Alfa HAK GOLD 1455 потолочный светильник",
@@ -2437,6 +2536,7 @@
     },
     {
         "article": "9642",
+        "quantity": 10,
         "image": "/media/products_images/9642.jpg",
         "category": "Alfa",
         "name": "Alfa HERMINA 9642 подвесной светильник",
@@ -2479,6 +2579,7 @@
     },
     {
         "article": "24023",
+        "quantity": 1,
         "image": "/media/products_images/24023.jpg",
         "category": "Alfa",
         "name": "Alfa HILA 24023 потолочный светильник",
@@ -2500,6 +2601,7 @@
     },
     {
         "article": "114",
+        "quantity": 10,
         "image": "/media/products_images/114.jpg",
         "category": "Alfa",
         "name": "Alfa ICE 114 потолочный светильник",
@@ -2521,6 +2623,7 @@
     },
     {
         "article": "24475",
+        "quantity": 10,
         "image": "/media/products_images/24475.jpg",
         "category": "Alfa",
         "name": "Alfa IDALIA 24475 потолочный светильник",
@@ -2542,6 +2645,7 @@
     },
     {
         "article": "15693",
+        "quantity": 10,
         "image": "/media/products_images/15693.jpg",
         "category": "Alfa",
         "name": "Alfa INCA 15693 потолочный светильник",
@@ -2563,6 +2667,7 @@
     },
     {
         "article": "15690",
+        "quantity": 10,
         "image": "/media/products_images/15690.jpg",
         "category": "Alfa",
         "name": "Alfa INCA 15690 настенный светильник",
@@ -2584,6 +2689,7 @@
     },
     {
         "article": "15695",
+        "quantity": 10,
         "image": "/media/products_images/15695.jpg",
         "category": "Alfa",
         "name": "Alfa INCA 15695 потолочный светильник",
@@ -2605,6 +2711,7 @@
     },
     {
         "article": "20910",
+        "quantity": 10,
         "image": "/media/products_images/20910.jpg",
         "category": "Alfa",
         "name": "Alfa IRMA 20910 настенный светильник",
@@ -2647,6 +2754,7 @@
     },
     {
         "article": "20078",
+        "quantity": 10,
         "image": "/media/products_images/20078.jpg",
         "category": "Alfa",
         "name": "Alfa ITALIA BIANCO 20078 настольный светильник",
@@ -2668,6 +2776,7 @@
     },
     {
         "article": "20079",
+        "quantity": 2,
         "image": "/media/products_images/20079.jpg",
         "category": "Alfa",
         "name": "Alfa ITALIA BLANCO 20079 напольный светильник",
@@ -2710,6 +2819,7 @@
     },
     {
         "article": "22050",
+        "quantity": 10,
         "image": "/media/products_images/22050.jpg",
         "category": "Alfa",
         "name": "Alfa IZYDA 22050 настенный светильник",
@@ -2731,6 +2841,7 @@
     },
     {
         "article": "22055",
+        "quantity": 1,
         "image": "/media/products_images/22055.jpg",
         "category": "Alfa",
         "name": "Alfa IZYDA 22055 потолочный светильник",
@@ -2752,6 +2863,7 @@
     },
     {
         "article": "22058",
+        "quantity": 10,
         "image": "/media/products_images/22058.jpg",
         "category": "Alfa",
         "name": "Alfa IZYDA 22058 настольный светильник",
@@ -2773,6 +2885,7 @@
     },
     {
         "article": "671",
+        "quantity": 6,
         "image": "/media/products_images/671.jpg",
         "category": "Alfa",
         "name": "Alfa JASKOLKA 671 потолочный светильник",
@@ -2794,6 +2907,7 @@
     },
     {
         "article": "670",
+        "quantity": 7,
         "image": "/media/products_images/670.jpg",
         "category": "Alfa",
         "name": "Alfa JASKOLKA 670 потолочный светильник",
@@ -2815,6 +2929,7 @@
     },
     {
         "article": "16351",
+        "quantity": 10,
         "image": "/media/products_images/16351.jpg",
         "category": "Alfa",
         "name": "Alfa JASKOLKA VENGE 16351 потолочный светильник",
@@ -2836,6 +2951,7 @@
     },
     {
         "article": "22718",
+        "quantity": 2,
         "image": "/media/products_images/22718.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA BLACK 22718 настольный светильник",
@@ -2857,6 +2973,7 @@
     },
     {
         "article": "22240",
+        "quantity": 3,
         "image": "/media/products_images/22240.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA RED 22240 настенный светильник",
@@ -2878,6 +2995,7 @@
     },
     {
         "article": "22245",
+        "quantity": 6,
         "image": "/media/products_images/22245.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA RED 22245 потолочный светильник",
@@ -2899,6 +3017,7 @@
     },
     {
         "article": "22248",
+        "quantity": 2,
         "image": "/media/products_images/22248.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA RED 22248 настольный светильник",
@@ -2920,6 +3039,7 @@
     },
     {
         "article": "23975",
+        "quantity": 10,
         "image": "/media/products_images/23975.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA WHITE  23975 потолочный светильник",
@@ -2941,6 +3061,7 @@
     },
     {
         "article": "23970",
+        "quantity": 10,
         "image": "/media/products_images/23970.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA WHITE  23970 настенный светильник",
@@ -2962,6 +3083,7 @@
     },
     {
         "article": "23978",
+        "quantity": 2,
         "image": "/media/products_images/23978.jpg",
         "category": "Alfa",
         "name": "Alfa JOGA WHITE  23978 настольный светильник",
@@ -3004,6 +3126,7 @@
     },
     {
         "article": "23995",
+        "quantity": 3,
         "image": "/media/products_images/23995.jpg",
         "category": "Alfa",
         "name": "Alfa KAPITOL 23995 потолочный светильник",
@@ -3046,6 +3169,7 @@
     },
     {
         "article": "10510",
+        "quantity": 4,
         "image": "/media/products_images/10510.jpg",
         "category": "Alfa",
         "name": "Alfa LENA 10510 настенный светильник",
@@ -3088,6 +3212,7 @@
     },
     {
         "article": "765",
+        "quantity": 1,
         "image": "/media/products_images/765.jpg",
         "category": "Alfa",
         "name": "Alfa LEZKA 765 потолочный светильник",
@@ -3109,6 +3234,7 @@
     },
     {
         "article": "25496",
+        "quantity": 10,
         "image": "/media/products_images/25496.jpg",
         "category": "Alfa",
         "name": "Alfa LINIO BLACK 25496 потолочный светильник",
@@ -3151,6 +3277,7 @@
     },
     {
         "article": "10445",
+        "quantity": 9,
         "image": "/media/products_images/10445.jpg",
         "category": "Alfa",
         "name": "Alfa LORD 10445 потолочный светильник",
@@ -3172,6 +3299,7 @@
     },
     {
         "article": "366",
+        "quantity": 2,
         "image": "/media/products_images/366.jpg",
         "category": "Alfa",
         "name": "Alfa LOS 366 потолочный светильник",
@@ -3193,6 +3321,7 @@
     },
     {
         "article": "5366",
+        "quantity": 9,
         "image": "/media/products_images/5366.jpg",
         "category": "Alfa",
         "name": "Alfa LOS 5366 потолочный светильник",
@@ -3214,6 +3343,7 @@
     },
     {
         "article": "267",
+        "quantity": 4,
         "image": "/media/products_images/267.jpg",
         "category": "Alfa",
         "name": "Alfa LOS 267 настенный светильник",
@@ -3235,6 +3365,7 @@
     },
     {
         "article": "21065",
+        "quantity": 1,
         "image": "/media/products_images/21065.jpg",
         "category": "Alfa",
         "name": "Alfa LUKRECJA 21065 потолочный светильник",
@@ -3256,6 +3387,7 @@
     },
     {
         "article": "21060",
+        "quantity": 10,
         "image": "/media/products_images/21060.jpg",
         "category": "Alfa",
         "name": "Alfa LUKRECJA 21060 настенный светильник",
@@ -3277,6 +3409,7 @@
     },
     {
         "article": "21063",
+        "quantity": 4,
         "image": "/media/products_images/21063.jpg",
         "category": "Alfa",
         "name": "Alfa LUKRECJA 21063 потолочный светильник",
@@ -3298,6 +3431,7 @@
     },
     {
         "article": "19195 (абажур 83004)",
+        "quantity": 2,
         "image": "/media/products_images/19195 (абажур 83004).jpg",
         "category": "Alfa",
         "name": "Alfa MACZEK 19195 (абажур 83004) потолочный светильник",
@@ -3319,6 +3453,7 @@
     },
     {
         "article": "19190 (абажур 83004)",
+        "quantity": 2,
         "image": "/media/products_images/19190 (абажур 83004).jpg",
         "category": "Alfa",
         "name": "Alfa MACZEK 19190 (абажур 83004) настенный светильник",
@@ -3361,6 +3496,7 @@
     },
     {
         "article": "23723",
+        "quantity": 4,
         "image": "/media/products_images/23723.jpg",
         "category": "Alfa",
         "name": "Alfa MAGIC 23723 потолочный светильник",
@@ -3382,6 +3518,7 @@
     },
     {
         "article": "21383",
+        "quantity": 1,
         "image": "/media/products_images/21383.jpg",
         "category": "Alfa",
         "name": "Alfa MAGNAT 21383 потолочный светильник",
@@ -3424,6 +3561,7 @@
     },
     {
         "article": "21385",
+        "quantity": 2,
         "image": "/media/products_images/21385.jpg",
         "category": "Alfa",
         "name": "Alfa MAGNAT 21385 потолочный светильник",
@@ -3445,6 +3583,7 @@
     },
     {
         "article": "21350",
+        "quantity": 7,
         "image": "/media/products_images/21350.jpg",
         "category": "Alfa",
         "name": "Alfa MAGNAT VENGE 21350 настенный светильник",
@@ -3466,6 +3605,7 @@
     },
     {
         "article": "21355",
+        "quantity": 4,
         "image": "/media/products_images/21355.jpg",
         "category": "Alfa",
         "name": "Alfa MAGNAT VENGE 21355 потолочный светильник",
@@ -3487,6 +3627,7 @@
     },
     {
         "article": "15343",
+        "quantity": 2,
         "image": "/media/products_images/15343.jpg",
         "category": "Alfa",
         "name": "Alfa MARTA 15343 потолочный светильник",
@@ -3529,6 +3670,7 @@
     },
     {
         "article": "60256",
+        "quantity": 5,
         "image": "/media/products_images/60256.jpg",
         "category": "Alfa",
         "name": "Alfa MARVEL STELL 60256 потолочный светильник",
@@ -3550,6 +3692,7 @@
     },
     {
         "article": "60384",
+        "quantity": 10,
         "image": "/media/products_images/60384.jpg",
         "category": "Alfa",
         "name": "Alfa METIS 60384 потолочный светильник",
@@ -3592,6 +3735,7 @@
     },
     {
         "article": "90006",
+        "quantity": 10,
         "image": "/media/products_images/90006.jpg",
         "category": "Alfa",
         "name": "Alfa NEVA VENGE 90006 настенный светильник",
@@ -3613,6 +3757,7 @@
     },
     {
         "article": "24150",
+        "quantity": 1,
         "image": "/media/products_images/24150.jpg",
         "category": "Alfa",
         "name": "Alfa ODETTA BEZ 24150 настенный светильник",
@@ -3634,6 +3779,7 @@
     },
     {
         "article": "12031",
+        "quantity": 3,
         "image": "/media/products_images/12031.jpg",
         "category": "Alfa",
         "name": "Alfa PAJA 12031 потолочный светильник",
@@ -3655,6 +3801,7 @@
     },
     {
         "article": "18105",
+        "quantity": 1,
         "image": "/media/products_images/18105.jpg",
         "category": "Alfa",
         "name": "Alfa PAMELA 18105 потолочный светильник",
@@ -3676,6 +3823,7 @@
     },
     {
         "article": "118",
+        "quantity": 3,
         "image": "/media/products_images/118.jpg",
         "category": "Alfa",
         "name": "Alfa PARIS 118 потолочный светильник",
@@ -3697,6 +3845,7 @@
     },
     {
         "article": "4513",
+        "quantity": 10,
         "image": "/media/products_images/4513.jpg",
         "category": "Alfa",
         "name": "Alfa PARIS 4513 напольный светильник",
@@ -3718,6 +3867,7 @@
     },
     {
         "article": "2512",
+        "quantity": 10,
         "image": "/media/products_images/2512.jpg",
         "category": "Alfa",
         "name": "Alfa PARIS 2512 настенный светильник",
@@ -3802,6 +3952,7 @@
     },
     {
         "article": "18415",
+        "quantity": 10,
         "image": "/media/products_images/18415.jpg",
         "category": "Alfa",
         "name": "Alfa PARIS WHITE 18415 потолочный светильник",
@@ -3823,6 +3974,7 @@
     },
     {
         "article": "16940",
+        "quantity": 1,
         "image": "/media/products_images/16940.jpg",
         "category": "Alfa",
         "name": "Alfa PARMA 16940 настенный светильник",
@@ -3844,6 +3996,7 @@
     },
     {
         "article": "16945",
+        "quantity": 9,
         "image": "/media/products_images/16945.jpg",
         "category": "Alfa",
         "name": "Alfa PARMA 16945 потолочный светильник",
@@ -3907,6 +4060,7 @@
     },
     {
         "article": "22643",
+        "quantity": 2,
         "image": "/media/products_images/22643.jpg",
         "category": "Alfa",
         "name": "Alfa PELAGIA 22643 потолочный светильник",
@@ -3928,6 +4082,7 @@
     },
     {
         "article": "16622",
+        "quantity": 1,
         "image": "/media/products_images/16622.jpg",
         "category": "Alfa",
         "name": "Alfa PETER 16622 потолочный светильник",
@@ -3949,6 +4104,7 @@
     },
     {
         "article": "16621",
+        "quantity": 10,
         "image": "/media/products_images/16621.jpg",
         "category": "Alfa",
         "name": "Alfa PETER 16621 потолочный светильник",
@@ -3970,6 +4126,7 @@
     },
     {
         "article": "10770 (стекло 8148)",
+        "quantity": 10,
         "image": "/media/products_images/10770 (стекло 8148).jpg",
         "category": "Alfa",
         "name": "Alfa PRAGA 10770 (стекло 8148) настенный светильник",
@@ -4012,6 +4169,7 @@
     },
     {
         "article": "10775 (стекло 8148)",
+        "quantity": 10,
         "image": "/media/products_images/10775 (стекло 8148).jpg",
         "category": "Alfa",
         "name": "Alfa PRAGA 10775 (стекло 8148) потолочный светильник",
@@ -4033,6 +4191,7 @@
     },
     {
         "article": "23040 (Абажур 83189)",
+        "quantity": 10,
         "image": "/media/products_images/23040 (Абажур 83189).jpg",
         "category": "Alfa",
         "name": "Alfa PULPA  23040 (Абажур 83189) настенный светильник",
@@ -4075,6 +4234,7 @@
     },
     {
         "article": "27003",
+        "quantity": 10,
         "image": "/media/products_images/27003.jpg",
         "category": "Alfa",
         "name": "Alfa QUENTIN 27003 потолочный светильник",
@@ -4117,6 +4277,7 @@
     },
     {
         "article": "11550",
+        "quantity": 7,
         "image": "/media/products_images/11550.jpg",
         "category": "Alfa",
         "name": "Alfa RIBERA 11550 настенный светильник",
@@ -4138,6 +4299,7 @@
     },
     {
         "article": "16070",
+        "quantity": 10,
         "image": "/media/products_images/16070.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA 16070 настенный светильник",
@@ -4159,6 +4321,7 @@
     },
     {
         "article": "16078",
+        "quantity": 10,
         "image": "/media/products_images/16078.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA 16078 настольный светильник",
@@ -4201,6 +4364,7 @@
     },
     {
         "article": "16073",
+        "quantity": 1,
         "image": "/media/products_images/16073.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA 16073 потолочный светильник",
@@ -4222,6 +4386,7 @@
     },
     {
         "article": "16074",
+        "quantity": 7,
         "image": "/media/products_images/16074.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA 16074 потолочный светильник",
@@ -4243,6 +4408,7 @@
     },
     {
         "article": "16076",
+        "quantity": 10,
         "image": "/media/products_images/16076.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA 16076 потолочный светильник",
@@ -4264,6 +4430,7 @@
     },
     {
         "article": "18530",
+        "quantity": 10,
         "image": "/media/products_images/18530.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA WHITE 18530 настенный светильник",
@@ -4285,6 +4452,7 @@
     },
     {
         "article": "18535",
+        "quantity": 10,
         "image": "/media/products_images/18535.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA WHITE 18535 потолочный светильник",
@@ -4306,6 +4474,7 @@
     },
     {
         "article": "18536",
+        "quantity": 10,
         "image": "/media/products_images/18536.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA WHITE 18536 потолочный светильник",
@@ -4327,6 +4496,7 @@
     },
     {
         "article": "18538",
+        "quantity": 4,
         "image": "/media/products_images/18538.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA WHITE 18538 настольный светильник",
@@ -4348,6 +4518,7 @@
     },
     {
         "article": "18533",
+        "quantity": 10,
         "image": "/media/products_images/18533.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA WHITE 18533 потолочный светильник",
@@ -4369,6 +4540,7 @@
     },
     {
         "article": "18534",
+        "quantity": 10,
         "image": "/media/products_images/18534.jpg",
         "category": "Alfa",
         "name": "Alfa ROKSANA WHITE 18534 потолочный светильник",
@@ -4390,6 +4562,7 @@
     },
     {
         "article": "24375",
+        "quantity": 8,
         "image": "/media/products_images/24375.jpg",
         "category": "Alfa",
         "name": "Alfa RUG 24375 потолочный светильник",
@@ -4411,6 +4584,7 @@
     },
     {
         "article": "60211",
+        "quantity": 10,
         "image": "/media/products_images/60211.jpg",
         "category": "Alfa",
         "name": "Alfa RURA 60211 потолочный светильник",
@@ -4474,6 +4648,7 @@
     },
     {
         "article": "25616",
+        "quantity": 7,
         "image": "/media/products_images/25616.jpg",
         "category": "Alfa",
         "name": "Alfa SAGITO CHROM 25616 потолочный светильник",
@@ -4495,6 +4670,7 @@
     },
     {
         "article": "22043",
+        "quantity": 10,
         "image": "/media/products_images/22043.jpg",
         "category": "Alfa",
         "name": "Alfa SANDRA 22043 потолочный светильник",
@@ -4537,6 +4713,7 @@
     },
     {
         "article": "22048",
+        "quantity": 4,
         "image": "/media/products_images/22048.jpg",
         "category": "Alfa",
         "name": "Alfa SANDRA 22048 настольный светильник",
@@ -4558,6 +4735,7 @@
     },
     {
         "article": "24240",
+        "quantity": 2,
         "image": "/media/products_images/24240.jpg",
         "category": "Alfa",
         "name": "Alfa SANTO 24240 спот",
@@ -4579,6 +4757,7 @@
     },
     {
         "article": "24243",
+        "quantity": 10,
         "image": "/media/products_images/24243.jpg",
         "category": "Alfa",
         "name": "Alfa SANTO 24243 спот",
@@ -4600,6 +4779,7 @@
     },
     {
         "article": "21433",
+        "quantity": 10,
         "image": "/media/products_images/21433.jpg",
         "category": "Alfa",
         "name": "Alfa SELVA 21433 потолочный светильник",
@@ -4621,6 +4801,7 @@
     },
     {
         "article": "21430",
+        "quantity": 10,
         "image": "/media/products_images/21430.jpg",
         "category": "Alfa",
         "name": "Alfa SELVA 21430 настенный светильник",
@@ -4663,6 +4844,7 @@
     },
     {
         "article": "766",
+        "quantity": 2,
         "image": "/media/products_images/766.jpg",
         "category": "Alfa",
         "name": "Alfa SIKORKA 766 потолочный светильник",
@@ -4684,6 +4866,7 @@
     },
     {
         "article": "767",
+        "quantity": 1,
         "image": "/media/products_images/767.jpg",
         "category": "Alfa",
         "name": "Alfa SIKORKA 767 потолочный светильник",
@@ -4726,6 +4909,7 @@
     },
     {
         "article": "769",
+        "quantity": 10,
         "image": "/media/products_images/769.jpg",
         "category": "Alfa",
         "name": "Alfa SIKORKA 769 настольный светильник",
@@ -4747,6 +4931,7 @@
     },
     {
         "article": "60307",
+        "quantity": 10,
         "image": "/media/products_images/60307.jpg",
         "category": "Alfa",
         "name": "Alfa SLIM SLOMKA 60307 потолочный светильник",
@@ -4768,6 +4953,7 @@
     },
     {
         "article": "60308",
+        "quantity": 8,
         "image": "/media/products_images/60308.jpg",
         "category": "Alfa",
         "name": "Alfa SLIM VENGE 60308 потолочный светильник",
@@ -4810,6 +4996,7 @@
     },
     {
         "article": "18347",
+        "quantity": 10,
         "image": "/media/products_images/18347.jpg",
         "category": "Alfa",
         "name": "Alfa SOFIA 18347 потолочный светильник",
@@ -4831,6 +5018,7 @@
     },
     {
         "article": "18345",
+        "quantity": 10,
         "image": "/media/products_images/18345.jpg",
         "category": "Alfa",
         "name": "Alfa SOFIA 18345 потолочный светильник",
@@ -4852,6 +5040,7 @@
     },
     {
         "article": "18340",
+        "quantity": 10,
         "image": "/media/products_images/18340.jpg",
         "category": "Alfa",
         "name": "Alfa SOFIA 18340 настенный светильник",
@@ -4873,6 +5062,7 @@
     },
     {
         "article": "12073",
+        "quantity": 10,
         "image": "/media/products_images/12073.jpg",
         "category": "Alfa",
         "name": "Alfa SOPHIA 12073 потолочный светильник",
@@ -4894,6 +5084,7 @@
     },
     {
         "article": "24420",
+        "quantity": 2,
         "image": "/media/products_images/24420.jpg",
         "category": "Alfa",
         "name": "Alfa SPARK MIEDZ 24420 спот",
@@ -4915,6 +5106,7 @@
     },
     {
         "article": "16330",
+        "quantity": 10,
         "image": "/media/products_images/16330.jpg",
         "category": "Alfa",
         "name": "Alfa SQUARE 16330 настенный светильник",
@@ -4936,6 +5128,7 @@
     },
     {
         "article": "16334",
+        "quantity": 10,
         "image": "/media/products_images/16334.jpg",
         "category": "Alfa",
         "name": "Alfa SQUARE 16334 потолочный светильник",
@@ -4957,6 +5150,7 @@
     },
     {
         "article": "18030",
+        "quantity": 1,
         "image": "/media/products_images/18030.jpg",
         "category": "Alfa",
         "name": "Alfa STADION VENGE 18030 настенный светильник",
@@ -4978,6 +5172,7 @@
     },
     {
         "article": "24787",
+        "quantity": 10,
         "image": "/media/products_images/24787.jpg",
         "category": "Alfa",
         "name": "Alfa STEP 24787 потолочный светильник",
@@ -5041,6 +5236,7 @@
     },
     {
         "article": "23170",
+        "quantity": 1,
         "image": "/media/products_images/23170.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO BLACK 23170 настенный светильник",
@@ -5062,6 +5258,7 @@
     },
     {
         "article": "23175",
+        "quantity": 9,
         "image": "/media/products_images/23175.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO BLACK 23175 потолочный светильник",
@@ -5083,6 +5280,7 @@
     },
     {
         "article": "23179",
+        "quantity": 5,
         "image": "/media/products_images/23179.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO BLACK 23179 напольный светильник",
@@ -5104,6 +5302,7 @@
     },
     {
         "article": "24465",
+        "quantity": 5,
         "image": "/media/products_images/24465.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO CHROME 24465 потолочный светильник",
@@ -5125,6 +5324,7 @@
     },
     {
         "article": "24460",
+        "quantity": 6,
         "image": "/media/products_images/24460.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO CHROME 24460 настенный светильник",
@@ -5146,6 +5346,7 @@
     },
     {
         "article": "24320",
+        "quantity": 2,
         "image": "/media/products_images/24320.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO COPPER 24320 настенный светильник",
@@ -5167,6 +5368,7 @@
     },
     {
         "article": "24325",
+        "quantity": 2,
         "image": "/media/products_images/24325.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO COPPER 24325 потолочный светильник",
@@ -5188,6 +5390,7 @@
     },
     {
         "article": "23610",
+        "quantity": 4,
         "image": "/media/products_images/23610.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO WHITE 23610 настенный светильник",
@@ -5209,6 +5412,7 @@
     },
     {
         "article": "23615",
+        "quantity": 10,
         "image": "/media/products_images/23615.jpg",
         "category": "Alfa",
         "name": "Alfa TANGO WHITE 23615 потолочный светильник",
@@ -5230,6 +5434,7 @@
     },
     {
         "article": "12910",
+        "quantity": 1,
         "image": "/media/products_images/12910.jpg",
         "category": "Alfa",
         "name": "Alfa TEQUILA 12910 настенный светильник",
@@ -5251,6 +5456,7 @@
     },
     {
         "article": "20574",
+        "quantity": 10,
         "image": "/media/products_images/20574.jpg",
         "category": "Alfa",
         "name": "Alfa TEXAS 20574 потолочный светильник",
@@ -5293,6 +5499,7 @@
     },
     {
         "article": "21255",
+        "quantity": 7,
         "image": "/media/products_images/21255.jpg",
         "category": "Alfa",
         "name": "Alfa TORA 21255 потолочный светильник",
@@ -5314,6 +5521,7 @@
     },
     {
         "article": "122",
+        "quantity": 9,
         "image": "/media/products_images/122.jpg",
         "category": "Alfa",
         "name": "Alfa TROJZAB 122 потолочный светильник",
@@ -5335,6 +5543,7 @@
     },
     {
         "article": "60095",
+        "quantity": 1,
         "image": "/media/products_images/60095.jpg",
         "category": "Alfa",
         "name": "Alfa TUAL 60095 потолочный светильник",
@@ -5356,6 +5565,7 @@
     },
     {
         "article": "10196",
+        "quantity": 1,
         "image": "/media/products_images/10196.jpg",
         "category": "Alfa",
         "name": "Alfa UFO 10196 потолочный светильник",
@@ -5377,6 +5587,7 @@
     },
     {
         "article": "10197",
+        "quantity": 10,
         "image": "/media/products_images/10197.jpg",
         "category": "Alfa",
         "name": "Alfa UFO 10197 потолочный светильник",
@@ -5398,6 +5609,7 @@
     },
     {
         "article": "10198",
+        "quantity": 10,
         "image": "/media/products_images/10198.jpg",
         "category": "Alfa",
         "name": "Alfa UFO 10198 потолочный светильник",
@@ -5419,6 +5631,7 @@
     },
     {
         "article": "22065",
+        "quantity": 6,
         "image": "/media/products_images/22065.jpg",
         "category": "Alfa",
         "name": "Alfa VANILA 22065 потолочный светильник",
@@ -5440,6 +5653,7 @@
     },
     {
         "article": "22060",
+        "quantity": 3,
         "image": "/media/products_images/22060.jpg",
         "category": "Alfa",
         "name": "Alfa VANILA 22060 настенный светильник",
@@ -5461,6 +5675,7 @@
     },
     {
         "article": "22070",
+        "quantity": 1,
         "image": "/media/products_images/22070.jpg",
         "category": "Alfa",
         "name": "Alfa VANILA VENGE 22070 настенный светильник",
@@ -5503,6 +5718,7 @@
     },
     {
         "article": "20452",
+        "quantity": 1,
         "image": "/media/products_images/20452.jpg",
         "category": "Alfa",
         "name": "Alfa VENEZIA 20452 потолочный светильник",
@@ -5524,6 +5740,7 @@
     },
     {
         "article": "20641",
+        "quantity": 3,
         "image": "/media/products_images/20641.jpg",
         "category": "Alfa",
         "name": "Alfa VETRO BLACK 20641 потолочный светильник",
@@ -5545,6 +5762,7 @@
     },
     {
         "article": "20643",
+        "quantity": 2,
         "image": "/media/products_images/20643.jpg",
         "category": "Alfa",
         "name": "Alfa VETRO BLACK 20643 потолочный светильник",
@@ -5587,6 +5805,7 @@
     },
     {
         "article": "20513",
+        "quantity": 10,
         "image": "/media/products_images/20513.jpg",
         "category": "Alfa",
         "name": "Alfa VETRO RED 20513 потолочный светильник",
@@ -5608,6 +5827,7 @@
     },
     {
         "article": "20516",
+        "quantity": 10,
         "image": "/media/products_images/20516.jpg",
         "category": "Alfa",
         "name": "Alfa VETRO WHITE 20516 потолочный светильник",
@@ -5629,6 +5849,7 @@
     },
     {
         "article": "25545",
+        "quantity": 10,
         "image": "/media/products_images/25545.jpg",
         "category": "Alfa",
         "name": "Alfa VIOLA KULA 25545 потолочный светильник",
@@ -5650,6 +5871,7 @@
     },
     {
         "article": "9232",
+        "quantity": 3,
         "image": "/media/products_images/9232.jpg",
         "category": "Alfa",
         "name": "Alfa WALDI 9232 напольный светильник",
@@ -5671,6 +5893,7 @@
     },
     {
         "article": "21021",
+        "quantity": 2,
         "image": "/media/products_images/21021.jpg",
         "category": "Alfa",
         "name": "Alfa WATERFALL BLACK 21021 потолочный светильник",
@@ -5692,6 +5915,7 @@
     },
     {
         "article": "21026",
+        "quantity": 1,
         "image": "/media/products_images/21026.jpg",
         "category": "Alfa",
         "name": "Alfa WATERFALL BLACK 21026 потолочный светильник",
@@ -5734,6 +5958,7 @@
     },
     {
         "article": "21016",
+        "quantity": 2,
         "image": "/media/products_images/21016.jpg",
         "category": "Alfa",
         "name": "Alfa WATERFALL RED 21016 потолочный светильник",
@@ -5755,6 +5980,7 @@
     },
     {
         "article": "21006",
+        "quantity": 2,
         "image": "/media/products_images/21006.jpg",
         "category": "Alfa",
         "name": "Alfa WATERFALL WHITE 21006 потолочный светильник",
@@ -5797,6 +6023,7 @@
     },
     {
         "article": "16840",
+        "quantity": 1,
         "image": "/media/products_images/16840.jpg",
         "category": "Alfa",
         "name": "Alfa WIKTORIA 16840 настенный светильник",
@@ -5818,6 +6045,7 @@
     },
     {
         "article": "23350",
+        "quantity": 6,
         "image": "/media/products_images/23350.jpg",
         "category": "Alfa",
         "name": "Alfa WILLMA 23350 настенный светильник",
@@ -5881,6 +6109,7 @@
     },
     {
         "article": "24715",
+        "quantity": 4,
         "image": "/media/products_images/24715.jpg",
         "category": "Alfa",
         "name": "Alfa ZOA 24715 потолочный светильник",
@@ -5902,6 +6131,7 @@
     },
     {
         "article": "830/3",
+        "quantity": 3,
         "image": "/media/products_images/830-3.jpg",
         "category": "Emibig",
         "name": "Emibig BLACCO 830/3 потолочный светильник",
@@ -5923,6 +6153,7 @@
     },
     {
         "article": "530/LP1",
+        "quantity": 1,
         "image": "/media/products_images/530-LP1.jpg",
         "category": "Emibig",
         "name": "Emibig KOKARDA BLUE 530/LP1 напольный светильник",
@@ -5944,6 +6175,7 @@
     },
     {
         "article": "334/K1",
+        "quantity": 3,
         "image": "/media/products_images/334-K1.jpg",
         "category": "Emibig",
         "name": "Emibig LILIA 334/K1 настенный светильник",
@@ -5986,6 +6218,7 @@
     },
     {
         "article": "318/3",
+        "quantity": 5,
         "image": "/media/products_images/318-3.jpg",
         "category": "Emibig",
         "name": "Emibig LUMIA BLACK 318/3 потолочный светильник",
@@ -6007,6 +6240,7 @@
     },
     {
         "article": "318/5",
+        "quantity": 1,
         "image": "/media/products_images/318-5.jpg",
         "category": "Emibig",
         "name": "Emibig LUMIA BLACK 318/5 потолочный светильник",
@@ -6028,6 +6262,7 @@
     },
     {
         "article": "318/K1",
+        "quantity": 1,
         "image": "/media/products_images/318-K1.jpg",
         "category": "Emibig",
         "name": "Emibig LUMIA BLACK 318/K1 настенный светильник",
@@ -6049,6 +6284,7 @@
     },
     {
         "article": "171/K2",
+        "quantity": 2,
         "image": "/media/products_images/171-K2.jpg",
         "category": "Emibig",
         "name": "Emibig TORI WHITE 171/K2 настенный светильник",
@@ -6070,6 +6306,7 @@
     },
     {
         "article": "885/3",
+        "quantity": 6,
         "image": "/media/products_images/885-3.jpg",
         "category": "Emibig",
         "name": "Emibig ULTRA BLACK 885/3 потолочный светильник",
@@ -6091,6 +6328,7 @@
     },
     {
         "article": "885/5",
+        "quantity": 4,
         "image": "/media/products_images/885-5.jpg",
         "category": "Emibig",
         "name": "Emibig ULTRA BLACK 885/5 потолочный светильник",
@@ -6112,6 +6350,7 @@
     },
     {
         "article": "885/K1",
+        "quantity": 1,
         "image": "/media/products_images/885-K1.jpg",
         "category": "Emibig",
         "name": "Emibig ULTRA BLACK 885/K1 настенный светильник",
@@ -6133,6 +6372,7 @@
     },
     {
         "article": "7617",
+        "quantity": 1,
         "image": "/media/products_images/7617.jpg",
         "category": "Luminex",
         "name": "Luminex ANDER 7617 настенный светильник",
@@ -6154,6 +6394,7 @@
     },
     {
         "article": "7622",
+        "quantity": 5,
         "image": "/media/products_images/7622.jpg",
         "category": "Luminex",
         "name": "Luminex ANDER 7622 потолочный светильник",
@@ -6175,6 +6416,7 @@
     },
     {
         "article": "7624",
+        "quantity": 1,
         "image": "/media/products_images/7624.jpg",
         "category": "Luminex",
         "name": "Luminex ANDER 7624 потолочный светильник",
@@ -6196,6 +6438,7 @@
     },
     {
         "article": "5026",
+        "quantity": 1,
         "image": "/media/products_images/5026.jpg",
         "category": "Luminex",
         "name": "Luminex BEVAN 5026 настенный светильник",
@@ -6238,6 +6481,7 @@
     },
     {
         "article": "5035",
+        "quantity": 8,
         "image": "/media/products_images/5035.jpg",
         "category": "Luminex",
         "name": "Luminex BEVAN 5035 настенный светильник",
@@ -6259,6 +6503,7 @@
     },
     {
         "article": "7513",
+        "quantity": 2,
         "image": "/media/products_images/7513.jpg",
         "category": "Luminex",
         "name": "Luminex BJORN 7513 спот",
@@ -6280,6 +6525,7 @@
     },
     {
         "article": "7514",
+        "quantity": 7,
         "image": "/media/products_images/7514.jpg",
         "category": "Luminex",
         "name": "Luminex BJORN 7514 спот",
@@ -6301,6 +6547,7 @@
     },
     {
         "article": "7515",
+        "quantity": 5,
         "image": "/media/products_images/7515.jpg",
         "category": "Luminex",
         "name": "Luminex BJORN 7515 спот",
@@ -6343,6 +6590,7 @@
     },
     {
         "article": "7699",
+        "quantity": 1,
         "image": "/media/products_images/7699.jpg",
         "category": "Luminex",
         "name": "Luminex BOLL 7699 потолочный светильник",
@@ -6364,6 +6612,7 @@
     },
     {
         "article": "9169",
+        "quantity": 10,
         "image": "/media/products_images/9169.jpg",
         "category": "Luminex",
         "name": "Luminex CALYX 9169 потолочный светильник",
@@ -6385,6 +6634,7 @@
     },
     {
         "article": "8921",
+        "quantity": 10,
         "image": "/media/products_images/8921.jpg",
         "category": "Luminex",
         "name": "Luminex CANDELA 8921 настенный светильник",
@@ -6406,6 +6656,7 @@
     },
     {
         "article": "8926",
+        "quantity": 2,
         "image": "/media/products_images/8926.jpg",
         "category": "Luminex",
         "name": "Luminex CANDELA 8926 потолочный светильник",
@@ -6427,6 +6678,7 @@
     },
     {
         "article": "8923",
+        "quantity": 7,
         "image": "/media/products_images/8923.jpg",
         "category": "Luminex",
         "name": "Luminex CANDELA 8923 потолочный светильник",
@@ -6448,6 +6700,7 @@
     },
     {
         "article": "5802",
+        "quantity": 2,
         "image": "/media/products_images/5802.jpg",
         "category": "Luminex",
         "name": "Luminex COLUMBA 5802 потолочный светильник",
@@ -6469,6 +6722,7 @@
     },
     {
         "article": "5529",
+        "quantity": 1,
         "image": "/media/products_images/5529.jpg",
         "category": "Luminex",
         "name": "Luminex CONALL 5529 потолочный светильник",
@@ -6490,6 +6744,7 @@
     },
     {
         "article": "5517",
+        "quantity": 4,
         "image": "/media/products_images/5517.jpg",
         "category": "Luminex",
         "name": "Luminex CONALL 5517 потолочный светильник",
@@ -6511,6 +6766,7 @@
     },
     {
         "article": "5516",
+        "quantity": 9,
         "image": "/media/products_images/5516.jpg",
         "category": "Luminex",
         "name": "Luminex CONALL 5516 потолочный светильник",
@@ -6532,6 +6788,7 @@
     },
     {
         "article": "7705",
+        "quantity": 2,
         "image": "/media/products_images/7705.jpg",
         "category": "Luminex",
         "name": "Luminex CYLINDRO 7705 потолочный светильник",
@@ -6553,6 +6810,7 @@
     },
     {
         "article": "7234",
+        "quantity": 10,
         "image": "/media/products_images/7234.jpg",
         "category": "Luminex",
         "name": "Luminex DOWNLIGHT ROUND 7234 потолочный светильник",
@@ -6574,6 +6832,7 @@
     },
     {
         "article": "7235",
+        "quantity": 10,
         "image": "/media/products_images/7235.jpg",
         "category": "Luminex",
         "name": "Luminex DOWNLIGHT ROUND 7235 потолочный светильник",
@@ -6595,6 +6854,7 @@
     },
     {
         "article": "7236",
+        "quantity": 10,
         "image": "/media/products_images/7236.jpg",
         "category": "Luminex",
         "name": "Luminex DOWNLIGHT ROUND 7236 потолочный светильник",
@@ -6616,6 +6876,7 @@
     },
     {
         "article": "7237",
+        "quantity": 10,
         "image": "/media/products_images/7237.jpg",
         "category": "Luminex",
         "name": "Luminex DOWNLIGHT ROUND 7237 потолочный светильник",
@@ -6637,6 +6898,7 @@
     },
     {
         "article": "7238",
+        "quantity": 1,
         "image": "/media/products_images/7238.jpg",
         "category": "Luminex",
         "name": "Luminex DOWNLIGHT ROUND 7238 потолочный светильник",
@@ -6721,6 +6983,7 @@
     },
     {
         "article": "9062",
+        "quantity": 3,
         "image": "/media/products_images/9062.jpg",
         "category": "Luminex",
         "name": "Luminex HAKON 9062 потолочный светильник",
@@ -6742,6 +7005,7 @@
     },
     {
         "article": "9059",
+        "quantity": 10,
         "image": "/media/products_images/9059.jpg",
         "category": "Luminex",
         "name": "Luminex HAKON 9059 настенный светильник",
@@ -6763,6 +7027,7 @@
     },
     {
         "article": "9060",
+        "quantity": 9,
         "image": "/media/products_images/9060.jpg",
         "category": "Luminex",
         "name": "Luminex HAKON 9060 потолочный светильник",
@@ -6805,6 +7070,7 @@
     },
     {
         "article": "455",
+        "quantity": 3,
         "image": "/media/products_images/455.jpg",
         "category": "Luminex",
         "name": "Luminex INFINITA 455 потолочный светильник",
@@ -6826,6 +7092,7 @@
     },
     {
         "article": "458",
+        "quantity": 9,
         "image": "/media/products_images/458.jpg",
         "category": "Luminex",
         "name": "Luminex INFINITA 458 потолочный светильник",
@@ -6889,6 +7156,7 @@
     },
     {
         "article": "7030",
+        "quantity": 1,
         "image": "/media/products_images/7030.jpg",
         "category": "Luminex",
         "name": "Luminex MARK 7030 настенный светильник",
@@ -6910,6 +7178,7 @@
     },
     {
         "article": "9153",
+        "quantity": 1,
         "image": "/media/products_images/9153.jpg",
         "category": "Luminex",
         "name": "Luminex MUZA WHITE/GOLD DARK WOOD 9153 потолочный светильник",
@@ -6952,6 +7221,7 @@
     },
     {
         "article": "3464",
+        "quantity": 3,
         "image": "/media/products_images/3464.jpg",
         "category": "Luminex",
         "name": "Luminex PALACE 3464 потолочный светильник",
@@ -6973,6 +7243,7 @@
     },
     {
         "article": "9162",
+        "quantity": 10,
         "image": "/media/products_images/9162.jpg",
         "category": "Luminex",
         "name": "Luminex SET 9162 потолочный светильник",
@@ -6994,6 +7265,7 @@
     },
     {
         "article": "7404",
+        "quantity": 10,
         "image": "/media/products_images/7404.jpg",
         "category": "Luminex",
         "name": "Luminex SET 7404 настенный светильник",
@@ -7057,6 +7329,7 @@
     },
     {
         "article": "7411",
+        "quantity": 1,
         "image": "/media/products_images/7411.jpg",
         "category": "Luminex",
         "name": "Luminex SET 7411 настенный светильник",
@@ -7099,6 +7372,7 @@
     },
     {
         "article": "7414",
+        "quantity": 5,
         "image": "/media/products_images/7414.jpg",
         "category": "Luminex",
         "name": "Luminex SET 7414 потолочный светильник",
@@ -7120,6 +7394,7 @@
     },
     {
         "article": "7554",
+        "quantity": 1,
         "image": "/media/products_images/7554.jpg",
         "category": "Luminex",
         "name": "Luminex SIMONE 7554 настенный светильник",
@@ -7141,6 +7416,7 @@
     },
     {
         "article": "7558",
+        "quantity": 1,
         "image": "/media/products_images/7558.jpg",
         "category": "Luminex",
         "name": "Luminex SIMONE 7558 потолочный светильник",
@@ -7162,6 +7438,7 @@
     },
     {
         "article": "7283",
+        "quantity": 8,
         "image": "/media/products_images/7283.jpg",
         "category": "Luminex",
         "name": "Luminex SINGLE 7283 потолочный светильник",
@@ -7183,6 +7460,7 @@
     },
     {
         "article": "9288",
+        "quantity": 4,
         "image": "/media/products_images/9288.jpg",
         "category": "Luminex",
         "name": "Luminex SINGLE 4 9288 потолочный светильник",
@@ -7204,6 +7482,7 @@
     },
     {
         "article": "9163",
+        "quantity": 1,
         "image": "/media/products_images/9163.jpg",
         "category": "Luminex",
         "name": "Luminex SINGLE 6 9163 потолочный светильник",
@@ -7225,6 +7504,7 @@
     },
     {
         "article": "9047",
+        "quantity": 1,
         "image": "/media/products_images/9047.jpg",
         "category": "Luminex",
         "name": "Luminex SVEN 9047 настольный светильник",
@@ -7246,6 +7526,7 @@
     },
     {
         "article": "4182",
+        "quantity": 3,
         "image": "/media/products_images/4182.jpg",
         "category": "Luminex",
         "name": "Luminex THAI 4182 потолочный светильник",
@@ -7267,6 +7548,7 @@
     },
     {
         "article": "8784",
+        "quantity": 1,
         "image": "/media/products_images/8784.jpg",
         "category": "Luminex",
         "name": "Luminex TUBLES 8784 потолочный светильник",
@@ -7288,6 +7570,7 @@
     },
     {
         "article": "8704",
+        "quantity": 10,
         "image": "/media/products_images/8704.jpg",
         "category": "Luminex",
         "name": "Luminex VERA 8704 настенный светильник",
@@ -7309,6 +7592,7 @@
     },
     {
         "article": "8707",
+        "quantity": 3,
         "image": "/media/products_images/8707.jpg",
         "category": "Luminex",
         "name": "Luminex VERA 8707 потолочный светильник",
@@ -7330,6 +7614,7 @@
     },
     {
         "article": "748",
+        "quantity": 10,
         "image": "/media/products_images/748.jpg",
         "category": "Luminex",
         "name": "Luminex WAZKA 748 настенный светильник",
@@ -7351,6 +7636,7 @@
     },
     {
         "article": "749",
+        "quantity": 10,
         "image": "/media/products_images/749.jpg",
         "category": "Luminex",
         "name": "Luminex WAZKA 749 потолочный светильник",
@@ -7372,6 +7658,7 @@
     },
     {
         "article": "9299",
+        "quantity": 1,
         "image": "/media/products_images/9299.jpg",
         "category": "Luminex",
         "name": "Luminex WORKS 9299 потолочный светильник",
@@ -7392,7 +7679,96 @@
         "weight": "1,40"
     },
     {
+        "article": "3367",
+        "quantity": 1,
+        "image": "/media/products_images/3367.jpg",
+        "category": "Nowodvorski",
+        "name": "Nowodvorski KORYNT 3367 настенный светильник",
+        "series": "KORYNT",
+        "type": "Настенный светильник",
+        "type_2": "Бра",
+        "material": "Металл",
+        "color": "Бронза",
+        "price": 3690,
+        "lamps": "1",
+        "lamps_type": "E27",
+        "power": "60",
+        "length": null,
+        "width": null,
+        "height": "24",
+        "diameter": null,
+        "size": null,
+        "weight": "0,85"
+    },
+    {
+        "article": "4424",
+        "quantity": 1,
+        "image": "/media/products_images/4424.jpg",
+        "category": "Nowodvorski",
+        "name": "Nowodvorski RIO II kinkiet 4424 настенный светильник",
+        "series": "RIO",
+        "type": "Настенный светильник",
+        "type_2": "Настенный светильник",
+        "material": "Металл",
+        "color": "Черный",
+        "price": 4190,
+        "lamps": "2",
+        "lamps_type": "E27",
+        "power": "40",
+        "length": null,
+        "width": null,
+        "height": "30",
+        "diameter": null,
+        "size": null,
+        "weight": "1,05"
+    },
+    {
+        "article": "5694",
+        "quantity": 2,
+        "image": "/media/products_images/5694.jpg",
+        "category": "Nowodvorski",
+        "name": "Nowodvorski ROSETTE 5694 настенный светильник",
+        "series": "ROSETTE",
+        "type": "Настенный светильник",
+        "type_2": "Настенный светильник",
+        "material": "Металл",
+        "color": "Хром",
+        "price": 1190,
+        "lamps": "1",
+        "lamps_type": "E27",
+        "power": "40",
+        "length": null,
+        "width": "21",
+        "height": "29",
+        "diameter": null,
+        "size": null,
+        "weight": "0,64"
+    },
+    {
+        "article": "5760",
+        "quantity": 9,
+        "image": "/media/products_images/5760.jpg",
+        "category": "Nowodvorski",
+        "name": "Nowodvorski ROSETTE 5760 настенный светильник",
+        "series": "ROSETTE",
+        "type": "Настенный светильник",
+        "type_2": "Настенный светильник",
+        "material": "Металл",
+        "color": "Хром",
+        "price": 1490,
+        "lamps": "1",
+        "lamps_type": "E27",
+        "power": "40",
+        "length": null,
+        "width": null,
+        "height": null,
+        "diameter": null,
+        "size": null,
+        "weight": "0,88"
+    },
+    {
         "article": "1160 AK K",
+        "quantity": 1,
         "image": "/media/products_images/1160 AK K.jpg",
         "category": "Jupiter",
         "name": "Jupiter ARKADA 1160 AK K настенный светильник",
@@ -7414,6 +7790,7 @@
     },
     {
         "article": "1431 BR 6 E",
+        "quantity": 2,
         "image": "/media/products_images/1431 BR 6 E.jpg",
         "category": "Jupiter",
         "name": "Jupiter BRISTOL 1431 BR 6 E потолочный светильник",
@@ -7435,6 +7812,7 @@
     },
     {
         "article": "1432 BR K 1 E",
+        "quantity": 7,
         "image": "/media/products_images/1432 BR K 1 E.jpg",
         "category": "Jupiter",
         "name": "Jupiter BRISTOL 1432 BR K 1 E настенный светильник",
@@ -7456,6 +7834,7 @@
     },
     {
         "article": "1437 BR K 1 P",
+        "quantity": 1,
         "image": "/media/products_images/1437 BR K 1 P.jpg",
         "category": "Jupiter",
         "name": "Jupiter BRISTOL 1437 BR K 1 P настенный светильник",
@@ -7498,6 +7877,7 @@
     },
     {
         "article": "1570 IS 1 B/M",
+        "quantity": 1,
         "image": "/media/products_images/1570 IS 1 B-M.jpg",
         "category": "Jupiter",
         "name": "Jupiter ISLA 1570 IS 1 B/M потолочный светильник",
@@ -7519,6 +7899,7 @@
     },
     {
         "article": "1478 JO 3 CH",
+        "quantity": 1,
         "image": "/media/products_images/1478 JO 3 CH.jpg",
         "category": "Jupiter",
         "name": "Jupiter JOKO 1478 JO 3 CH потолочный светильник",
@@ -7540,6 +7921,7 @@
     },
     {
         "article": "1588 LY K BI",
+        "quantity": 1,
         "image": "/media/products_images/1588 LY K BI.jpg",
         "category": "Jupiter",
         "name": "Jupiter LADY 1588 LY K BI настенный светильник",
@@ -7561,6 +7943,7 @@
     },
     {
         "article": "517 LA L",
+        "quantity": 1,
         "image": "/media/products_images/517 LA L.jpg",
         "category": "Jupiter",
         "name": "Jupiter LAURA 517 LA L настольный светильник",
@@ -7603,6 +7986,7 @@
     },
     {
         "article": "1233 OS K P",
+        "quantity": 3,
         "image": "/media/products_images/1233 OS K P.jpg",
         "category": "Jupiter",
         "name": "Jupiter OSLO 1233 P. OS K настенный светильник",
@@ -7624,6 +8008,7 @@
     },
     {
         "article": "1235 OS 1 CH",
+        "quantity": 1,
         "image": "/media/products_images/1235 OS 1 CH.jpg",
         "category": "Jupiter",
         "name": "Jupiter OSLO 1235 ch. OS 1 потолочный светильник",
@@ -7645,6 +8030,7 @@
     },
     {
         "article": "1238 OS K CH",
+        "quantity": 4,
         "image": "/media/products_images/1238 OS K CH.jpg",
         "category": "Jupiter",
         "name": "Jupiter OSLO 1238 ch. OS K настенный светильник",
@@ -7666,6 +8052,7 @@
     },
     {
         "article": "871 SM 12",
+        "quantity": 6,
         "image": "/media/products_images/871 SM 12.jpg",
         "category": "Jupiter",
         "name": "Jupiter SYMFONIA 871 SM 12 потолочный светильник",
@@ -7687,6 +8074,7 @@
     },
     {
         "article": "1423 SM 18 CH",
+        "quantity": 6,
         "image": "/media/products_images/1423 SM 18 CH.jpg",
         "category": "Jupiter",
         "name": "Jupiter SYMFONIA 1423 SM 18 CH потолочный светильник",
@@ -7708,6 +8096,7 @@
     },
     {
         "article": "1409 TW K G",
+        "quantity": 1,
         "image": "/media/products_images/1409 TW K G.jpg",
         "category": "Jupiter",
         "name": "Jupiter TWINGO 1409 TW K G настенный светильник",
@@ -7729,6 +8118,7 @@
     },
     {
         "article": "1290 VS K",
+        "quantity": 1,
         "image": "/media/products_images/1290 VS K.jpg",
         "category": "Jupiter",
         "name": "Jupiter VENUS 1290 VS K настенный светильник",
@@ -7750,6 +8140,7 @@
     },
     {
         "article": "1291 VS L",
+        "quantity": 1,
         "image": "/media/products_images/1291 VS L.jpg",
         "category": "Jupiter",
         "name": "Jupiter VENUS 1291 VS L настольный светильник",
@@ -7771,6 +8162,7 @@
     },
     {
         "article": "1447 WE K 1 E",
+        "quantity": 10,
         "image": "/media/products_images/1447 WE K 1 E.jpg",
         "category": "Jupiter",
         "name": "Jupiter WENECJA 1447 WE K 1 E настенный светильник",
@@ -7792,6 +8184,7 @@
     },
     {
         "article": "1448 WE K 2 E",
+        "quantity": 3,
         "image": "/media/products_images/1448 WE K 2 E.jpg",
         "category": "Jupiter",
         "name": "Jupiter WENECJA 1448 WE K 2 E настенный светильник",
@@ -7813,6 +8206,7 @@
     },
     {
         "article": "1451 WE K 1 P",
+        "quantity": 1,
         "image": "/media/products_images/1451 WE K 1 P.jpg",
         "category": "Jupiter",
         "name": "Jupiter WENECJA 1451 WE K 1 P настенный светильник",
@@ -7834,6 +8228,7 @@
     },
     {
         "article": "1456 WE K 2 R",
+        "quantity": 1,
         "image": "/media/products_images/1456 WE K 2 R.jpg",
         "category": "Jupiter",
         "name": "Jupiter WENECJA 1456 WE K 2 R настенный светильник",
@@ -7876,6 +8271,7 @@
     },
     {
         "article": "1255/8",
+        "quantity": 6,
         "image": "/media/products_images/1255-8.jpg",
         "category": "Namat",
         "name": "Namat ARIS/8 1255/8 потолочный светильник",
@@ -7897,6 +8293,7 @@
     },
     {
         "article": "1273/9",
+        "quantity": 1,
         "image": "/media/products_images/1273-9.jpg",
         "category": "Namat",
         "name": "Namat ATAR 1273/9 настенный светильник",
@@ -7918,6 +8315,7 @@
     },
     {
         "article": "1015",
+        "quantity": 7,
         "image": "/media/products_images/1015.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1015.270S 66W потолочный",
@@ -7939,6 +8337,7 @@
     },
     {
         "article": "1016",
+        "quantity": 10,
         "image": "/media/products_images/1016.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1016.270R 44W потолочный",
@@ -7960,6 +8359,7 @@
     },
     {
         "article": "1017",
+        "quantity": 10,
         "image": "/media/products_images/1017.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1017.270R 33W потолочный",
@@ -7981,6 +8381,7 @@
     },
     {
         "article": "0967",
+        "quantity": 10,
         "image": "/media/products_images/0967.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0967.263R 72W потолочный",
@@ -8002,6 +8403,7 @@
     },
     {
         "article": "1012",
+        "quantity": 1,
         "image": "/media/products_images/1012.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1012.264S 100W потолочный",
@@ -8023,6 +8425,7 @@
     },
     {
         "article": "1011",
+        "quantity": 4,
         "image": "/media/products_images/1011.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1011.264S 80W потолочный",
@@ -8044,6 +8447,7 @@
     },
     {
         "article": "0648",
+        "quantity": 7,
         "image": "/media/products_images/0648.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0648.172S 80W потолочный",
@@ -8065,6 +8469,7 @@
     },
     {
         "article": "0880",
+        "quantity": 1,
         "image": "/media/products_images/0880.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0880.243S 120W потолочный",
@@ -8086,6 +8491,7 @@
     },
     {
         "article": "0882",
+        "quantity": 2,
         "image": "/media/products_images/0882.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0882.243S 60W потолочный",
@@ -8107,6 +8513,7 @@
     },
     {
         "article": "1039",
+        "quantity": 6,
         "image": "/media/products_images/1039.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1039.278S 180W потолочный",
@@ -8128,6 +8535,7 @@
     },
     {
         "article": "1040",
+        "quantity": 6,
         "image": "/media/products_images/1040.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1040.278S 140W потолочный",
@@ -8149,6 +8557,7 @@
     },
     {
         "article": "1041",
+        "quantity": 3,
         "image": "/media/products_images/1041.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 1041.278R 85W потолочный",
@@ -8170,6 +8579,7 @@
     },
     {
         "article": "0877",
+        "quantity": 7,
         "image": "/media/products_images/0877.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0877.241S 120W потолочный",
@@ -8191,6 +8601,7 @@
     },
     {
         "article": "0878",
+        "quantity": 2,
         "image": "/media/products_images/0878.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0878.241S 96W потолочный",
@@ -8212,6 +8623,7 @@
     },
     {
         "article": "0846",
+        "quantity": 3,
         "image": "/media/products_images/0846.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0846.234R 36W потолочный",
@@ -8233,6 +8645,7 @@
     },
     {
         "article": "0949",
+        "quantity": 2,
         "image": "/media/products_images/0949.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0949.259R 40W потолочный",
@@ -8254,6 +8667,7 @@
     },
     {
         "article": "0091",
+        "quantity": 6,
         "image": "/media/products_images/0091.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0091.MD0806 30W подвесной",
@@ -8275,6 +8689,7 @@
     },
     {
         "article": "0093",
+        "quantity": 1,
         "image": "/media/products_images/0093.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0093.MD0807 30W подвесной",
@@ -8296,6 +8711,7 @@
     },
     {
         "article": "0094",
+        "quantity": 1,
         "image": "/media/products_images/0094.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0094.MD0807 22W подвесной",
@@ -8338,6 +8754,7 @@
     },
     {
         "article": "0750",
+        "quantity": 5,
         "image": "/media/products_images/0750.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0750.214R 100W потолочный",
@@ -8359,6 +8776,7 @@
     },
     {
         "article": "0751",
+        "quantity": 10,
         "image": "/media/products_images/0751.jpg",
         "category": "ADILUX",
         "name": "Светодиодный светильник 0751.214R 48W потолочный",

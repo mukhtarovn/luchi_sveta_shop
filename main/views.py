@@ -17,7 +17,7 @@ from main.models import Product, ProductCategory
 def main(request):
     title = 'лучи света'
     products = Product.objects.exclude(category__name='Technical'). \
-        exclude(category__name='Voltega').exclude(category__name='Outdoor')
+        exclude(category__name='Voltega').exclude(category__name='Outdoor').filter(quantity=True)
     random_products = random.sample(list(products), 3)
     content = {
         'title': title,
@@ -34,8 +34,8 @@ def get_basket(user):
         return []
 
 def get_hot_product():
-    _products = Product.objects.exclude(category__name='Technical'). \
-        exclude(category__name='Voltega').exclude(category__name='Efapel')
+    _products = Product.objects.exclude(category__name='Technical').exclude(category__name='Outdoor'). \
+        exclude(category__name='Voltega').exclude(category__name='Efapel').exclude(quantity=0)
 
     return random.sample(list(_products), 1)[0]
 
@@ -44,7 +44,7 @@ def get_product_by_price(pk=None):
     return products
 
 def get_same_products(hot_product):
-    _same_products = Product.objects.filter(category=hot_product.category).\
+    _same_products = Product.objects.filter(category=hot_product.category).exclude(quantity=0).\
         exclude(pk=hot_product.pk)[:3]
     return _same_products
 
@@ -54,11 +54,11 @@ def products(request, pk=None, page=1):
 
     if pk is not None:
         if pk == 0:
-            products = Product.objects.all().exclude(quantity=True)
+            products = Product.objects.all().exclude(quantity=0)
             category = {'pk':0, 'name':'все'}
         else:
             category = get_object_or_404(ProductCategory, pk=pk)
-            products = Product.objects.filter(category__pk=pk)
+            products = Product.objects.filter(category__pk=pk).exclude(quantity=0)
 
         paginator = Paginator(products, 15)
         try:
@@ -121,7 +121,7 @@ def product(request, pk):
 def search_result(request):
     query = request.GET.get ('search')
     products_item = Product.objects.filter(Q(name__icontains=query) | Q(category__name__icontains=query)
-                                        |Q(article__icontains= query))
+                                        |Q(article__icontains= query)).exclude(quantity=0)
 
     content = {
         'title': 'Поиск',
