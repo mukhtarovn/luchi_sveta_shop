@@ -37,7 +37,7 @@ class Product(models.Model):
     image_4 = models.ImageField(verbose_name='фото-4', upload_to='products_images', blank=True, null=True, max_length=200)
     image_5 = models.ImageField(verbose_name='фото-5', upload_to='products_images', blank=True, null=True, max_length=200)
     short_desc = models.CharField(verbose_name='краткое описание', max_length=64, blank=True)
-    style = models.CharField(verbose_name='стиль', max_length=64, blank=True, null=True)
+    style = models.CharField(verbose_name='стиль', max_length=128, blank=True, null=True)
     descriptions = models.CharField(verbose_name='описание', max_length=128, blank=True)
     quantity = models.PositiveIntegerField(verbose_name='количество на складе', default=0)
 
