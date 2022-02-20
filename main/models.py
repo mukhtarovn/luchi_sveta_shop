@@ -32,7 +32,7 @@ class Product(models.Model):
     size = models.CharField(verbose_name='размер', blank=True, max_length=64, null=True)
     weight = models.CharField(verbose_name='вес', max_length=16, blank=True, null=True)
     short_desc = models.CharField (verbose_name='краткое описание', max_length=64, blank=True)
-    style = models.CharField (verbose_name='стиль', max_length=128, blank=True, null=True)
+    styles = models.CharField (verbose_name='стиль', max_length=128, blank=True, null=True)
     descriptions = models.CharField (verbose_name='описание', max_length=128, blank=True)
     quantity = models.PositiveIntegerField (verbose_name='количество на складе', default=0)
     image = models.ImageField(verbose_name='фото', upload_to='products_images', blank=True, null=True, max_length=200)
