@@ -30,12 +30,12 @@ class Command(BaseCommand):
             prod["category"] = _cat
             Product.objects.create(**prod)
 
-        products = load_from_json("products_new")
-        for prod in products:
-            cat_name = prod["category"]
-            _cat = ProductCategory.objects.get(name=cat_name)
-            prod["category"] = _cat
-            Product.objects.create(**prod)
+        #products = load_from_json("products_new")
+        #for prod in products:
+        #    cat_name = prod["category"]
+        #    _cat = ProductCategory.objects.get(name=cat_name)
+        #    prod["category"] = _cat
+        #    Product.objects.create(**prod)
 
         #products = load_from_json("products_stluce")
         #for prod in products:
