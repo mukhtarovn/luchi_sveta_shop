@@ -636,7 +636,8 @@
         "diameter": null,
         "size": "390x390x240",
         "weight": "1,80"
-  }, {
+    },
+    {
         "article": "16610",
         "quantity": 10,
         "image": "/media/products_images/16610.jpg",
@@ -6091,7 +6092,8 @@
         "diameter": "50",
         "size": null,
         "weight": "1,40"
-  }, {
+    },
+    {
         "article": "3367",
         "quantity": 1,
         "image": "/media/products_images/3367.jpg",
@@ -6178,7 +6180,8 @@
         "diameter": null,
         "size": null,
         "weight": "0,88"
-  }, {
+    },
+    {
         "article": "1160 AK K",
         "quantity": 1,
         "image": "/media/products_images/1160 AK K.jpg",
