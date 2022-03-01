@@ -6620,7 +6620,8 @@
         "diameter": null,
         "size": "370x230x230",
         "weight": "0,79"
-  }, {
+    },
+    {
         "article": "1255/8",
         "quantity": 6,
         "image": "/media/products_images/1255-8.jpg",
@@ -6663,7 +6664,8 @@
         "diameter": null,
         "size": null,
         "weight": "0,80"
-  }, {
+    },
+    {
         "article": "1015",
         "quantity": 7,
         "image": "/media/products_images/1015.jpg",
