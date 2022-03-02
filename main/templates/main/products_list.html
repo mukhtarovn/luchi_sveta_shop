@@ -62,7 +62,7 @@
                             <h4>{{product.name| truncatewords:5}}</h4>
                           {%if product.sale_price%}
                             <p><span style="text-decoration: line-through">{{product.price}} руб</span>
-                                <span style="color:red">{{product.price}} руб</span></p>
+                                <span style="color:red">{{product.sale_price}} руб</span></p>
                           {%else%}
                             <p>{{product.price}} руб</p>
                           {%endif%}
