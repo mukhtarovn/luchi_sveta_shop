@@ -22,7 +22,7 @@ class Product(models.Model):
     material = models.CharField(verbose_name='метериал', max_length= 64, blank=True, null=True)
     color = models.CharField(verbose_name='цвет', max_length= 64, blank=True, null=True)
     price = models.PositiveIntegerField(verbose_name='цена', null=True)
-    sale_price =models.PositiveIntegerField(verbose_name='цена', null=True)
+    sale_price =models.PositiveIntegerField(verbose_name='цена cо скидкой', null=True, blank=True)
     lamps = models.CharField (verbose_name='количество ламп', max_length=16, null=True, blank=True)
     lamps_type = models.CharField(verbose_name='цоколь', max_length=16, blank=True, null=True)
     power = models.CharField(verbose_name='мощность', max_length=16, null=True, blank=True)
