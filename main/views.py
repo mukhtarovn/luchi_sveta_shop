@@ -34,9 +34,11 @@ def get_basket(user):
         return []
 
 def get_hot_product():
-    _products = Product.objects.filter(sale_price__isnull = False) #exclude(category__name='Technical').exclude(category__name='Outdoor'). \
-        #exclude(category__name='Voltega').exclude(quantity=0)
-
+    try:
+        _products = Product.objects.filter(sale_price__isnull = False) #exclude(category__name='Technical').exclude(category__name='Outdoor'). \
+            #exclude(category__name='Voltega').exclude(quantity=0)
+    except:
+        _products = Product.objects.all()
     return random.sample(list(_products), 1)[0]
 
 def get_product_by_price(pk=None):
