@@ -51,8 +51,13 @@
                       </ul>
                     </div>
             <div class="category-products clearfix">
-
+                <script> var z=1</script>
+                <button onclick="alert(z); location.reload()"> кнопка</button>
+                {%if z == '1'%}
+                <script>alert(z)</script>
+                {%endif%}
                 {%for product in products%}
+
                 <div class="block">
                     <div class="card" style="width: 19rem;">
                       <a href="{%url 'products:product' product.pk%}"><img src="{{product.image}}" alt="{{product.name}}" height="270px">
