@@ -24,6 +24,7 @@
   <tbody>
   {%for res in result%}
     <tr class="table_search">
+        <td><img src="{{res.image}}" height="100px"></td>
       <td><a href="{%url 'products:product' res.pk%}">{{res.category}}</a></td>
       <td id="td_name"><a href="{%url 'products:product' res.pk%}">{{res.name}}</a></td>
       <td id="td_article"><a href="{%url 'products:product' res.pk%}">{{res.article}}</a></td>
