@@ -32671,28 +32671,6 @@
         "type": "Абажур"
     },
     {
-        "name": "Товар  S-775-242",
-        "price": 470,
-        "category": "",
-        "article": "S-775-242",
-        "quantity": 50,
-        "series": "Cleaning Sponge for Lampshades",
-        "color": "Желтый",
-        "power": "",
-        "image": "http://mais-upload.s3.amazonaws.com/upload/media/625eb9c5-4ce6-4351-8baa-eb1a327d6515/s/S-775-242_w.jpg",
-        "image_2": "http://mais-upload.s3.amazonaws.com/upload/media/bd2cd523-c866-4689-9e17-1e48377416c6/s/S-775-242.jpg",
-        "image_3": "",
-        "image_4": "",
-        "image_5": "",
-        "lamps_type": "",
-        "height": "",
-        "diameter": "",
-        "length": "",
-        "material": "",
-        "weight": "0,1",
-        "type": "Товар"
-    },
-    {
         "name": "Аксессуар Maytoni DC-500",
         "price": 1980,
         "category": "Maytoni",
