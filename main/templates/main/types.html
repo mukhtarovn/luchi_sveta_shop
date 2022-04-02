@@ -1,0 +1,89 @@
+{%extends 'main/base.html'%}
+{%load static%}
+
+{%block menu%}
+    <div class="hero-white">
+        <div class="header clearfix">
+            {%include 'main/inc/inc_main_menu.html'%}
+        </div>
+    </div>
+{%endblock%}
+
+{%block content%}
+    <div class="detalis">
+        <div class="type-menu clearfix">
+			{%include 'main/inc/inc_type_menu.html'%}
+				</div>
+        <div class="links clearfix">
+            {%include 'main/inc/inc_categories_menu.html'%}
+        </div>
+
+        <div class="products_list">
+            <div class="title clearfix">
+                <h2>
+                    Категория: "{{types.name|title}}"
+                </h2>
+            </div>
+            <div aria-label="Page navigation example">
+                      <ul class="pagination">
+                          {% if products.has_previous %}
+                        <li class="page-item"><a class="page-link" href="1" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.previous_page_number %}">{{products.previous_page_number}}</a></li>
+                          {% endif %}
+                        <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number}}</a></li>
+                          {% if products.has_next %}
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}">{{products.next_page_number}}</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                            {% endif %}
+                      </ul>
+                    </div>
+            <div class="category-products clearfix">
+                {%for product in products%}
+                <div class="block">
+                    <div class="card" style="width: 19rem;">
+                      <a href="{%url 'products:product' product.pk%}"><img src="{{product.image}}" alt="{{product.name}}" height="270px">
+                      </a>
+                      <div class="text">
+                            <h4>{{product.name| truncatewords:5}}</h4>
+                          {%if product.sale_price%}
+                            <p><span style="text-decoration: line-through">{{product.price}} руб</span>
+                                <span style="color:red">{{product.sale_price}} руб</span></p>
+                          {%else%}
+                            <p>{{product.price}} руб</p>
+                          {%endif%}
+                      </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+            <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                          {% if products.has_previous %}
+                        <li class="page-item"><a class="page-link" href="1" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.previous_page_number %}">{{products.previous_page_number}}</a></li>
+                          {% endif %}
+                        <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number }}</a></li>
+                          {% if products.has_next %}
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}">{{products.next_page_number}}</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                            {% endif %}
+                      </ul>
+                    </nav>
+        </div>
+    </div>
+    <div class="clr"></div>
+{%endblock%}

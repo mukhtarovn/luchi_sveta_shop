@@ -1827,3 +1827,27 @@ a {
     text-align: justify;
     padding: 0px 20px;
 }
+
+.type-menu {
+    height:100px;
+    width:100%;
+    margin: 30px 0px;
+	text-decoration: none;
+	color:  #6c6c6c;
+	font-size: 14 px;
+	font-weight: 900;
+	text-transform: uppercase;
+	right:30px;
+    display: block;
+}
+
+.type-menu li {
+    float: left;
+	list-style-type: none;
+	padding-right: 33px;
+	padding-top: 10px;
+}
+
+.navbar-nav {
+    display: float;
+}

@@ -4,7 +4,17 @@ from django.urls import reverse
 
 class ProductCategory(models.Model):
     name = models.CharField(verbose_name='имя', max_length=64, unique=True)
-    description = models.TextField(verbose_name='описание', blank=True)
+    description = models.TextField(verbose_name='описание', blank=True, null=True)
+
+    class Meta:
+        verbose_name = 'бренд'
+        verbose_name_plural = 'бренды'
+    def __str__(self):
+        return self.name
+
+class ProductType(models.Model):
+    name = models.CharField(verbose_name='имя', max_length=64, unique=True)
+    description = models.TextField(verbose_name='описание', blank=True, null=True)
 
     class Meta:
         verbose_name = 'категория'
@@ -17,7 +27,7 @@ class Product(models.Model):
     article = models.CharField(verbose_name='артикул', max_length= 128, blank=True, null=True)
     name = models.CharField(verbose_name='имя продукта', max_length= 128, null=True)
     series = models.CharField(verbose_name='серия', max_length= 64, blank=True, null=True)
-    type = models.CharField(verbose_name='тип светильника', max_length= 64, blank=True, null=True)
+    type = models.ForeignKey(ProductType, on_delete=models.CASCADE, null=True)
     type_2 = models.CharField(verbose_name='подтип', max_length= 64, blank=True, null=True)
     material = models.CharField(verbose_name='метериал', max_length= 64, blank=True, null=True)
     color = models.CharField(verbose_name='цвет', max_length= 64, blank=True, null=True)
@@ -34,7 +44,7 @@ class Product(models.Model):
     weight = models.CharField(verbose_name='вес', max_length=16, blank=True, null=True)
     short_desc = models.CharField (verbose_name='краткое описание', max_length=64, blank=True)
     style = models.CharField (verbose_name='стиль', max_length=128, blank=True, null=True)
-    descriptions = models.CharField (verbose_name='описание', max_length=2048, blank=True, null=True)
+    descriptions = models.CharField(verbose_name='описание', max_length=2048, blank=True, null=True)
     quantity = models.PositiveIntegerField (verbose_name='количество на складе', default=0)
     image = models.ImageField(verbose_name='фото', upload_to='products_images', blank=True, null=True, max_length=200)
     image_2 = models.ImageField(verbose_name='фото-2', upload_to='products_images', blank=True, null=True, max_length=200)

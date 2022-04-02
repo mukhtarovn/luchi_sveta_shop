@@ -12,7 +12,8 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
 
 from basketapp.models import Basket
-from main.models import Product, ProductCategory
+from main.models import Product, ProductCategory, ProductType
+
 
 def main(request):
     title = 'лучи света'
@@ -54,6 +55,7 @@ def get_same_products(hot_product):
 def products(request, pk=None, page=1):
     title = 'Продукты'
     links_menu = ProductCategory.objects.all()
+    type_menu = ProductType.objects.all()
 
     if pk is not None:
         if pk == 0:
@@ -75,12 +77,14 @@ def products(request, pk=None, page=1):
 
         content = {
             'links_menu': links_menu,
+            'type_menu': type_menu,
             'title': title,
             'category': category,
             'products': product_paginator, #products,
             'basket': get_basket(request.user),
             'last_page': last_page,
             'first_page': first_page,
+            'by_price': get_product_by_price(pk)
             }
         return render(request, 'main/products_list.html', content)
 
@@ -88,6 +92,7 @@ def products(request, pk=None, page=1):
     same_product = get_same_products(hot_product)
     content = {
         'links_menu': links_menu,
+        'type_menu': type_menu,
         'title': title,
         'basket': get_basket(request.user),
         'hot_product': hot_product,
@@ -116,6 +121,7 @@ def product(request, pk):
         'title': title,
         'basket': get_basket(request.user),
         'links_menu': ProductCategory.objects.all(),
+        'type_menu': ProductType.objects.all(),
         'product': get_object_or_404(Product, pk=pk),
         'same_product': get_same_products(product_item)
     }
@@ -139,3 +145,43 @@ def info(request):
         'title': title,
     }
     return render (request, 'main/info.html', content)
+
+def by_price(request, pk=None, page=1):
+    title = 'Продукты'
+    links_menu = ProductCategory.objects.all()
+
+    if pk == 0:
+        products = Product.objects.all().exclude(quantity=0).order_by('price')
+        category = {'pk':0, 'name':'все'}
+    else:
+        category = get_object_or_404(ProductCategory, pk=pk)
+        products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by('price')
+
+    content = {
+            'links_menu': links_menu,
+            'type_menu': ProductType.objects.all(),
+            'title': title,
+            'category': category,
+            'products': products,
+            'basket': get_basket(request.user),
+            }
+    return render(request, 'main/products_list.html', content)
+
+
+def types(request, pk=None, page=1):
+    title = 'Продукты'
+    links_menu = ProductCategory.objects.all()
+
+    types = get_object_or_404(ProductType, pk=pk)
+    products = Product.objects.filter(type__pk=pk).exclude(quantity=0)
+
+
+    content = {
+            'links_menu': links_menu,
+            'type_menu': ProductType.objects.all(),
+            'title': title,
+            'types': types,
+            'products': products,
+            'basket': get_basket(request.user),
+            }
+    return render(request, 'main/types.html', content)

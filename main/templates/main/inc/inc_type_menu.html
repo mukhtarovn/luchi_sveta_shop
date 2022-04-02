@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="">
+        {%for item in type_menu%}
+        <li><a href="{%url 'products:type' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}
+               class="active"{%endif%}>
+            {%if item.name == "Потолочные светильники (люстры)"%}
+            Люстры
+            {% elif item.name == "Настенные светильники (бра)"%}
+            Бра
+            {% elif item.name == "Напольные светильники (торшеры)"%}
+            Торшеры
+            {% else%}
+            {{item.name}}
+            {%endif%}</a></li>
+    {%endfor%}
+      </ul>
+    </div>
+  </div>
+</nav>
+
