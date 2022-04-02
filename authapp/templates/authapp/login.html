@@ -1,0 +1,31 @@
+{% extends 'authapp/base.html' %}
+{{%block content%}
+  <body class="text-center">
+
+<main class="form-signin shadow-lg p-3 mb-5 bg-body rounded">
+  <form method="post">
+    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h3 class="h3 mb-3 fw-normal">Введите логин и пароль</h3>
+    <div class="form-floating">
+        {%csrf_token%}
+        {{login_form.as_p}}
+        <br>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> запомнить
+      </label>
+    </div>
+    <a role="button" href="{%url 'auth:anonym'%}" class="w-100 btn btn-lg btn-warning">Заказ без регистрации</a>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Вход</button>
+    <a class="nav-link active" aria-current="page" href="{%url 'authapp:register'%}">Регистрация</a>
+    <a class="nav-link active" aria-current="page" href="{%url 'main'%}">на главную</a>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>
+
+
+
+  </body>
+{%endblock%}
