@@ -46,11 +46,11 @@ class Product(models.Model):
     style = models.CharField (verbose_name='стиль', max_length=128, blank=True, null=True)
     descriptions = models.CharField(verbose_name='описание', max_length=2048, blank=True, null=True)
     quantity = models.PositiveIntegerField (verbose_name='количество на складе', default=0)
-    image = models.ImageField(verbose_name='фото', upload_to='products_images', blank=True, null=True, max_length=200)
-    image_2 = models.ImageField(verbose_name='фото-2', upload_to='products_images', blank=True, null=True, max_length=200)
-    image_3 = models.ImageField(verbose_name='фото-3', upload_to='products_images', blank=True, null=True, max_length=200)
-    image_4 = models.ImageField(verbose_name='фото-4', upload_to='products_images', blank=True, null=True, max_length=200)
-    image_5 = models.ImageField(verbose_name='фото-5', upload_to='products_images', blank=True, null=True, max_length=200)
+    image = models.ImageField(verbose_name='фото', upload_to='products_images', blank=True, null=True, max_length=500)
+    image_2 = models.ImageField(verbose_name='фото-2', upload_to='products_images', blank=True, null=True, max_length=500)
+    image_3 = models.ImageField(verbose_name='фото-3', upload_to='products_images', blank=True, null=True, max_length=500)
+    image_4 = models.ImageField(verbose_name='фото-4', upload_to='products_images', blank=True, null=True, max_length=500)
+    image_5 = models.ImageField(verbose_name='фото-5', upload_to='products_images', blank=True, null=True, max_length=500)
 
 
     class Meta:
