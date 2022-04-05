@@ -89,11 +89,15 @@
 					</a>
 					<div class="description-text">
 						<p>{{product.name}}</p>
+						{%if product.descriptions%}
+						<h6>{{product.descriptions}}</h6>
+						{%else%}
 						<p>{{product.type}} серии {{product.series}} Прекрасно дополнит
 						и подчеркнет изысканый стиль Вашего интерьера. Цвет - {{product.color}},
 							количество ламп - {{product.lamps}} шт. ({{product.lamps_type}})
 							мощьность {{product.power}} Вт
 						</p>
+						{%endif%}
 					</div>
 				</div>
 			</div>
