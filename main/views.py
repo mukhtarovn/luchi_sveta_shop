@@ -23,6 +23,7 @@ def main(request):
     content = {
         'title': title,
         'products': products,
+        "types": ProductType.objects.all(),
         'random_products': random_products,
         'basket': get_basket (request.user),
     }

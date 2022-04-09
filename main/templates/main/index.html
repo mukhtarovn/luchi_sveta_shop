@@ -22,6 +22,34 @@
 <div style="margin-top: 100px">
 	<img src="/static/img/акция1.jpg" width="100%">
 </div>
+<div class="category-products clearfix" style="margin-top: 10%">
+
+                {%for type in types%}
+                <div class="block" style="margin-bottom: 5px; width: 330px;">
+                    <div class="card" style="border: none;">
+                      <a href="{%url 'products:type' type.pk%}">
+						  {%if type.name == "Потолочные светильники (люстры)"%}<img src="https://onec-dev.s3.amazonaws.com/upload/media/153fb5cc-6774-48a9-b70b-81fb1946b899/s/MOD317PL-06G_on_w_standard.jpeg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Настольные светильники"%}<img src="http://mais-upload.s3.amazonaws.com/upload/media/efb18e42-d74a-4adb-a6d3-672ee3516dfb/s/Z153-TL-01-BS_on_w.jpg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Напольные светильники (торшеры)"%}<img src="https://onec-dev.s3.amazonaws.com/upload/media/84cb6ecd-b24f-48b9-a888-27e3e19a0c00/s/MOD006FL-01B_on_w_standard.jpeg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Спот"%}<img src="https://onec-dev.s3.amazonaws.com/upload/media/ebb6a448-ae01-476d-9d39-b6644a39c0e6/s/FR10006CW-L6W_on_w_standard_(1).jpeg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Настенные светильники (бра)"%}<img src="http://mais-upload.s3.amazonaws.com/upload/media/9d0f3452-ac65-40e4-b9aa-09cf5195f815/s/RC098-WL-01-R_on_w.jpg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Аксессуары"%}<img src="http://www.stluce.ru/upload/images/ST015.500.98_01W.jpg" alt="{{product.name}}" height="270px">
+						  {%elif type.name == "Трековые светильники"%}<img src="http://mais-upload.s3.amazonaws.com/upload/media/4cabde78-9fe6-4253-b49b-1cb1f67319d6/s/TR019-2-15W3K-MG_on_w_(2).jpg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Подсветка"%}<img src="https://onec-dev.s3.amazonaws.com/upload/media/979c7bc6-f608-493d-9a75-91c90e42b5f1/s/MIR014WL-L10G3K_on_w_standard.jpeg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Встраиваемые светильники"%}<img src="http://mais-upload.s3.amazonaws.com/upload/media/7fd94198-1bb6-4a84-9360-4ce1af76fe9f/s/DL008-2-02-W_on_w_(1).jpg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Ландшафтные светильники"%}<img src="http://mais-upload.s3.amazonaws.com/upload/media/8d218cb6-eb68-450e-bd46-6aaedcfff166/s/O004FL-01B_on_w_(1).jpg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Светодиодные ленты"%}<img src="https://onec-dev.s3.amazonaws.com/upload/media/5a2a9665-f864-4198-9d67-a8b6f872a2fd/s/interior_ALM008S-2M_standard.jpeg" alt="{{product.name}}" height="300px">
+						  {%elif type.name == "Лампочки"%}<img src="https://onec-dev.s3.amazonaws.com/upload/media/4d31817e-8516-4706-8570-4f2f2dda23b1/s/2428_on_w_standard.jpeg" alt="{{product.name}}" height="300px">
+						  {%endif%}
+					  </a>
+                      <div class="text" style="text-align: center">
+                            <h4>{{type.name| truncatewords:5}}</h4>
+                      </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+
 		<div class="featured">
 			<div class="featured-menu">
 					<a class="active" href="#">Популярные</a>
