@@ -1,6 +1,8 @@
 {%extends 'main/base.html'%}
 {%load static%}
 {%block menu%}
+<meta name="description" content="{{product.name}}, цена {{product.price}} руб"/>
+
 		<div class="hero-white">
 			<div class="header clearfix">
 				<p class="logo">ЛУЧИ СВЕТА</p>
@@ -10,6 +12,9 @@
 {%endblock%}
 {%block content%}
 		<div class="details">
+			<div class="type-menu clearfix">
+			{%include 'main/inc/inc_type_menu.html'%}
+				</div>
 			<div class="links clearfix">
 				{%include 'main/inc/inc_categories_menu.html'%}
 
