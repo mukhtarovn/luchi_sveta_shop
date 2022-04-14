@@ -69,5 +69,15 @@ class Command(BaseCommand):
             prod["type"] = _type
             Product.objects.create (**prod)
 
+        products = load_from_json ("VeleLuce")
+        for prod in products:
+            cat_name = prod["category"]
+            type_name = prod["type"]
+            _cat = ProductCategory.objects.get (name=cat_name)
+            _type = ProductType.objects.get(name=type_name)
+            prod["category"] = _cat
+            prod["type"] = _type
+            Product.objects.create (**prod)
+
     ShopUser.objects.all().delete()
     ShopUser.objects.create_superuser(username='nariman', password='sarvan030511', age=30, first_name='Нариман', )
