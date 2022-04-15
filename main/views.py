@@ -66,7 +66,7 @@ def products(request, pk=None, page=1):
             category = get_object_or_404(ProductCategory, pk=pk)
             products = Product.objects.filter(category__pk=pk).exclude(quantity=0)
 
-        paginator = Paginator(products, 15)
+        paginator = Paginator(products, 21)
         try:
             product_paginator = paginator.page(page)
         except PageNotAnInteger:
