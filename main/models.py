@@ -41,7 +41,7 @@ class Product(models.Model):
     height = models.CharField(verbose_name='высота', max_length=16, null=True, blank=True)
     diameter = models.CharField(verbose_name='диаметр', max_length=16, null=True, blank=True)
     size = models.CharField(verbose_name='размер', blank=True, max_length=64, null=True)
-    weight = models.CharField(verbose_name='вес', max_length=16, blank=True, null=True)
+    weight = models.CharField(verbose_name='вес', max_length=32, blank=True, null=True)
     short_desc = models.CharField (verbose_name='краткое описание', max_length=64, blank=True)
     style = models.CharField (verbose_name='стиль', max_length=128, blank=True, null=True)
     descriptions = models.CharField(verbose_name='описание', max_length=2048, blank=True, null=True)
