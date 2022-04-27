@@ -16,7 +16,7 @@ from main.models import Product, ProductCategory, ProductType
 
 
 def main(request):
-    title = 'лучи света'
+    title = 'лучи света - интернет магазин'
     products = Product.objects.exclude(category__name='Technical'). \
         exclude(category__name='Voltega').exclude(category__name='Outdoor').filter(quantity=True)
     random_products = random.sample(list(products), 3)
@@ -54,19 +54,21 @@ def get_same_products(hot_product):
     return random_prod
 
 def products(request, pk=None, page=1):
-    title = 'Продукты'
+    title = 'лучи света: каталог, светильники'
     links_menu = ProductCategory.objects.all()
     type_menu = ProductType.objects.all()
 
     if pk is not None:
         if pk == 0:
-            products = Product.objects.all().exclude(quantity=0)
+            sort=request.GET.getlist('sort')
+            products = Product.objects.all().exclude(quantity=0).order_by(*sort)
             category = {'pk':0, 'name':'все'}
         else:
             category = get_object_or_404(ProductCategory, pk=pk)
-            products = Product.objects.filter(category__pk=pk).exclude(quantity=0)
+            sort=request.GET.getlist('sort')
+            products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by(*sort)
 
-        paginator = Paginator(products, 21)
+        paginator = Paginator(products, 24)
         try:
             product_paginator = paginator.page(page)
         except PageNotAnInteger:
@@ -81,11 +83,10 @@ def products(request, pk=None, page=1):
             'type_menu': type_menu,
             'title': title,
             'category': category,
-            'products': product_paginator, #products,
+            'products': product_paginator,
             'basket': get_basket(request.user),
             'last_page': last_page,
             'first_page': first_page,
-            'by_price': get_product_by_price(pk)
             }
         return render(request, 'main/products_list.html', content)
 
@@ -103,7 +104,7 @@ def products(request, pk=None, page=1):
     return render(request, 'main/products.html', content)
 
 def contacts(request):
-    title = 'Контакты'
+    title = 'Лучи света: контакты, о компании'
     visit_date = datetime.now()
     locations =None
     with open(os.path.join(settings.BASE_DIR, 'main/json/contacts.json')) as json_file:
@@ -134,21 +135,21 @@ def search_result(request):
                                         |Q(article__icontains= query)).exclude(quantity=0)
 
     content = {
-        'title': 'Поиск',
+        'title': 'Лучи света: Поиск',
         'result': products_item
     }
     return render(request, 'main/search_results.html', content)
 
 
 def info(request):
-    title = 'Информация'
+    title = 'Лучи света: Информация/контакты'
     content = {
         'title': title,
     }
     return render (request, 'main/info.html', content)
 
 def by_price(request, pk=None, page=1):
-    title = 'Продукты'
+    title = 'Лучи света: товары по цене'
     links_menu = ProductCategory.objects.all()
 
     if pk == 0:
@@ -170,19 +171,60 @@ def by_price(request, pk=None, page=1):
 
 
 def types(request, pk=None, page=1):
-    title = 'Продукты'
+
     links_menu = ProductCategory.objects.all()
 
+    sort = request.GET.getlist('sort')
     types = get_object_or_404(ProductType, pk=pk)
-    products = Product.objects.filter(type__pk=pk).exclude(quantity=0)
+    title = f'Лучи света: каталог, {types.name}'
+    products = Product.objects.filter(type__pk=pk).exclude(quantity=0).order_by(*sort)
 
-
+    paginator = Paginator(products, 24)
+    try:
+        product_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        product_paginator = paginator.page(1)
+    except EmptyPage:
+        product_paginator = paginator.page(paginator.num_pages)
+    last_page = paginator.num_pages
+    first_page = 1
     content = {
             'links_menu': links_menu,
             'type_menu': ProductType.objects.all(),
             'title': title,
             'types': types,
-            'products': products,
+            'products': product_paginator,
+            'last_page': last_page,
+            'first_page': first_page,
             'basket': get_basket(request.user),
             }
     return render(request, 'main/types.html', content)
+
+def sales(request, pk=None, page=1):
+    title = 'Лучи света: Скидки, Акции'
+    links_menu = ProductCategory.objects.all()
+
+    sort = request.GET.getlist ('sort')
+    products = Product.objects.filter(sale_price__isnull = False).exclude(quantity=0).order_by(*sort)
+
+    paginator = Paginator(products, 24)
+    try:
+        product_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        product_paginator = paginator.page(1)
+    except EmptyPage:
+        product_paginator = paginator.page(paginator.num_pages)
+    last_page = paginator.num_pages
+    first_page = 1
+    content = {
+            'links_menu': links_menu,
+            'type_menu': ProductType.objects.all(),
+            'title': title,
+            'types': types,
+            'category': ProductCategory.objects.all(),
+            'products': products,
+            'last_page': last_page,
+            'first_page': first_page,
+            'basket': get_basket(request.user),
+            }
+    return render(request, 'main/products_list.html', content)

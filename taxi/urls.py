@@ -5,6 +5,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 import main.views as main
+if settings.DEBUG:
+    import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,6 +19,7 @@ urlpatterns = [
     #path('admin/', include('adminapp.urls', namespace='admin'))
 
 ]
+
 
 if settings.DEBUG:
     urlpatterns += static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

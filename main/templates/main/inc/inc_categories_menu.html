@@ -2,15 +2,29 @@
 
     <li>
         <a>Бренды</a>
-        <hr>
+
     </li>
     <li>
         <a href="{%url 'products:category' 0%}">Все</a>
+        <hr>
     </li>
     {%for item in links_menu%}
-    {%if item.name != "Nowodvorski" and item.name != "Evronomer"%}
+    {%if item.name != "Nowodvorski" and item.name != "Evronomer" and item.name != "Werkel"%}
+        <li><a href="{%url 'products:category' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}
+               class="active"{%endif%}>
+            {%if item.name == "Elektrostandard"%}
+                <li><a href="{%url 'products:category' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}
+               class="active"{%endif%}>Elektro standard</a></li>
+    {%elif item.name == "Elektrostandard Pro"%}
+        <li><a href="{%url 'products:category' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}
+               class="active"{%endif%}>Elektro standard pro</a></li>
+    {%else%}
         <li><a href="{%url 'products:category' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}
                class="active"{%endif%}>{{item.name}}</a></li>
     {%endif%}
+            </a></li>
+
+    {%endif%}
+    <hr style="color: green; margin: 0px;">
     {%endfor%}
 </ul>

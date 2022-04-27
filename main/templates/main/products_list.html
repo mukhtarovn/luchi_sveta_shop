@@ -4,8 +4,9 @@
 <meta name="description" content="светильники (бра, торшеры, люстры, светодиодные ленты) фирмы{{category.name}}"/>
     <div class="hero-white">
         <div class="header clearfix">
-            {%include 'main/inc/inc_main_menu.html'%}
-        </div>
+				<p class="logo">ЛУЧИ СВЕТА</p>
+				{%include 'main/inc/inc_main_menu.html'%}
+			</div>
     </div>
 {%endblock%}
 
@@ -36,13 +37,17 @@
                         <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number}}</a></li>
                           {% if products.has_next %}
                         <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}">{{products.next_page_number}}</a></li>
-                        <li class="page-item">
-                          <a class="page-link" href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
+                       <li class="page-item"style="margin-left:5px;">
+                          <a class="page-link"  href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>
                           </a>
                         </li>
                             {% endif %}
-                          <button type="button" class="btn btn-light"><a href="{%url 'products:by_price' category.pk%}">по цене</a></button>
+                            <form method="get" style="margin-left: 100px">
+                                <button type="submit" class="btn btn-sm btn-outline-dark btn-raised mr-3">Сортировать</button>
+                                <input name="sort" type="checkbox" value="price"> Дешевле
+                                <input name="sort" type="checkbox" value="-price"> Дороже
+                            </form>
                       </ul>
                     </div>
             <div class="category-products clearfix">
@@ -77,9 +82,9 @@
                         <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number }}</a></li>
                           {% if products.has_next %}
                         <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}">{{products.next_page_number}}</a></li>
-                        <li class="page-item">
-                          <a class="page-link" href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
+                        <li class="page-item"style="margin-left:5px;">
+                          <a class="page-link"  href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>
                           </a>
                         </li>
                             {% endif %}

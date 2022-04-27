@@ -722,6 +722,7 @@ html, body {
 	width: 290px;
 	height: 52px;
 	float: left;
+	color: green
 }
 
 .menu {
@@ -1547,7 +1548,7 @@ td:first-child {
 }
 
 .links {
-    height: 1000px;
+    height: 1100px;
     width: 12%;
     margin-right: 10px;
     float: left;
@@ -1563,7 +1564,7 @@ td:first-child {
 }
 .links-menu li {
 	list-style-type: none;
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 }
 .links-menu li a {
 	text-decoration: none;
@@ -1648,7 +1649,7 @@ td:first-child {
 }
 .description .red {
 	text-transform: uppercase;
-	color: #e53935;
+	color: green;
 	font-size: 18px;
 	font-weight: 700;
 	text-align: center;
@@ -1677,7 +1678,7 @@ td:first-child {
 	height: 71px;
 	width: 510px;
 	border-radius: 35px;
-	background-color: #f44336;
+	background-color: rgba(0, 128, 7, 0.69);
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -1849,7 +1850,8 @@ a {
 }
 
 .navbar-nav {
-    display: float;
+    display: flex;
+    flex-decoration: row;
 }
 
 .topbutton {

@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.template.loader import render_to_string
@@ -27,6 +28,9 @@ def basket_add(request, pk):  #pk - Product
         basket = Basket(user=request.user, product=product)
     basket.quantity += 1
     basket.save()
+    send_mail ('ДОБАВИЛИ В КОРЗИНУ', f'Клиент {request.user} добавил {basket.product}  - {basket.quantity} шт',
+               'luchi_sveta@list.ru', ['luchi_sveta@list.ru', 'mukhtarov.n@gmail.com'],
+               fail_silently=False, )
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 @login_required

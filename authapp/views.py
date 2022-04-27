@@ -37,7 +37,7 @@ def verify(request, email, activation_key):
 
 
 def login(request):
-    title = 'вход'
+    title = 'Лучи свеиа:вход в личный кабинет'
     login_form = ShopUserLoginForm(data=request.POST)
     if request.method == 'POST' and login_form.is_valid():
         username = request.POST['username']
@@ -60,7 +60,7 @@ def logout(request):
     return HttpResponseRedirect(reverse('main'))
 
 def register(request):
-    title = 'Регистарция'
+    title = 'Лучи света: Регистарция пользователя'
     if request.method == 'POST':
         register_form = ShopUserRegisterForm(request.POST, request.FILES)
         if register_form.is_valid():
@@ -82,7 +82,7 @@ def register(request):
 
 
 def edit(request):
-    title = 'Редактирование'
+    title = 'Лучи света:Редактирование данных пользователя'
     if request.method == 'POST':
         edit_form = ShopUserEditForm(request.POST, request.FILES, instance=request.user)
         if edit_form.is_valid():

@@ -18,6 +18,13 @@
             <a class="nav-link" href="{% url 'products:index'%}">каталог</a>
             {%endif%}
         </li>
+          <li class="nav-item">
+            {% if request.resolver_match.url_name == 'sales' %}
+           <a class="nav-link active" href="{% url 'products:sales'%}">скидки</a>
+            {%else%}
+            <a class="nav-link" href="{% url 'products:sales'%}">скидки</a>
+            {%endif%}
+        </li>
         <li class="nav-item">
             {% if request.resolver_match.url_name == 'contacts' %}
           <a class="nav-link active" href="{% url 'contacts'%}" >контакты</a>
