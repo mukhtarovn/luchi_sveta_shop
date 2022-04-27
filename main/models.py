@@ -25,7 +25,7 @@ class ProductType(models.Model):
 class Product(models.Model):
     category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE, null=True)
     article = models.CharField(verbose_name='артикул', max_length= 128, blank=True, null=True)
-    name = models.CharField(verbose_name='имя продукта', max_length= 128, null=True)
+    name = models.CharField(verbose_name='имя продукта', max_length= 256, null=True)
     series = models.CharField(verbose_name='серия', max_length= 128, blank=True, null=True)
     type = models.ForeignKey(ProductType, on_delete=models.CASCADE, null=True)
     type_2 = models.CharField(verbose_name='подтип', max_length= 64, blank=True, null=True)
