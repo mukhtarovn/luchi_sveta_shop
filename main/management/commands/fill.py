@@ -99,7 +99,7 @@ class Command(BaseCommand):
             prod["type"] = _type
             Product.objects.create (**prod)
 
-        products = load_from_json ("lussole")
+        products = load_from_json ("Lussole")
         for prod in products:
             cat_name = prod["category"]
             type_name = prod["type"]
