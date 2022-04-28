@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'authapp',
     'basketapp',
     'orderapp',
-    'debug-toolbar',
+    'debug_toolbar',
     'template_profiler_panel',
 ]
 
@@ -59,7 +59,7 @@ MIDDLEWARE = [
 if DEBUG:
     def show_toolbar(request):
         return True
-    DEBUG_TOOLBAR_CONFIG = { 'SHOW_TOOLBAR_CALLBACK': show_toolbar,
+    DEBUG_TOOLBAR_CONFIG = {'SHOW_TOOLBAR_CALLBACK': show_toolbar,
     }
 
     DEBUG_TOOLBAR_PANELS = [
@@ -104,16 +104,16 @@ AUTH_USER_MODEL = 'authapp.ShopUser'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-      'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    #'default': {
+    #  'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': BASE_DIR / 'db.sqlite3',
    # }
     
-    #'default': {
-    #    'NAME': 'luchi_sveta',
-    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #    'USER': 'nariman',
-    #    'PASSWORD': 'sarvan030511',
+    'default': {
+        'NAME': 'luchi_sveta',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'USER': 'nariman',
+        'PASSWORD': 'sarvan030511',
    }
 }
 
@@ -155,6 +155,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
 
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
