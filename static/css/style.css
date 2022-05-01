@@ -585,7 +585,7 @@ html, body {
 }
 .category-products .block {
 	float: left;
-	margin-bottom: 50px;
+	margin-bottom: 32px;
 	display: block;
 	height: 370px;
 	width: 370px;
@@ -1735,7 +1735,7 @@ td:first-child {
 }
 .related-products .block {
 	float: left;
-	margin-right: 30px;
+	margin-right: 4%;
 	display: block;
 	height: 370px;
 	width: 345px;
@@ -1871,4 +1871,13 @@ a {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
+}
+
+.carousel-item img {
+    max-height:75rem;
+    max-width: 100%;
+    text-align: center;
+    display:block;
+    margin:auto;
+
 }

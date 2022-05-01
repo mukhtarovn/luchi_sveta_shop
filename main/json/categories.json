@@ -1,43 +1,43 @@
 [
   {
     "name": "Alfa",
-    "description": "люстры польской фирмы ALFA"
+    "description": "Польша"
   },
   {
     "name": "Luminex",
-    "description": "люстры польской фирмы Luminex"
+    "description": "Польша"
   },
   {
     "name": "Kemar",
-    "description": "люстры польской фирмы Kemar"
+    "description": "Польша"
   },
   {
     "name": "Emibig",
-    "description": "люстры польской фирмы Emibig"
+    "description": "Польша"
   },
   {
     "name": "Jupiter",
-    "description": "люстры польской фирмы Jupiter"
+    "description": "Польша"
   },
   {
     "name": "ADILUX",
-    "description": "люстры польской фирмы ADILUX"
+    "description": "Дания"
   },
   {
     "name": "Freya",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Maytoni",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Technical",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Voltega",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Namat",
@@ -45,39 +45,39 @@
   },
   {
     "name": "Outdoor",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Nowodvorski",
-    "description": ""
+    "description": "Польша"
   },
   {
     "name": "ST LUCE",
-    "description": ""
+    "description": "Италия"
   },
   {
     "name": "EVOLUCE",
-    "description": ""
+    "description": "Италия"
   },
   {
     "name": "EVOLED",
-    "description": ""
+    "description": "Италия"
   },
   {
     "name": "MW-Light",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "CHIARO",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "De Markt",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "De City",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Evronomer",
@@ -85,34 +85,34 @@
   },
   {
     "name": "Vele Luce",
-    "description": ""
+    "description": "Италия"
   },
   {
     "name": "Elektrostandard",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Elektrostandard Pro",
-    "description": ""
+    "description": "Германия"
   },
   {
     "name": "Werkel",
-    "description": ""
+    "description": "Швеция"
   },
   {
     "name": "Eurosvet",
-    "description": ""
+    "description": "Россия"
   },
   {
     "name": "TK Lighting",
-    "description": ""
+    "description": "Польша"
   },
   {
     "name": "Bogate's",
-    "description": ""
+    "description": "Россия"
   },
   {
     "name": "Lussole",
-    "description": ""
+    "description": "Италия"
   }
 ]

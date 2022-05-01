@@ -36,32 +36,32 @@
 		{%endif%}
 	  {%if product.image_5%}
     <div class="carousel-item">
-      <img src="{{product.image_3}}" class="d-block w-100" alt="...">
+      <img src="{{product.image_3}}" class="d-block" alt="...">
     </div>
 	  {%endif%}
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="{{product.image}}" class="d-block w-100" alt="...">
+      <img src="{{product.image}}" class="d-block" alt="...">
     </div>
 	  {%if product.image_2%}
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="{{product.image_2}}" class="d-block w-100" alt="...">
+      <img src="{{product.image_2}}" class="d-block" alt="...">
     </div>
 	  {%endif%}
 	  {%if product.image_3%}
     <div class="carousel-item">
-      <img src="{{product.image_3}}" class="d-block w-100" alt="...">
+      <img src="{{product.image_3}}" class="d-block" alt="...">
     </div>
 	  {%endif%}
 	  {%if product.image_4%}
     <div class="carousel-item">
-      <img src="{{product.image_4}}" class="d-block w-100" alt="...">
+      <img src="{{product.image_4}}" class="d-block" alt="...">
     </div>
 	  {%endif%}
 	  {%if product.image_5%}
     <div class="carousel-item">
-      <img src="{{product.image_5}}" class="d-block w-100" alt="...">
+      <img src="{{product.image_5}}" class="d-block" alt="...">
     </div>
 	  {%endif%}
   </div>
@@ -105,6 +105,10 @@
   <tbody>
   <h4 style="padding-top:50px; padding-left:68%; text-decoration: underline;">Харрактеристики</h4>
     <tr>
+      <td>Производитель</td>
+      <td>{{product.category}} ({{product.category.description}})</td>
+    </tr>
+  	<tr>
       <td>Артикул</td>
       <td>{{product.article}}</td>
     </tr>
@@ -196,7 +200,7 @@
 				<div class="related-products clearfix">
 					{%for product in same_product%}
 						<div class="block">
-							<a href="{%url 'products:product' product.pk%}"><img src="{{product.image}}" alt="{{product.name}}" height="300px">
+							<a href="{%url 'products:product' product.pk%}" style="display:block; margin:auto;"><img src="{{product.image}}" alt="{{product.name}}" style="max-height:350px; max-wigth: 350px;">
 								<div class="text">
 									<img src="/static/img/icon-hover.png" alt="img">
 									<h4>{{product.name}}</h4>

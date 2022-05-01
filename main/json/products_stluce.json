@@ -7617,6 +7617,7 @@
         "quantity": 20,
         "length": "37",
         "width": "31",
+        "image": "https://stluce-design.ru/upload/iblock/3a0/3a00a96f727b5b7ccb34b9cd70193f9b.jpg",
         "height": "37",
         "weight": "11,5",
         "lamps_type": "E14",
@@ -11938,8 +11939,8 @@
     {
         "price": 12150,
         "type": "Настенные светильники (бра)",
-        "image": "http://www.stluce.ru/upload/images/SL1232.201.01_01W.jpg",
-        "image_2": "http://www.stluce.ru/upload/images/SL1232.201.01_01B.jpg",
+        "image_2": "http://www.stluce.ru/upload/images/SL1232.201.01_01W.jpg",
+        "image": "http://www.stluce.ru/upload/images/SL1232.201.01_01B.jpg",
         "image_3": "http://www.stluce.ru/upload/images/SL1232.201.01_01G.jpg",
         "name": "SL1232.201.01 Бра ST-Luce Золотистый/Прозрачный, Золотистый E14 1*60W CASERTA",
         "category": "ST LUCE",

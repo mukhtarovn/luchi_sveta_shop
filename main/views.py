@@ -18,7 +18,7 @@ from main.models import Product, ProductCategory, ProductType
 def main(request):
     title = 'лучи света - интернет магазин'
     products = Product.objects.exclude(category__name='Technical'). \
-        exclude(category__name='Voltega').exclude(category__name='Outdoor').filter(quantity=True)
+        exclude(category__name='Voltega').exclude(category__name='Outdoor').filter(quantity=True).select_related('category')
     random_products = random.sample(list(products), 3)
     content = {
         'title': title,
@@ -61,14 +61,14 @@ def products(request, pk=None, page=1):
     if pk is not None:
         if pk == 0:
             sort=request.GET.getlist('sort')
-            products = Product.objects.all().exclude(quantity=0).order_by(*sort)
+            products = Product.objects.all().exclude(quantity=0).order_by(*sort).select_related('category')
             category = {'pk':0, 'name':'все'}
         else:
             category = get_object_or_404(ProductCategory, pk=pk)
             sort=request.GET.getlist('sort')
-            products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by(*sort)
+            products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
 
-        paginator = Paginator(products, 24)
+        paginator = Paginator(products, 21)
         try:
             product_paginator = paginator.page(page)
         except PageNotAnInteger:
@@ -153,7 +153,7 @@ def by_price(request, pk=None, page=1):
     links_menu = ProductCategory.objects.all()
 
     if pk == 0:
-        products = Product.objects.all().exclude(quantity=0).order_by('price')
+        products = Product.objects.all().exclude(quantity=0).order_by('price').select_related('category')
         category = {'pk':0, 'name':'все'}
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
@@ -177,9 +177,9 @@ def types(request, pk=None, page=1):
     sort = request.GET.getlist('sort')
     types = get_object_or_404(ProductType, pk=pk)
     title = f'Лучи света: каталог, {types.name}'
-    products = Product.objects.filter(type__pk=pk).exclude(quantity=0).order_by(*sort)
+    products = Product.objects.filter(type__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
 
-    paginator = Paginator(products, 24)
+    paginator = Paginator(products, 21)
     try:
         product_paginator = paginator.page(page)
     except PageNotAnInteger:
@@ -200,14 +200,15 @@ def types(request, pk=None, page=1):
             }
     return render(request, 'main/types.html', content)
 
-def sales(request, pk=None, page=1):
+def sales(request, page=1):
     title = 'Лучи света: Скидки, Акции'
     links_menu = ProductCategory.objects.all()
 
+    category = {'pk': 0, 'name': 'Акиции', 'description': 'Скидки'}
     sort = request.GET.getlist ('sort')
-    products = Product.objects.filter(sale_price__isnull = False).exclude(quantity=0).order_by(*sort)
+    products = Product.objects.filter(sale_price__isnull = False).exclude(quantity=0).order_by(*sort).select_related('category')
 
-    paginator = Paginator(products, 24)
+    paginator = Paginator(products, 21)
     try:
         product_paginator = paginator.page(page)
     except PageNotAnInteger:
@@ -221,8 +222,8 @@ def sales(request, pk=None, page=1):
             'type_menu': ProductType.objects.all(),
             'title': title,
             'types': types,
-            'category': ProductCategory.objects.all(),
-            'products': products,
+            'category': category,
+            'products': product_paginator,
             'last_page': last_page,
             'first_page': first_page,
             'basket': get_basket(request.user),

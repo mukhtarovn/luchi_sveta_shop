@@ -55,16 +55,17 @@
             <div class="category-products clearfix">
                 {%for product in products%}
                 <div class="block">
-                    <div class="card" style="width: 19rem;">
-                      <a href="{%url 'products:product' product.pk%}"><img src="{{product.image}}" alt="{{product.name}}" height="270px">
+                    <div class="card" style="width: 20rem; min-height: 105%;">
+                      <a style="display:block; margin:auto; margin-top: 0px;" href="{%url 'products:product' product.pk%}"><img style="max-width: 270px; max-height: 270px;" src="{{product.image}}" alt="{{product.name}}">
                       </a>
-                      <div class="text">
-                            <h4>{{product.name| truncatewords:5}}</h4>
+                      <div class="text" style="position:absolute; bottom:0; margin-left: 1rem;">
+                            <h4>{{product.category}} ({{product.category.description}})</h4>
+                          <h6>{{product.article}}. {{product.name| truncatewords:3}}</h6>
                           {%if product.sale_price%}
-                            <p><span style="text-decoration: line-through">{{product.price}} руб</span>
+                            <p style="margin-bottom:0rem"><span style="text-decoration: line-through">{{product.price}} руб</span>
                                 <span style="color:red">{{product.sale_price}} руб</span></p>
                           {%else%}
-                            <p>{{product.price}} руб</p>
+                            <p style="margin-bottom:0rem">{{product.price}} руб</p>
                           {%endif%}
                       </div>
                     </div>

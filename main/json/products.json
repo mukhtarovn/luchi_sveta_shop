@@ -505,50 +505,6 @@
         "weight": "5,10"
     },
     {
-        "article": "T/D/P Brown",
-        "quantity": 1,
-        "image": "/media/products_images/T-D-P Brown.jpg",
-        "category": "Kemar",
-        "name": "Kemar TANAJA Brown T/D/P потолочный светильник",
-        "series": "TANAJA Brown",
-        "type": "Потолочные светильники (люстры)",
-        "type_2": "Потолочный светильник",
-        "material": "Металл",
-        "color": "Коричневый с патиной",
-        "price": 27680,
-        "lamps": "2",
-        "lamps_type": "E14",
-        "power": "40",
-        "length": null,
-        "width": null,
-        "height": "22",
-        "diameter": "37",
-        "size": "390x390x240",
-        "weight": "2,20"
-    },
-    {
-        "article": "T/9 Green",
-        "quantity": 1,
-        "image": "/media/products_images/T-9 Green.jpg",
-        "category": "Kemar",
-        "name": "Kemar TANAJA Green T/9 потолочный светильник",
-        "series": "TANAJA Green",
-        "type": "Потолочные светильники (люстры)",
-        "type_2": "Люстра",
-        "material": "Металл",
-        "color": "Зеленый с патиной",
-        "price": 148840,
-        "lamps": "10",
-        "lamps_type": "E14/E27",
-        "power": "60",
-        "length": null,
-        "width": null,
-        "height": "87",
-        "diameter": "73",
-        "size": "800x800x670",
-        "weight": "11,00"
-    },
-    {
         "article": "T/6 Green",
         "quantity": 1,
         "image": "/media/products_images/T-6 Green.jpg",
@@ -569,28 +525,6 @@
         "diameter": "57",
         "size": "710x640x550",
         "weight": "3,50"
-    },
-    {
-        "article": "T/Z Green",
-        "quantity": 2,
-        "image": "/media/products_images/T-Z Green.jpg",
-        "category": "Kemar",
-        "name": "Kemar TANAJA Green T/Z потолочный светильник",
-        "series": "TANAJA Green",
-        "type": "Потолочные светильники (люстры)",
-        "type_2": "Потолочный светильник",
-        "material": "Металл",
-        "color": "Зеленый с патиной",
-        "price": 389600,
-        "lamps": "6",
-        "lamps_type": "E14",
-        "power": "100",
-        "length": null,
-        "width": null,
-        "height": "120",
-        "diameter": "80",
-        "size": null,
-        "weight": "10,50"
     },
     {
         "article": "T/M/P Red",
@@ -1035,7 +969,7 @@
     {
         "article": "11480",
         "quantity": 1,
-        "image": "/media/products_images/11480.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/327/vamsvet-bra-alfa-baron-11480.jpeg",
         "category": "Alfa",
         "name": "Alfa BARON 11480 настенный светильник",
         "series": "BARON",
@@ -1101,7 +1035,7 @@
     {
         "article": "11485 (Абажур 83139)",
         "quantity": 1,
-        "image": "/media/products_images/11485 (Абажур 83139).jpg",
+        "image": "/media/products_images/11485.jpg",
         "category": "Alfa",
         "name": "Alfa BARON SILVER 11485 (Абажур 83139) потолочный светильник",
         "series": "BARON",
@@ -1890,7 +1824,7 @@
     {
         "article": "27041",
         "quantity": 1,
-        "image": "/media/products_images/27041.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/ab8/vamsvet-bra-alfa-gracja-27041.jpeg",
         "category": "Alfa",
         "name": "Alfa GRACJA  BEZ  27041  настенный светильник",
         "series": "GRACJA",
@@ -2746,7 +2680,7 @@
     {
         "article": "19195 (абажур 83004)",
         "quantity": 2,
-        "image": "/media/products_images/19195 (абажур 83004).jpg",
+        "image": "/media/products_images/19195.jpg",
         "category": "Alfa",
         "name": "Alfa MACZEK 19195 (абажур 83004) потолочный светильник",
         "series": "MACZEK",
@@ -2768,7 +2702,7 @@
     {
         "article": "19190 (абажур 83004)",
         "quantity": 2,
-        "image": "/media/products_images/19190 (абажур 83004).jpg",
+        "image": "/media/products_images/19190.jpg",
         "category": "Alfa",
         "name": "Alfa MACZEK 19190 (абажур 83004) настенный светильник",
         "series": "MACZEK",
@@ -3228,7 +3162,7 @@
     {
         "article": "10770 (стекло 8148)",
         "quantity": 10,
-        "image": "/media/products_images/10770 (стекло 8148).jpg",
+        "image": "/media/products_images/10770.jpg",
         "category": "Alfa",
         "name": "Alfa PRAGA 10770 (стекло 8148) настенный светильник",
         "series": "PRAGA",
@@ -3250,7 +3184,7 @@
     {
         "article": "10775 (стекло 8148)",
         "quantity": 2,
-        "image": "/media/products_images/10775 (стекло 8148).jpg",
+        "image": "/media/products_images/10775.jpg",
         "category": "Alfa",
         "name": "Alfa PRAGA 10775 (стекло 8148) потолочный светильник",
         "series": "PRAGA",
@@ -3272,7 +3206,7 @@
     {
         "article": "23040 (Абажур 83189)",
         "quantity": 8,
-        "image": "/media/products_images/23040 (Абажур 83189).jpg",
+        "image": "/media/products_images/23040.jpg",
         "category": "Alfa",
         "name": "Alfa PULPA  23040 (Абажур 83189) настенный светильник",
         "series": "PULPA",
@@ -3294,7 +3228,7 @@
     {
         "article": "27003",
         "quantity": 10,
-        "image": "/media/products_images/27003.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/c41/vamsvet-podvesnoy-svetilnik-alfa-quentin-27003.jpeg",
         "category": "Alfa",
         "name": "Alfa QUENTIN 27003 потолочный светильник",
         "series": "QUENTIN",
@@ -5927,7 +5861,7 @@
     {
         "article": "748",
         "quantity": 10,
-        "image": "/media/products_images/748.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/028/vamsvet-bra-luminex-wazka-748.jpeg",
         "category": "Luminex",
         "name": "Luminex WAZKA 748 настенный светильник",
         "series": "WAZKA",
@@ -5949,7 +5883,7 @@
     {
         "article": "749",
         "quantity": 8,
-        "image": "/media/products_images/749.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/7f0/vamsvet_potolochnaya_lyustra_luminex_wazka_749.jpeg",
         "category": "Luminex",
         "name": "Luminex WAZKA 749 потолочный светильник",
         "series": "WAZKA",
@@ -7178,7 +7112,7 @@
     {
         "article": "3545",
         "quantity": 10,
-        "image": "/media/products_images/3545.jpg",
+        "image": "https://img.lu.ru/xl/adilux_3545.jpg",
         "category": "ADILUX",
         "name": "ADILUX ADARA SATYNA 3545 потолочный светильник",
         "series": "ADARA SATYNA",
@@ -7200,7 +7134,7 @@
     {
         "article": "3548",
         "quantity": 10,
-        "image": "/media/products_images/3548.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/a15/vamsvet-bra-adilux-adara-satyna-3548.jpeg",
         "category": "ADILUX",
         "name": "ADILUX ADARA SATYNA 3548 настенный светильник",
         "series": "ADARA SATYNA",
@@ -7222,7 +7156,7 @@
     {
         "article": "3591",
         "quantity": 10,
-        "image": "/media/products_images/3591.jpg",
+        "image": "/media/products_images/3591.png",
         "category": "ADILUX",
         "name": "ADILUX KLIWIA ZLOTO 3591 настенный светильник",
         "series": "ADARA SATYNA",
@@ -7244,7 +7178,7 @@
     {
         "article": "3789",
         "quantity": 6,
-        "image": "/media/products_images/3789.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/e99/vamsvet-podvesnoy-svetilnik-burn-black-adilux-3789.jpeg",
         "category": "ADILUX",
         "name": "ADILUX BURN BLACK 3789 потолочный светильник",
         "series": "BURN BLACK",
@@ -7266,7 +7200,7 @@
     {
         "article": "1961",
         "quantity": 10,
-        "image": "/media/products_images/1961.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/85f/vamsvet-podvesnaya-lyustra-adilux-emma-1961.jpeg",
         "category": "ADILUX",
         "name": "ADILUX EMMA 1961 потолочный светильник",
         "series": "EMMA",
@@ -7288,7 +7222,7 @@
     {
         "article": "1962",
         "quantity": 9,
-        "image": "/media/products_images/1962.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/8fe/vamsvet-bra-adilux-emma-1962.jpeg",
         "category": "ADILUX",
         "name": "ADILUX EMMA 1962 настенный светильник",
         "series": "EMMA",
@@ -7310,7 +7244,7 @@
     {
         "article": "1770",
         "quantity": 2,
-        "image": "/media/products_images/1770.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/ccc/vamsvet-potolochnaya-lyustra-adilux-eryk-1770.jpeg",
         "category": "ADILUX",
         "name": "ADILUX ERYK 1770 потолочный светильник",
         "series": "ERYK",
@@ -7332,7 +7266,7 @@
     {
         "article": "1772",
         "quantity": 9,
-        "image": "/media/products_images/1772.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/541/vamsvet-bra-adilux-eryk-1772.jpeg",
         "category": "ADILUX",
         "name": "ADILUX ERYK 1772 настенный светильник",
         "series": "ERYK",
@@ -7352,31 +7286,9 @@
         "weight": "0,62"
     },
     {
-        "article": "1771",
-        "quantity": 9,
-        "image": "/media/products_images/1771.jpg",
-        "category": "ADILUX",
-        "name": "ADILUX ERYK 1771 потолочный светильник",
-        "series": "ERYK",
-        "type": "Потолочные светильники (люстры)",
-        "type_2": "Люстра потолочная",
-        "material": "Металл",
-        "color": "Серебрянный",
-        "price": 8830,
-        "lamps": "5",
-        "lamps_type": "E27",
-        "power": "60",
-        "length": null,
-        "width": null,
-        "height": "35",
-        "diameter": "70",
-        "size": "400х400х300",
-        "weight": "1,87"
-    },
-    {
         "article": "2289",
         "quantity": 10,
-        "image": "/media/products_images/2289.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/52d/vamsvet-podvesnaya-lyustra-adilux-kalina-2289.jpeg",
         "category": "ADILUX",
         "name": "ADILUX KALINA 2289 потолочный светильник",
         "series": "KALINA",
@@ -7398,7 +7310,7 @@
     {
         "article": "2291",
         "quantity": 1,
-        "image": "/media/products_images/2291.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/330/vamsvet-bra-adilux-kalina-2291.jpeg",
         "category": "ADILUX",
         "name": "ADILUX KALINA 2291 настенный светильник",
         "series": "KALINA",
@@ -7420,7 +7332,7 @@
     {
         "article": "3854",
         "quantity": 5,
-        "image": "/media/products_images/3854.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/04e/vamsvet-podvesnaya-lyustra-adilux-kaalina-art-3854.jpeg",
         "category": "ADILUX",
         "name": "ADILUX KALINA ART 3854 потолочный светильник",
         "series": "KALINA ART",
@@ -7442,7 +7354,7 @@
     {
         "article": "3588",
         "quantity": 10,
-        "image": "/media/products_images/3588.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/4f5/vamsvet-podvesnaya-lyustra-adilux-kliwia-zloto-3588.jpeg",
         "category": "ADILUX",
         "name": "ADILUX KLIWIA ZLOTO 3588 потолочный светильник",
         "series": "KLIWIA ZLOTO",
@@ -7464,7 +7376,7 @@
     {
         "article": "3589",
         "quantity": 10,
-        "image": "/media/products_images/3589.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/ad1/vamsvet-podvesnaya-lyustra-adilux-kliwia-zloto-3589.jpeg",
         "category": "ADILUX",
         "name": "ADILUX KLIWIA ZLOTO 3589 потолочный светильник",
         "series": "KLIWIA ZLOTO",
@@ -7486,7 +7398,7 @@
     {
         "article": "3917",
         "quantity": 6,
-        "image": "/media/products_images/3917.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/0ab/vamsvet-potolochnaya-lyustra-adilux-londyn-3917.jpeg",
         "category": "ADILUX",
         "name": "ADILUX LONDYN 3917 потолочный светильник",
         "series": "LONDYN",
@@ -7508,7 +7420,7 @@
     {
         "article": "1720",
         "quantity": 6,
-        "image": "/media/products_images/1720.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/177/vamsvet-podvesnaya-lyustra-adilux-patryk-1720.jpeg",
         "category": "ADILUX",
         "name": "ADILUX PATRYK 1720 потолочный светильник",
         "series": "PATRYK",
@@ -7530,7 +7442,7 @@
     {
         "article": "1721",
         "quantity": 10,
-        "image": "/media/products_images/1721.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/235/vamsvet-podvesnaya-lyustra-adilux-patryk-1721.jpeg",
         "category": "ADILUX",
         "name": "ADILUX PATRYK 1721 потолочный светильник",
         "series": "PATRYK",
@@ -7574,7 +7486,7 @@
     {
         "article": "1483/8",
         "quantity": 4,
-        "image": "/media/products_images/1483-8.jpg",
+        "image": "https://www.vamsvet.ru/upload/iblock/815/vamsvet-bra-adilux-puga-1483-8.jpeg",
         "category": "ADILUX",
         "name": "ADILUX PUGA 1483/8 настенный светильник",
         "series": "PUGA",
