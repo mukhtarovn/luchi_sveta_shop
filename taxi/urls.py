@@ -16,7 +16,8 @@ urlpatterns = [
     path('basket/', include('basketapp.urls', namespace='basket')),
     path('order/', include('orderapp.urls', namespace='order')),
     path('contacts/', main.contacts, name='contacts'),
-    path('price/', main.price, name='price'),
+    path('price/maytoni/', main.price_maytoni, name='maytoni'),
+    path('price/mw/', main.price_mw, name='mw'),
     #path('admin/', include('adminapp.urls', namespace='admin'))
 
 ]

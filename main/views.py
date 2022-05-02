@@ -231,8 +231,14 @@ def sales(request, page=1):
     return render(request, 'main/products_list.html', content)
 
 
-def price(request):
+def price_maytoni(request):
     content = {
         'title': "Прайс",
     }
     return render(request, 'main/all.yml', content)
+
+def price_mw(request):
+    content = {
+        'title': "Прайс",
+    }
+    return render(request, 'main/stock_files.php.xml', content)
