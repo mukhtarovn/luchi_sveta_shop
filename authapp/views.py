@@ -64,15 +64,12 @@ def register(request):
     if request.method == 'POST':
         register_form = ShopUserRegisterForm(request.POST, request.FILES)
         if register_form.is_valid():
-            user = register_form.save()
-            if send_varification_email(user):
-                print('success')
-                send_mail ('Зарегестрировался новый клиент', f'Зарегестрировался новый клиент {request.user}',
+            register_form.save()
+            send_mail ('Зарегестрировался новый клиент', f'Зарегестрировался новый клиент {request.user}',
                            'luchi_sveta@list.ru', ['luchi_sveta@list.ru', 'mukhtarov.n@gmail.com'],
                            fail_silently=False, )
-                return HttpResponseRedirect(reverse('auth:login'))
-            print('error')
             return HttpResponseRedirect(reverse('auth:login'))
+
     else:
         register_form = ShopUserRegisterForm()
     content = {
