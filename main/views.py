@@ -229,3 +229,10 @@ def sales(request, page=1):
             'basket': get_basket(request.user),
             }
     return render(request, 'main/products_list.html', content)
+
+
+def price(request):
+    content = {
+        'title': "Прайс",
+    }
+    return render(request, 'main/all.yml', content)

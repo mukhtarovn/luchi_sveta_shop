@@ -1,3 +1,5 @@
 User-agent: Yandex
-Disallow: /
+Allow: /
+Disalow: /order
+Disalow: /auth
 Sitemap: http://xn--80aswg.xn--p1ai/sitemap.xml

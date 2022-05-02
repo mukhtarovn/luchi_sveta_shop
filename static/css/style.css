@@ -448,7 +448,7 @@ html, body {
 
 .basket_list span.category_name {
     margin-left: 2em;
-    width: 5em;
+    width: 8em;
     position: relative;
     display: block;
     float: left;
@@ -456,7 +456,7 @@ html, body {
 
 .basket_list span.product_name {
     margin-left: 1em;
-    width: 8em;
+    width: 15em;
     position: relative;
     display: block;
     float: left;
@@ -480,7 +480,7 @@ html, body {
 
 .basket_list span.product_cost {
     margin-left: 1em;
-    width: 10em;
+    width: 6em;
     position: relative;
     display: block;
     float: left;
