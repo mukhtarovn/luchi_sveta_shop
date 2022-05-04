@@ -242,3 +242,10 @@ def price_mw(request):
         'title': "Прайс",
     }
     return render(request, 'main/stock_files.php.xml', content)
+
+
+def price_lussole(request):
+    content = {
+        'title': "Прайс",
+    }
+    return render(request, 'main/into_lussoleru_yandex.xml', content)
