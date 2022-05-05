@@ -233,19 +233,25 @@ def sales(request, page=1):
 
 def price_maytoni(request):
     content = {
-        'title': "Прайс",
+        'title': "Прайс maytoni",
     }
     return render(request, 'main/all.yml', content)
 
 def price_mw(request):
     content = {
-        'title': "Прайс",
+        'title': "Прайс mw",
     }
     return render(request, 'main/stock_files.php.xml', content)
 
 
 def price_lussole(request):
     content = {
-        'title': "Прайс",
+        'title': "Прайс lussole",
+    }
+    return render(request, 'main/info_lussoleru_yandex.xml', content)
+
+def price_stluce(request):
+    content = {
+        'title': "Прайс stluce",
     }
     return render(request, 'main/info_lussoleru_yandex.xml', content)

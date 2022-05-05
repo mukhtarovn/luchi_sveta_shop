@@ -18,7 +18,8 @@ urlpatterns = [
     path('contacts/', main.contacts, name='contacts'),
     path('price/maytoni/', main.price_maytoni, name='maytoni'),
     path('price/mw/', main.price_mw, name='mw'),
-    path('price/lussole/', main.price_lussole, name='mw'),
+    path('price/lussole/', main.price_lussole, name='lussole'),
+    path('price/stluce/', main.price_stluce, name='stluce'),
     #path('admin/', include('adminapp.urls', namespace='admin'))
 
 ]
