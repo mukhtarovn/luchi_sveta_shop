@@ -254,4 +254,4 @@ def price_stluce(request):
     content = {
         'title': "Прайс stluce",
     }
-    return render(request, 'main/stluce.yml', content)
+    return render(request, 'main/stluce_mrc.xml', content)
