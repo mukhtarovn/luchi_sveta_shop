@@ -3,6 +3,7 @@
 
 
 {%block content%}
+<meta name="description" content="Лучи Света. Изменить данные пользователя"/>
 <div class="user_avatar"><img src="/media/{{user.avatar}}" height="350px"></div>
     <form class="form-horizontal" action="{%url 'auth:edit'%}" method="post" enctype="multipart/form-data">
         {%csrf_token%}
