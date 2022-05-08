@@ -3,7 +3,7 @@
 <nav class="menu navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar" style="margin-bottom: 0px; list-style: none;">
         <li class="nav-item ">
             {% if request.resolver_match.url_name == 'main' %}
             <a class="nav-link active" aria-current="page" href= "{% url 'main'%}">главная</a>
