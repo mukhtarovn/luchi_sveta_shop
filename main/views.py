@@ -53,32 +53,33 @@ def get_same_products(hot_product):
     random_prod = random.sample(list(_same_products), 3)
     return random_prod
 
-def products(request, pk=None, page=1):
+def products(request, pk=None, page=1, *args, **kwargs):
     title = 'лучи света: каталог, светильники'
     links_menu = ProductCategory.objects.all()
     type_menu = ProductType.objects.all()
 
     if pk is not None:
-        sort = request.GET.getlist ('sort')
-        color = request.GET.get ('color')
+        sort = request.GET.getlist('sort')
+        color = " "
         price_min=0
         price_max=1000000
 
         if pk == 0:
             products = Product.objects.all().order_by(*sort).exclude(quantity=0).select_related('category')
-            if color != None:
-                products = products.filter(Q(color__iregex=color))
+            if request.GET.get('color'):
+                if request.GET.get ('color'):
+                    color = request.GET.get ('color')
+                    products = products.filter (Q (color__iregex=color))
             if request.GET.get('price_min'):
                 price_min = request.GET.get('price_min')
             if request.GET.get ('price_max'):
                 price_max = request.GET.get ('price_max')
             products=products.filter(price__range=(price_min, price_max))
             category = {'pk':0, 'name':'все'}
-            print(price_min)
         else:
             category = get_object_or_404(ProductCategory, pk=pk)
             products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
-            if color != None:
+            if request.GET.get('color'):
                 products = products.filter (Q (color__iregex=color))
             if request.GET.get ('price_min'):
                 price_min = request.GET.get ('price_min')
@@ -95,7 +96,6 @@ def products(request, pk=None, page=1):
             product_paginator = paginator.page(paginator.num_pages)
         last_page = paginator.num_pages
         first_page = 1
-
         content = {
             'links_menu': links_menu,
             'type_menu': type_menu,
@@ -105,6 +105,7 @@ def products(request, pk=None, page=1):
             'basket': get_basket(request.user),
             'last_page': last_page,
             'first_page': first_page,
+            'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
             }
         return render(request, 'main/products_list.html', content)
 
@@ -116,8 +117,7 @@ def products(request, pk=None, page=1):
         'title': title,
         'basket': get_basket(request.user),
         'hot_product': hot_product,
-        'same_product': same_product
-
+        'same_product': same_product,
     }
     return render(request, 'main/products.html', content)
 
@@ -158,7 +158,6 @@ def search_result(request):
     }
     return render(request, 'main/search_results.html', content)
 
-
 def info(request):
     title = 'Лучи света: Информация/контакты'
     content = {
@@ -187,24 +186,23 @@ def by_price(request, pk=None, page=1):
             }
     return render(request, 'main/products_list.html', content)
 
-
-def types(request, pk=None, page=1):
-
+def types(request, pk=None, page=1, *args, **kwargs):
     links_menu = ProductCategory.objects.all()
-    color = request.GET.get ('color')
+    color = ' '
     price_min = 0
     price_max = 1000000
     sort = request.GET.getlist('sort')
     types = get_object_or_404(ProductType, pk=pk)
     title = f'Лучи света: каталог, {types.name}'
     products = Product.objects.filter(type__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
-    if color != None:
-        products = products.filter (Q (color__iregex=color))
-    if request.GET.get ('price_min'):
+    if request.GET.get('color'):
+        color=request.GET.get('color')
+        products = products.filter(Q (color__iregex=color))
+    if request.GET.get('price_min'):
         price_min = request.GET.get ('price_min')
     if request.GET.get ('price_max'):
         price_max = request.GET.get ('price_max')
-    products = products.filter (price__range=(price_min, price_max))
+    products = products.filter(price__range=(price_min, price_max))
     paginator = Paginator(products, 21)
     try:
         product_paginator = paginator.page(page)
@@ -223,7 +221,8 @@ def types(request, pk=None, page=1):
             'last_page': last_page,
             'first_page': first_page,
             'basket': get_basket(request.user),
-            }
+            'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
+    }
     return render(request, 'main/types.html', content)
 
 def sales(request, page=1):
@@ -232,17 +231,18 @@ def sales(request, page=1):
 
     category = {'pk': 0, 'name': 'Акиции', 'description': 'Скидки'}
     sort = request.GET.getlist ('sort')
-    color = request.GET.get ('color')
+    color = " "
     price_min = 0
     price_max = 1000000
-    products = Product.objects.filter(sale_price__isnull = False).exclude(quantity=0).order_by(*sort).select_related('category')
-    if color != None:
+    products = Product.objects.filter(sale_price__isnull=False).exclude(quantity=0).order_by(*sort).select_related('category')
+    if request.GET.get('color'):
+        color = request.GET.get ('color')
         products = products.filter (Q (color__iregex=color))
     if request.GET.get ('price_min'):
-        price_min = request.GET.get ('price_min')
+        price_min = request.GET.get('price_min')
     if request.GET.get ('price_max'):
         price_max = request.GET.get ('price_max')
-    products = products.filter (price__range=(price_min, price_max))
+    products = products.filter(price__range=(price_min, price_max))
     paginator = Paginator(products, 21)
     try:
         product_paginator = paginator.page(page)
@@ -262,8 +262,9 @@ def sales(request, page=1):
             'last_page': last_page,
             'first_page': first_page,
             'basket': get_basket(request.user),
+            'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
             }
-    return render(request, 'main/products_list.html', content)
+    return render(request, 'main/sales.html', content)
 
 
 def price_maytoni(request):

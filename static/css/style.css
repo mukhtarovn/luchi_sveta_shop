@@ -1884,10 +1884,27 @@ a {
 
 #form-number {
     width:5em;
-    border: px solid #ccc;
+    height:2.5em;
+    border: 1px solid green;
     margin: 5px;
+    opacity: 0.4;
+    font-weight: 600;
 }
 .search-form {
-    width:400px;
-    border: 2px solid #ccc;
+    width:auto;
+    border: 2px solid rgba(0,128,0,0.3);
+    font-weight: 600;
+    color: #555 !important;
+    font-size: small;
+    text-transform: uppercase;
+    margin-left:200px;
+}
+.search-form select {
+    display: inline;
+    border: 1px solid green;
+}
+
+
+.search-form button {
+    display:inline;
 }

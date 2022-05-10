@@ -28,26 +28,26 @@
             <div aria-label="Page navigation example">
                       <ul class="pagination">
                           {% if products.has_previous %}
-                        <li class="page-item"><a class="page-link" href="1" aria-label="Previous">
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk 1 %}{{q}}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.previous_page_number %}">{{products.previous_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.previous_page_number%}{{q}}">{{products.previous_page_number}}</a></li>
                           {% endif %}
                         <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number}}</a></li>
                           {% if products.has_next %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}">{{products.next_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}{{q}}">{{products.next_page_number}}</a></li>
                        <li class="page-item"style="margin-left:5px;">
-                          <a class="page-link"  href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
+                          <a class="page-link"  href="{% url 'products:page' category.pk last_page %}{{q}}" aria-label="Next">
                             <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>
                           </a>
                         </li>
                             {% endif %}
-                            <form method="get" style="margin-left: 100px;" class="search-form">
-                                <label style="float:left; width: 100px; display: block">По цене</label>
-                                <input name="price_min" type="number" id="form-number"> от
-                                <input name="price_max" type="number" id="form-number"> до
-                                <label style="float:left; width: 100px;display: block">По цвету</label>
+                            <form method="get" class="search-form rounded">
+                                <label>По цене</label>
+                                от <input name="price_min" type="number" id="form-number">
+                                до <input name="price_max" type="number" id="form-number">
+                                <label>По цвету</label>
                                 <select class="form-select" aria-label="Default select example" name="color" style="width:10em;">
                                     <optgroup label="Выбери цвет">
                                     <option selected></option>
@@ -57,7 +57,6 @@
                                   <option value="Золото">Золото</option>
                                   <option value="Желтый">Желтый</option>
                                   <option value="Красн">Красный</option>
-                                  <option value="Зелен">Зеленый</option>
                                   <option value="Корич">Кориневый</option>
                                   <option>Хром</option>
                                   <option>Бронза</option>
@@ -66,12 +65,21 @@
                                   <option>Латунь</option>
                                   <option>Никель</option>
                                   <option>Прозрачный</option>
-                                  <option></option>
+                                  <option>Розовый</option>
                                     </optgroup>
                                 </select>
-                                <input name="sort" type="checkbox" value="price"> Дешевле
-                                <input name="sort" type="checkbox" value="-price"> Дороже
-                                <button type="submit" class="btn btn-sm btn-outline-dark btn-raised mr-3">Применить</button>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="sort" id="inlineRadio1" value="price">
+                                      <label class="form-check-label" for="inlineRadio1">Дешевле</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="sort" id="inlineRadio2" value="-price">
+                                      <label class="form-check-label" for="inlineRadio2">Дороже</label>
+                                    </div>
+                                <button type="submit" class="btn btn-outline-success" style="margin-left:10px">Применить</button>
+                                <button type="reset" class="btn btn-outline-success">Cбросить</button>
+                            </div>
                             </form>
                       </ul>
                     </div>
@@ -99,15 +107,15 @@
             <nav aria-label="Page navigation example">
                       <ul class="pagination">
                           {% if products.has_previous %}
-                        <li class="page-item"><a class="page-link" href="1" aria-label="Previous">
+<!--                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk 1 %}{{q}}" aria-label="Previous">-->
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.previous_page_number %}">{{products.previous_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.previous_page_number %}{{q}}">{{products.previous_page_number}}</a></li>
                           {% endif %}
                         <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number }}</a></li>
                           {% if products.has_next %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}">{{products.next_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}{{q}}">{{products.next_page_number}}</a></li>
                         <li class="page-item"style="margin-left:5px;">
                           <a class="page-link"  href="{% url 'products:page' category.pk last_page %}" aria-label="Next">
                             <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>

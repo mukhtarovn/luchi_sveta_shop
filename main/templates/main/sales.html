@@ -1,13 +1,12 @@
 {%extends 'main/base.html'%}
 {%load static%}
-
 {%block menu%}
-<meta name="description" content="{{types.name}}"/>
-
+<meta name="description" content="светильники (бра, торшеры, люстры, светодиодные ленты) фирмы{{category.name}}"/>
     <div class="hero-white">
         <div class="header clearfix">
-            {%include 'main/inc/inc_main_menu.html'%}
-        </div>
+				<p class="logo">ЛУЧИ СВЕТА</p>
+				{%include 'main/inc/inc_main_menu.html'%}
+			</div>
     </div>
 {%endblock%}
 
@@ -23,28 +22,28 @@
         <div class="products_list">
             <div class="title clearfix">
                 <h2>
-                    Категория: "{{types.name|title}}"
+                    Категория: "{{category.name|title}}" ({{category.description}})
                 </h2>
             </div>
             <div aria-label="Page navigation example">
-                      <ul class="pagination">
+                    <ul class="pagination">
                           {% if products.has_previous %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:type_page' types.pk first_page%}{{q}}" aria-label="Previous">
+                        <li class="page-item"><a class="page-link" href="{% url 'products:sales_page' 1 %}{{q}}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="{% url 'products:type_page' types.pk products.previous_page_number%}{{q}}">{{products.previous_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:sales_page' products.previous_page_number%}{{q}}">{{products.previous_page_number}}</a></li>
                           {% endif %}
                         <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number}}</a></li>
                           {% if products.has_next %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:type_page' types.pk products.next_page_number%}{{q}}">{{products.next_page_number}}</a></li>
-                        <li class="page-item" style="margin-left:5px;">
-                          <a class="page-link" href="{% url 'products:type_page' types.pk last_page %}{{q}}" aria-label="Next">
+                        <li class="page-item"><a class="page-link" href="{% url 'products:sales_page' products.next_page_number %}{{q}}">{{products.next_page_number}}</a></li>
+                       <li class="page-item"style="margin-left:5px;">
+                          <a class="page-link"  href="{% url 'products:sales_page' last_page %}{{q}}" aria-label="Next">
                             <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>
                           </a>
                         </li>
                             {% endif %}
-                          <form method="get" class="search-form rounded">
+                        <form method="get" class="search-form rounded">
                                 <label>По цене</label>
                                 от <input name="price_min" type="number" id="form-number">
                                 до <input name="price_max" type="number" id="form-number">
@@ -70,7 +69,7 @@
                                     </optgroup>
                                 </select>
                                 <div>
-                                <div class="form-check form-check-inline">
+                                    <div class="form-check form-check-inline">
                                       <input class="form-check-input" type="radio" name="sort" id="inlineRadio1" value="price">
                                       <label class="form-check-label" for="inlineRadio1">Дешевле</label>
                                     </div>
@@ -84,8 +83,8 @@
                             </form>
                       </ul>
                     </div>
-
             <div class="category-products clearfix">
+
                 {%for product in products%}
                 <div class="block">
                     <div class="card" style="width: 20rem; min-height: 105%;">
@@ -105,29 +104,32 @@
                 </div>
                 {%endfor%}
             </div>
-                        <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
-
             <nav aria-label="Page navigation example">
                       <ul class="pagination">
                           {% if products.has_previous %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:type_page' types.pk first_page%}{{q}}" aria-label="Previous">
+                        <li class="page-item"><a class="page-link" href="{% url 'products:sales_page' 1 %}{{q}}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="{% url 'products:type_page' types.pk products.previous_page_number%}{{q}}">{{products.previous_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:sales_page' products.previous_page_number %}{{q}}">{{products.previous_page_number}}</a></li>
                           {% endif %}
-                        <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number }}</a></li>
                           {% if products.has_next %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:type_page' types.pk products.next_page_number%}{{q}}">{{products.next_page_number}}</a></li>
-                        <li class="page-item" style="margin-left:5px;">
-                          <a class="page-link" href="{% url 'products:type_page' types.pk last_page %}{{q}}" aria-label="Next">
+                        <li class="page-item"><a class="page-link" href="{% url 'products:sales_page' products.next_page_number %}{{q}}">{{products.next_page_number}}</a></li>
+                        <li class="page-item"style="margin-left:5px;">
+                          <a class="page-link"  href="{% url 'products:sales_page' last_page %}{{q}}" aria-label="Next">
                             <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>
                           </a>
                         </li>
                             {% endif %}
                       </ul>
                     </nav>
+            <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
         </div>
+
     </div>
-    <div class="clr"></div>
+    <div class="" style="display: flex; margin-left:10%">
+        <a href="{%url 'products:sales'%}"><img src="/static/img/акция.jpg" width="100%"></a>
+        <a href="{%url 'products:sales'%}"><img src="/static/img/апрель-st.jpg" width="70%"></a>
+    </div>
 {%endblock%}
