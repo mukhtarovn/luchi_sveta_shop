@@ -59,14 +59,32 @@ def products(request, pk=None, page=1):
     type_menu = ProductType.objects.all()
 
     if pk is not None:
+        sort = request.GET.getlist ('sort')
+        color = request.GET.get ('color')
+        price_min=0
+        price_max=1000000
+
         if pk == 0:
-            sort=request.GET.getlist('sort')
-            products = Product.objects.all().exclude(quantity=0).order_by(*sort).select_related('category')
+            products = Product.objects.all().order_by(*sort).exclude(quantity=0).select_related('category')
+            if color != None:
+                products = products.filter(Q(color__iregex=color))
+            if request.GET.get('price_min'):
+                price_min = request.GET.get('price_min')
+            if request.GET.get ('price_max'):
+                price_max = request.GET.get ('price_max')
+            products=products.filter(price__range=(price_min, price_max))
             category = {'pk':0, 'name':'все'}
+            print(price_min)
         else:
             category = get_object_or_404(ProductCategory, pk=pk)
-            sort=request.GET.getlist('sort')
             products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
+            if color != None:
+                products = products.filter (Q (color__iregex=color))
+            if request.GET.get ('price_min'):
+                price_min = request.GET.get ('price_min')
+            if request.GET.get ('price_max'):
+                price_max = request.GET.get ('price_max')
+            products=products.filter(price__range=(price_min, price_max))
 
         paginator = Paginator(products, 21)
         try:
@@ -173,12 +191,20 @@ def by_price(request, pk=None, page=1):
 def types(request, pk=None, page=1):
 
     links_menu = ProductCategory.objects.all()
-
+    color = request.GET.get ('color')
+    price_min = 0
+    price_max = 1000000
     sort = request.GET.getlist('sort')
     types = get_object_or_404(ProductType, pk=pk)
     title = f'Лучи света: каталог, {types.name}'
     products = Product.objects.filter(type__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
-
+    if color != None:
+        products = products.filter (Q (color__iregex=color))
+    if request.GET.get ('price_min'):
+        price_min = request.GET.get ('price_min')
+    if request.GET.get ('price_max'):
+        price_max = request.GET.get ('price_max')
+    products = products.filter (price__range=(price_min, price_max))
     paginator = Paginator(products, 21)
     try:
         product_paginator = paginator.page(page)
@@ -206,8 +232,17 @@ def sales(request, page=1):
 
     category = {'pk': 0, 'name': 'Акиции', 'description': 'Скидки'}
     sort = request.GET.getlist ('sort')
+    color = request.GET.get ('color')
+    price_min = 0
+    price_max = 1000000
     products = Product.objects.filter(sale_price__isnull = False).exclude(quantity=0).order_by(*sort).select_related('category')
-
+    if color != None:
+        products = products.filter (Q (color__iregex=color))
+    if request.GET.get ('price_min'):
+        price_min = request.GET.get ('price_min')
+    if request.GET.get ('price_max'):
+        price_max = request.GET.get ('price_max')
+    products = products.filter (price__range=(price_min, price_max))
     paginator = Paginator(products, 21)
     try:
         product_paginator = paginator.page(page)

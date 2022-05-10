@@ -44,10 +44,34 @@
                           </a>
                         </li>
                             {% endif %}
-                          <form method="get" style="margin-left: 100px">
-                                <button type="submit" class="btn btn-sm btn-outline-dark btn-raised mr-3">Сортировать</button>
+                          <form method="get" style="margin-left: 100px;" class="search-form">
+                                <label style="float:left; width: 100px; display: block">По цене</label>
+                                <input name="price_min" type="number" id="form-number"> от
+                                <input name="price_max" type="number" id="form-number"> до
+                                <label style="float:left; width: 100px;display: block">По цвету</label>
+                                <select class="form-select" aria-label="Default select example" name="color" style="width:10em;">
+                                    <optgroup label="Выбери цвет">
+                                    <option selected></option>
+                                    <option value="Черный">Черный</option>
+                                  <option value="Белый">Белый</option>
+                                  <option value="Серый">Серый</option>
+                                  <option value="Золот">Золото</option>
+                                  <option value="Зелен">Зеленый</option>
+                                  <option value="Желтый">Желтый</option>
+                                  <option value="Красн">Красный</option>
+                                  <option value="Корич">Кориневый</option>
+                                  <option>Хром</option>
+                                  <option>Бронза</option>
+                                  <option>Метал</option>
+                                  <option value="Серебр">Серебро</option>
+                                  <option>Латунь</option>
+                                  <option>Никель</option>
+                                  <option>Прозрачный</option>
+                                    </optgroup>
+                                </select>
                                 <input name="sort" type="checkbox" value="price"> Дешевле
                                 <input name="sort" type="checkbox" value="-price"> Дороже
+                                <button type="submit" class="btn btn-sm btn-outline-dark btn-raised mr-3">Применить</button>
                             </form>
                       </ul>
                     </div>
