@@ -61,15 +61,14 @@ def products(request, pk=None, page=1, *args, **kwargs):
     if pk is not None:
         sort = request.GET.getlist('sort')
         color = " "
-        price_min=0
-        price_max=1000000
+        price_min= 0
+        price_max= 1000000
 
         if pk == 0:
             products = Product.objects.all().order_by(*sort).exclude(quantity=0).select_related('category')
             if request.GET.get('color'):
-                if request.GET.get ('color'):
-                    color = request.GET.get ('color')
-                    products = products.filter (Q (color__iregex=color))
+                color = request.GET.get('color')
+                products = products.filter (Q (color__iregex=color))
             if request.GET.get('price_min'):
                 price_min = request.GET.get('price_min')
             if request.GET.get ('price_max'):
@@ -80,6 +79,7 @@ def products(request, pk=None, page=1, *args, **kwargs):
             category = get_object_or_404(ProductCategory, pk=pk)
             products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
             if request.GET.get('color'):
+                color=request.GET.get('color')
                 products = products.filter (Q (color__iregex=color))
             if request.GET.get ('price_min'):
                 price_min = request.GET.get ('price_min')
