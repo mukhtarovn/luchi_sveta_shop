@@ -3,20 +3,31 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="">
         {%for item in type_menu%}
-        <li><a href="{%url 'products:type' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}
-               class="active"{%endif%}>
-            {%if item.name == "Потолочные светильники (люстры)"%}
-            Люстры
-            {% elif item.name == "Настенные светильники (бра)"%}
-            Бра
-            {% elif item.name == "Напольные светильники (торшеры)"%}
-            Торшеры
-            {% else%}
-            {{item.name}}
-            {%endif%}</a></li>
+          <div class="btn-group">
+  <a class="btn btn-secondary btn-light" style="font-weight:900" href="{%url 'products:type' item.pk%}" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    {{item}}
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+{%for i in type2_menu%}
+      {%if i.parent_type == item%}
+    <li><a class="dropdown-item" href="{%url 'products:type' i.pk%}">{{i}}</a></li>
+      {%endif%}
+      {%endfor%}
+  </ul>
+</div>
+<!--        <li><a href="{%url 'products:type' item.pk%}" {%if request.resolver_match.kwargs.category_pk == item.pk %}-->
+<!--               class="active"{%endif%}>-->
+<!--            {%if item.name == "Потолочные светильники (люстры)"%}-->
+<!--            Люстры-->
+<!--            {% elif item.name == "Настенные светильники (бра)"%}-->
+<!--            Бра-->
+<!--            {% elif item.name == "Напольные светильники (торшеры)"%}-->
+<!--            Торшеры-->
+<!--            {% else%}-->
+<!--            {{item.name}}-->
+<!--            {%endif%}</a></li>-->
     {%endfor%}
       </ul>
     </div>
   </div>
 </nav>
-

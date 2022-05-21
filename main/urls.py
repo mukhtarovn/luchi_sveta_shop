@@ -17,7 +17,6 @@ urlpatterns = [
     path('product/<int:pk>/', main.product, name='product'),
     path('search/', main.search_result, name='search'),
     path('info/', main.info, name='info'),
-    path('by_price/<int:pk>/', main.by_price, name='by_price'),
     path('sales/', main.sales, name='sales'),
     path('sales/<int:page>/', main.sales, name='sales_page')
 ]

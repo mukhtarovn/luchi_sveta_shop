@@ -6,13 +6,13 @@ from datetime import datetime
 
 from django.conf import settings
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from django.db.models import Q
+from django.db.models import Q, Prefetch
 from django.shortcuts import render, get_object_or_404
 
 from django.views.generic import ListView
 
 from basketapp.models import Basket
-from main.models import Product, ProductCategory, ProductType
+from main.models import Product, ProductCategory, ProductType, ProductType_2
 
 
 def main(request):
@@ -57,18 +57,33 @@ def products(request, pk=None, page=1, *args, **kwargs):
     title = 'лучи света: каталог, светильники'
     links_menu = ProductCategory.objects.all()
     type_menu = ProductType.objects.all()
+    type2_menu = ProductType_2.objects.all().select_related('parent_type')
+
 
     if pk is not None:
         sort = request.GET.getlist('sort')
         color = " "
-        price_min= 0
-        price_max= 1000000
+        price_min = 0
+        price_max = 1000000
+        style = " "
+        material = " "
+        search = ' '
 
         if pk == 0:
             products = Product.objects.all().order_by(*sort).exclude(quantity=0).select_related('category')
             if request.GET.get('color'):
                 color = request.GET.get('color')
                 products = products.filter (Q (color__iregex=color))
+            if request.GET.get('search'):
+                search = request.GET.get('search')
+                products = products.filter(Q(name__icontains=search) | Q(category__name__icontains=search)
+                                        |Q(article__icontains= search))
+            if request.GET.get('style'):
+                style = request.GET.get('style')
+                products = products.filter(style=style)
+            if request.GET.get('material'):
+                material = request.GET.get('material')
+                products = products.filter(material=material)
             if request.GET.get('price_min'):
                 price_min = request.GET.get('price_min')
             if request.GET.get ('price_max'):
@@ -81,6 +96,12 @@ def products(request, pk=None, page=1, *args, **kwargs):
             if request.GET.get('color'):
                 color=request.GET.get('color')
                 products = products.filter (Q (color__iregex=color))
+            if request.GET.get('style'):
+                color = request.GET.get('style')
+                products = products.filter (Q (style__iregex=style))
+            if request.GET.get('material'):
+                material = request.GET.get('material')
+                products = products.filter(material=material)
             if request.GET.get ('price_min'):
                 price_min = request.GET.get ('price_min')
             if request.GET.get ('price_max'):
@@ -99,6 +120,7 @@ def products(request, pk=None, page=1, *args, **kwargs):
         content = {
             'links_menu': links_menu,
             'type_menu': type_menu,
+            'type2_menu': type2_menu,
             'title': title,
             'category': category,
             'products': product_paginator,
@@ -114,6 +136,7 @@ def products(request, pk=None, page=1, *args, **kwargs):
     content = {
         'links_menu': links_menu,
         'type_menu': type_menu,
+        'type2_menu': type2_menu,
         'title': title,
         'basket': get_basket(request.user),
         'hot_product': hot_product,
@@ -136,12 +159,14 @@ def contacts(request):
 
 def product(request, pk):
     product_item = get_object_or_404(Product, pk=pk)
+    type2_menu = ProductType_2.objects.all().select_related('parent_type')
     title = product_item.name
     content = {
         'title': title,
         'basket': get_basket(request.user),
         'links_menu': ProductCategory.objects.all(),
         'type_menu': ProductType.objects.all(),
+        'type2_menu': type2_menu,
         'product': get_object_or_404(Product, pk=pk),
         'same_product': get_same_products(product_item)
     }
@@ -165,39 +190,33 @@ def info(request):
     }
     return render (request, 'main/info.html', content)
 
-def by_price(request, pk=None, page=1):
-    title = 'Лучи света: товары по цене'
-    links_menu = ProductCategory.objects.all()
-
-    if pk == 0:
-        products = Product.objects.all().exclude(quantity=0).order_by('price').select_related('category')
-        category = {'pk':0, 'name':'все'}
-    else:
-        category = get_object_or_404(ProductCategory, pk=pk)
-        products = Product.objects.filter(category__pk=pk).exclude(quantity=0).order_by('price')
-
-    content = {
-            'links_menu': links_menu,
-            'type_menu': ProductType.objects.all(),
-            'title': title,
-            'category': category,
-            'products': products,
-            'basket': get_basket(request.user),
-            }
-    return render(request, 'main/products_list.html', content)
 
 def types(request, pk=None, page=1, *args, **kwargs):
     links_menu = ProductCategory.objects.all()
+    type2_menu = ProductType_2.objects.all().select_related('parent_type')
     color = ' '
+    style = ' '
+    material = ' '
+    search = ' '
     price_min = 0
     price_max = 1000000
     sort = request.GET.getlist('sort')
-    types = get_object_or_404(ProductType, pk=pk)
+    types = get_object_or_404(ProductType_2, pk=pk)
     title = f'Лучи света: каталог, {types.name}'
-    products = Product.objects.filter(type__pk=pk).exclude(quantity=0).order_by(*sort).select_related('category')
+    products = Product.objects.filter(type_2=pk).exclude(quantity=0).order_by(*sort).select_related('category')
     if request.GET.get('color'):
         color=request.GET.get('color')
         products = products.filter(Q (color__iregex=color))
+    if request.GET.get ('search'):
+        search = request.GET.get ('search')
+        products = products.filter (Q (name__icontains=search) | Q (category__name__icontains=search)
+                                    | Q (article__icontains=search))
+    if request.GET.get ('style'):
+        color = request.GET.get ('style')
+        products = products.filter (Q (style__iregex=style))
+    if request.GET.get ('material'):
+        material = request.GET.get ('material')
+        products = products.filter (Q (style__iregex=material))
     if request.GET.get('price_min'):
         price_min = request.GET.get ('price_min')
     if request.GET.get ('price_max'):
@@ -215,6 +234,7 @@ def types(request, pk=None, page=1, *args, **kwargs):
     content = {
             'links_menu': links_menu,
             'type_menu': ProductType.objects.all(),
+            'type2_menu': type2_menu,
             'title': title,
             'types': types,
             'products': product_paginator,
@@ -228,16 +248,29 @@ def types(request, pk=None, page=1, *args, **kwargs):
 def sales(request, page=1):
     title = 'Лучи света: Скидки, Акции'
     links_menu = ProductCategory.objects.all()
-
+    type2_menu = ProductType_2.objects.all().select_related('parent_type')
     category = {'pk': 0, 'name': 'Акиции', 'description': 'Скидки'}
     sort = request.GET.getlist ('sort')
     color = " "
+    style = ' '
+    material = ' '
+    search = ' '
     price_min = 0
     price_max = 1000000
     products = Product.objects.filter(sale_price__isnull=False).exclude(quantity=0).order_by(*sort).select_related('category')
     if request.GET.get('color'):
         color = request.GET.get ('color')
         products = products.filter (Q (color__iregex=color))
+    if request.GET.get ('search'):
+        search = request.GET.get ('search')
+        products = products.filter (Q (name__icontains=search) | Q (category__name__icontains=search)
+                                    | Q (article__icontains=search))
+    if request.GET.get ('style'):
+        color = request.GET.get ('style')
+        products = products.filter (Q (style__iregex=style))
+    if request.GET.get ('material'):
+        material = request.GET.get ('material')
+        products = products.filter (Q (style__iregex=material))
     if request.GET.get ('price_min'):
         price_min = request.GET.get('price_min')
     if request.GET.get ('price_max'):
@@ -255,6 +288,7 @@ def sales(request, page=1):
     content = {
             'links_menu': links_menu,
             'type_menu': ProductType.objects.all(),
+            'type2_menu': type2_menu,
             'title': title,
             'types': types,
             'category': category,

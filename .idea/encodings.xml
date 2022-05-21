@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/db.sqlite3" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/main/templates/main/stluce.yml" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/main/templates/main/stluce_mrc.yml" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/main/templates/main/stluce_mrc.yml" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/stluce.yml" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/stluce_mrc-10.yml" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/stluce_mrc-11.yml" charset="windows-1251" />
@@ -20,7 +22,6 @@
     <file url="file://$USER_HOME$/Downloads/stluce_mrc-7.yml" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/stluce_mrc-8.yml" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/stluce_mrc-9.yml" charset="windows-1251" />
-    <file url="file://$USER_HOME$/Downloads/stluce_mrc.yml" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/test.csv" charset="UTF-16" />
     <file url="file://$USER_HOME$/Downloads/Новый прайс.csv" charset="windows-1251" />
     <file url="file://$USER_HOME$/Downloads/Уточнение_контента_16.02.22.csv" charset="windows-1251" />

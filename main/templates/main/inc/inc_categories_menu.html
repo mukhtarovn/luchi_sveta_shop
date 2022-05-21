@@ -1,4 +1,10 @@
-<ul class="links-menu">
+<!--<ul class="links-menu">-->
+
+    <div class="dropdown">
+  <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Бренды
+  </button>
+  <ul class="dropdown-menu links-menu" aria-labelledby="dropdownMenuButton1">
 
     <li>
         <a>Бренды</a>
@@ -27,4 +33,160 @@
     {%endif%}
     <hr style="color: green; margin: 0px;">
     {%endfor%}
-</ul>
+  </ul>
+</div>
+
+<form method="get" class="search-form2">
+                                    <label style="padding: 15px">Поиск</label>
+
+                  <input name="search" type="text" placeholder="Что вы ищите?" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                                <label style="padding: 15px">Сортировка</label>
+                                <hr style="color: green; margin-top: 0">
+                                <label>По цене</label>
+                                <label style="">от</label> <input name="price_min" type="number" id="form-number" placeholder="от">руб
+                                <label style="">до</label> <input name="price_max" type="number" id="form-number" placeholder="до">руб
+                                <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="sort" id="inlineRadio1" value="price">
+                                      <label class="form-check-label" for="inlineRadio1">Дешевле</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="sort" id="inlineRadio2" value="-price">
+                                      <label class="form-check-label" for="inlineRadio2">Дороже</label>
+                                    </div>
+                                 <div class="form-check">
+                                <label>По цвету</label>
+                                <select class="form-select" aria-label="Default select example" name="color" style="width:9em;" >
+                                    <optgroup label="Выбери цвет">
+                                    <option selected></option>
+                                    <option value="Черный">Черный</option>
+                                  <option value="Белый">Белый</option>
+                                  <option value="Серый">Серый</option>
+                                  <option value="Золото">Золото</option>
+                                  <option>Розовое золото</option>
+                                  <option>Матовое золото</option>
+                                  <option>Бежевый</option>
+                                  <option>Светло-бежевый</option>
+                                  <option>Коричневый</option>
+                                  <option>Темно-коричнивый</option>
+                                  <option>Бронза</option>
+                                  <option>Серебро</option>
+                                  <option>Серебро+хром</option>
+                                  <option>Титановый</option>
+                                  <option>Темно-серый</option>
+                                  <option>Светло-серый</option>
+                                  <option>Серо-коричневый</option>
+                                  <option>Никель</option>
+                                  <option>Матовый никель</option>
+                                  <option>Прозрачный</option>
+                                  <option>Дымчатый</option>
+                                  <option>Антиный черный</option>
+                                  <option>Янтарный</option>
+                                  <option>Белый жемчуг</option>
+                                  <option>Латунь</option>
+                                  <option>Сталь</option>
+                                  <option>Дерево</option>
+                                  <option>Шампань</option>
+                                  <option>Кремовый</option>
+                                  <option>Мраморный</option>
+                                  <option>Разноцветный</option>
+                                  <option>Медь</option>
+                                  <option>Алюминий</option>
+                                  <option>Сатин никель</option>
+                                  <option>Сатин</option>
+                                  <option>Зеленый</option>
+                                  <option>Светло-зеленый</option>
+                                  <option>Изумрудный</option>
+                                  <option>Слоновая кость</option>
+                                  <option>Красный</option>
+                                  <option>Античная бронза</option>
+                                  <option>Графит</option>
+                                  <option>Желтый</option>
+                                  <option>Антрацит</option>
+                                  <option>Голубой</option>
+                                  <option>Синий</option>
+                                  <option>Оранжевый</option>
+                                  <option>Розовый</option>
+                                  <option>Фиолетовый</option>
+                                  <option>Сиреневый</option>
+                                  <option>Венге</option>
+                                  <option>Кофейный</option>
+                                  <option>Зеркальный</option>
+                                  <option>Матовый</option>
+                                  <option>Матовый хром</option>
+                                  <option>Перламутровый</option>
+                                  <option>Темно-зеленый</option>
+                                  <option>Бордовый</option>
+                                  <option>Бирюзовый</option>
+                                  <option>Песоный</option>
+                                  <option>Античная латунь</option>
+                                  <option>Античный шампунь</option>
+                                  <option>Античное серебро</option>
+                                  <option>Лиловый</option>
+                                  <option>Пурпурный</option>
+                                  <option>Оливковый</option>
+                                  <option>Медовый</option>
+                                  <option>Хаки</option>
+                                    </optgroup>
+                                </select>
+                                    <label>Стиль</label>
+                                <select class="form-select" aria-label="Default select example" name="style" style="width:9em;" >
+                                    <optgroup label="Выбери стиль">
+                                    <option selected></option>
+                                    <option>Современный</option>
+                                    <option>Хай-тек</option>
+                                    <option>Модерн</option>
+                                    <option>Классика</option>
+                                    <option>Лофт</option>
+                                    <option>Арт-деко</option>
+                                    <option>Дизайнерский</option>
+                                    <option>Прованс</option>
+                                    <option>Скандинавский</option>
+                                    <option>Кантри</option>
+                                    <option>Ретро</option>
+                                    <option>Минимализм</option>
+                                    <option>Американский</option>
+                                    <option>Неоклассика</option>
+                                    <option>Флористика</option>
+                                    <option>Замковый</option>
+                                    <option>Восточный</option>
+                                    <option>Эко</option>
+                                    <option>Морской</option>
+                                    <option>Тифани</option>
+                                    <option>Тиффани</option>
+                                    <option>Японский</option>
+                                    </optgroup>
+                                </select>
+
+                                    <label>Материал</label>
+                                <select class="form-select" aria-label="Default select example" name="material" style="width:9em;" >
+                                    <optgroup label="Выбери материал">
+                                    <option selected></option>
+                                    <option>Металлические</option>
+                                    <option>Пластиковые</option>
+                                    <option>Стеклянные</option>
+                                    <option>Текстильные</option>
+                                    <option>Хрустальные</option>
+                                    <option>Деревянные</option>
+                                    <option>Поликарбонат</option>
+                                    <option>Керамические</option>
+                                    <option>Силиконовые</option>
+                                    <option>Гипсовые</option>
+                                    <option>МДФ</option>
+                                    <option>Бетонные</option>
+                                    <option>Кованые</option>
+                                    <option>Каменные</option>
+                                    <option>Кожаные</option>
+                                    <option>Резиновые</option>
+                                    <option>Ротанг</option>
+                                    <option>Гранитные</option>
+                                    <option>Мрамор</option>
+                                    </optgroup>
+                                </select>
+
+
+                                        <hr>
+                                <button type="submit" style="width: 100%;" class="btn btn-outline-success">Применить</button>
+                                <button type="reset" style="margin-top: 5px; width: 100%;" class="btn btn-outline-success">Cбросить</button>
+                                 </div>
+                            </form>

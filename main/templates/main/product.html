@@ -119,13 +119,19 @@
 	{%if product.type %}
     <tr>
       <td>Тип</td>
-      <td>{{product.type}}</td>
+      <td>{{product.type}} / {{product.type_2}}</td>
     </tr>
 	{%endif%}
-	{%if product.type_2 %}
+	{%if product.interior %}
 	<tr>
-		<td>Подтип</td>
-		<td>{{product.type_2}}</td>
+		<td>Интерьер</td>
+		<td>{{product.interior}}</td>
+	</tr>
+	{%endif%}
+  	{%if product.style %}
+	<tr>
+		<td>Стиль</td>
+		<td>{{product.style}}</td>
 	</tr>
 	{%endif%}
 	{%if product.material %}
@@ -146,9 +152,15 @@
 		<td>{{product.lamps}}</td>
 	</tr>
 	{%endif%}
+  	{%if product.lighting_area %}
+  	<tr>
+		<td>Площадь освещения</td>
+		<td>{{product.lighting_area}}</td>
+	</tr>
+	{%endif%}
 	{%if product.lamps_type %}
   	<tr>
-		<td>тип ламп</td>
+		<td>Тип ламп</td>
 		<td>{{product.lamps_type}}</td>
 	</tr>
 	{%endif%}
