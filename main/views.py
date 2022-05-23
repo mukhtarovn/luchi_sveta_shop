@@ -24,8 +24,9 @@ def main(request):
         'title': title,
         'products': products,
         "types": ProductType.objects.all(),
+        "type2": ProductType_2.objects.all(),
         'random_products': random_products,
-        'basket': get_basket (request.user),
+        'basket': get_basket(request.user),
     }
     return render(request, 'main/index.html', content)
 
@@ -97,7 +98,7 @@ def products(request, pk=None, page=1, *args, **kwargs):
                 color=request.GET.get('color')
                 products = products.filter (Q (color__iregex=color))
             if request.GET.get('style'):
-                color = request.GET.get('style')
+                style = request.GET.get('style')
                 products = products.filter (Q (style__iregex=style))
             if request.GET.get('material'):
                 material = request.GET.get('material')
@@ -127,7 +128,7 @@ def products(request, pk=None, page=1, *args, **kwargs):
             'basket': get_basket(request.user),
             'last_page': last_page,
             'first_page': first_page,
-            'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
+            # 'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
             }
         return render(request, 'main/products_list.html', content)
 
@@ -192,6 +193,7 @@ def info(request):
 
 
 def types(request, pk=None, page=1, *args, **kwargs):
+    sort = request.GET.getlist('sort')
     links_menu = ProductCategory.objects.all()
     type2_menu = ProductType_2.objects.all().select_related('parent_type')
     color = ' '
@@ -201,22 +203,28 @@ def types(request, pk=None, page=1, *args, **kwargs):
     price_min = 0
     price_max = 1000000
     sort = request.GET.getlist('sort')
-    types = get_object_or_404(ProductType_2, pk=pk)
+
+    if pk < 100:
+        products = Product.objects.filter(type_id=pk).exclude(quantity=0).order_by(*sort).select_related('category')
+        types = get_object_or_404 (ProductType, pk=pk)
+
+    else:
+        products = Product.objects.filter(type_2=pk).exclude(quantity=0).order_by(*sort).select_related('category')
+        types = get_object_or_404 (ProductType_2, pk=pk)
     title = f'Лучи света: каталог, {types.name}'
-    products = Product.objects.filter(type_2=pk).exclude(quantity=0).order_by(*sort).select_related('category')
     if request.GET.get('color'):
         color=request.GET.get('color')
         products = products.filter(Q (color__iregex=color))
     if request.GET.get ('search'):
-        search = request.GET.get ('search')
+        search = request.GET.get('search')
         products = products.filter (Q (name__icontains=search) | Q (category__name__icontains=search)
                                     | Q (article__icontains=search))
-    if request.GET.get ('style'):
-        color = request.GET.get ('style')
-        products = products.filter (Q (style__iregex=style))
-    if request.GET.get ('material'):
-        material = request.GET.get ('material')
-        products = products.filter (Q (style__iregex=material))
+    if request.GET.get('style'):
+        style = request.GET.get('style')
+        products = products.filter (Q(style__iregex=style))
+    if request.GET.get('material'):
+        material = request.GET.get('material')
+        products = products.filter (Q(material__iregex=material))
     if request.GET.get('price_min'):
         price_min = request.GET.get ('price_min')
     if request.GET.get ('price_max'):
@@ -241,7 +249,7 @@ def types(request, pk=None, page=1, *args, **kwargs):
             'last_page': last_page,
             'first_page': first_page,
             'basket': get_basket(request.user),
-            'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
+            'q': f'?price_min={price_min}&price_max={price_max}&color={color}&style={style}&material={material}&search={search}'
     }
     return render(request, 'main/types.html', content)
 
