@@ -274,11 +274,11 @@ def sales(request, page=1):
         products = products.filter (Q (name__icontains=search) | Q (category__name__icontains=search)
                                     | Q (article__icontains=search))
     if request.GET.get ('style'):
-        color = request.GET.get ('style')
+        style = request.GET.get ('style')
         products = products.filter (Q (style__iregex=style))
     if request.GET.get ('material'):
         material = request.GET.get ('material')
-        products = products.filter (Q (style__iregex=material))
+        products = products.filter (Q (material__iregex=material))
     if request.GET.get ('price_min'):
         price_min = request.GET.get('price_min')
     if request.GET.get ('price_max'):
