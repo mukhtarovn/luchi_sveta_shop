@@ -28,7 +28,7 @@
             <div aria-label="Page navigation example">
                       <ul class="pagination">
                           {% if products.has_previous %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk 1 %}{{q}}" aria-label="Previous">
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk 1%}{{q}}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
@@ -36,7 +36,7 @@
                           {% endif %}
                         <li class="page-item"><a class="page-link" href="#" style="font-size: 22px;">{{products.number}}</a></li>
                           {% if products.has_next %}
-                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number %}{{q}}">{{products.next_page_number}}</a></li>
+                        <li class="page-item"><a class="page-link" href="{% url 'products:page' category.pk products.next_page_number%}{{q}}">{{products.next_page_number}}</a></li>
                        <li class="page-item"style="margin-left:5px;">
                           <a class="page-link"  href="{% url 'products:page' category.pk last_page %}{{q}}" aria-label="Next">
                             <span aria-hidden="true">&raquo;{{last_page}}&raquo;</span>

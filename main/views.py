@@ -63,12 +63,12 @@ def products(request, pk=None, page=1, *args, **kwargs):
 
     if pk is not None:
         sort = request.GET.getlist('sort')
-        color = " "
+        color = ""
         price_min = 0
         price_max = 1000000
-        style = " "
-        material = " "
-        search = ' '
+        style = ""
+        material = ""
+        search = ""
 
         if pk == 0:
             products = Product.objects.all().order_by(*sort).exclude(quantity=0).select_related('category')
@@ -128,7 +128,7 @@ def products(request, pk=None, page=1, *args, **kwargs):
             'basket': get_basket(request.user),
             'last_page': last_page,
             'first_page': first_page,
-            # 'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
+            'q': f'?price_min={price_min}&price_max={price_max}&color={color}&style={style}&material={material}&search={search}'
             }
         return render(request, 'main/products_list.html', content)
 
@@ -196,10 +196,10 @@ def types(request, pk=None, page=1, *args, **kwargs):
     sort = request.GET.getlist('sort')
     links_menu = ProductCategory.objects.all()
     type2_menu = ProductType_2.objects.all().select_related('parent_type')
-    color = ' '
-    style = ' '
-    material = ' '
-    search = ' '
+    color = ""
+    style = ""
+    material = ""
+    search = ""
     price_min = 0
     price_max = 1000000
     sort = request.GET.getlist('sort')
@@ -259,10 +259,10 @@ def sales(request, page=1):
     type2_menu = ProductType_2.objects.all().select_related('parent_type')
     category = {'pk': 0, 'name': 'Акиции', 'description': 'Скидки'}
     sort = request.GET.getlist ('sort')
-    color = " "
-    style = ' '
-    material = ' '
-    search = ' '
+    color = ""
+    style = ""
+    material = ""
+    search = ""
     price_min = 0
     price_max = 1000000
     products = Product.objects.filter(sale_price__isnull=False).exclude(quantity=0).order_by(*sort).select_related('category')
@@ -304,7 +304,7 @@ def sales(request, page=1):
             'last_page': last_page,
             'first_page': first_page,
             'basket': get_basket(request.user),
-            'q': f'?price_min={price_min}&price_max={price_max}&color={color}'
+            'q': f'?price_min={price_min}&price_max={price_max}&color={color}&style={style}&material={material}&search={search}'
             }
     return render(request, 'main/sales.html', content)
 
