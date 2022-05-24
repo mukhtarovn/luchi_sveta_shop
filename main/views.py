@@ -204,7 +204,7 @@ def types(request, pk=None, page=1, *args, **kwargs):
     price_max = 1000000
     sort = request.GET.getlist('sort')
 
-    if pk < 100:
+    if pk < 2000:
         products = Product.objects.filter(type_id=pk).exclude(quantity=0).order_by(*sort).select_related('category')
         types = get_object_or_404 (ProductType, pk=pk)
 
