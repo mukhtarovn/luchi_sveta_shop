@@ -92,4 +92,31 @@
                     </nav>
         </div>
     </div>
+    <div class="" style="display: flex; margin-left:10%">
+        <div style="margin-top: 30px; margin-bottom: 30px">
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+		<a href="{%url 'products:sales'%}"><img src="/static/img/MAYTONI.jpg" width="80%" height="300px"></a>
+    </div>
+    <div class="carousel-item">
+		<a href="{%url 'products:sales'%}"><img src="/static/img/MAYTONI2.jpg" width="80%" height="300px"></a>
+    </div>
+	  <div class="carousel-item">
+		<a href="{%url 'products:sales'%}"><img src="/static/img/MAYTONI3.jpg" width="80%" height="300px"></a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+    </div>
+
 {%endblock%}
