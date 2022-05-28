@@ -319,7 +319,7 @@ def price_mw(request):
     content = {
         'title': "Прайс mw",
     }
-    return render(request, 'main/all_all.yml', content)
+    return render(request, 'main/all_all.xml', content)
 
 
 def price_lussole(request):
