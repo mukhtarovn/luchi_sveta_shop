@@ -35,7 +35,7 @@ class Command(BaseCommand):
         #     type_2["parent_type"] = _type
         #     ProductType_2.objects.create(**type_2)
 
-        products = load_from_json("vam_svet")
+        products = load_from_json("vam_svet_1")
         for prod in products:
             try:
                 _sale_price = None
