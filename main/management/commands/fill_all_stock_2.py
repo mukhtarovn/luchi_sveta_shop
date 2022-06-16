@@ -40,10 +40,16 @@ class Command(BaseCommand):
             try:
                 _sale_price = None
                 _article = prod['article']
-                _price = prod['price']
-                _quantity = prod['quantity']
+                _price = int(prod['price'])
+                _quantity = int(prod['quantity'])
                 if prod['sale_price']:
-                    _sale_price = prod['sale_price']
+                    try:
+                        _sale_price = int (prod['sale_price'])
+                        if _price < _sale_price:
+                            prod["price"] = _sale_price
+                            prod['sale_price'] = int (_price)
+                    except KeyError:
+                        pass
 
             except KeyError:
                 _quantity = 0
