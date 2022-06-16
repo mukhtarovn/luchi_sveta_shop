@@ -44,10 +44,10 @@ class Command(BaseCommand):
                 _quantity = int(prod['quantity'])
                 if prod['sale_price']:
                     try:
-                        _sale_price = int (prod['sale_price'])
+                        _sale_price = int(prod['sale_price'])
                         if _price < _sale_price:
                             prod["price"] = _sale_price
-                            prod['sale_price'] = int (_price)
+                            prod['sale_price'] = _price
                     except KeyError:
                         pass
 
