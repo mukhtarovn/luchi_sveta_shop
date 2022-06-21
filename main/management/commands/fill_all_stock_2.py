@@ -47,10 +47,10 @@ class Command(BaseCommand):
                     _price = prod['sale_price']
                     if _price < _sale_price:
                         prod["price"] = _sale_price
-                        prod['sale_price'] = int (_price)
+                        prod['sale_price'] = int(_price)
 
             except KeyError:
-                _quantity = 0
+                pass
             Product.objects.filter(article=_article).update(price=_price, quantity=_quantity, sale_price=_sale_price)
 
 #ShopUser.objects.all().delete()
