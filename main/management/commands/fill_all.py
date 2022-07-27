@@ -35,7 +35,7 @@ class Command(BaseCommand):
             type_2["parent_type"] = _type
             ProductType_2.objects.create(**type_2)
 
-        products = load_from_json("vam_svet")
+        products = load_from_json("vam_svet-1")
         Product.objects.all().delete()
         for prod in products:
             cat_name = prod["category"]
@@ -50,6 +50,27 @@ class Command(BaseCommand):
             except KeyError:
                 pass
 
+            _cat = ProductCategory.objects.get (name=cat_name)
+            _type = ProductType.objects.get (name=type_name)
+            _type_2 = ProductType_2.objects.get (name=type_name_2, parent_type__name=_type)
+            prod["category"] = _cat
+            prod["type"] = _type
+            prod["type_2"] = _type_2
+            Product.objects.create (**prod)
+
+        products = load_from_json("vam_svet-2")
+        for prod in products:
+            cat_name = prod["category"]
+            type_name = prod["type"]
+            type_name_2 = prod["type_2"]
+            price = int (prod["price"])
+            try:
+                sale_price = int (prod['sale_price'])
+                if price < sale_price:
+                    prod["price"] = sale_price
+                    prod['sale_price'] = price
+            except KeyError:
+                pass
 
             _cat = ProductCategory.objects.get(name=cat_name)
             _type = ProductType.objects.get(name=type_name)

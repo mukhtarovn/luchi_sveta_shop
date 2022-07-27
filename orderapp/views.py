@@ -35,7 +35,7 @@ class OrderItemsCreate(CreateView):
             if len(basket_items):
                 OrderFormSet = inlineformset_factory (Order, OrderItem,
                                                       form=OrderItemForm, extra=len (basket_items))
-                formset = OrderFormSet ()
+                formset = OrderFormSet()
                 for num, form in enumerate (formset.forms):
                     form.initial['product'] = basket_items[num].product
                     form.initial['quantity'] = basket_items[num].quantity

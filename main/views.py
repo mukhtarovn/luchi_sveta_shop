@@ -16,7 +16,7 @@ from main.models import Product, ProductCategory, ProductType, ProductType_2
 
 
 def main(request):
-    title = 'лучи света - интернет магазин'
+    title = 'лучи света: Светильники, люстры, торшеры, бра, трековый свет, споты, офисное освещение'
     products = Product.objects.exclude(category__name='Technical'). \
         exclude(category__name='Voltega').exclude(category__name='Outdoor').filter(quantity=True).select_related('category')
     random_products = random.sample(list(products), 3)
@@ -55,7 +55,7 @@ def get_same_products(hot_product):
     return random_prod
 
 def products(request, pk=None, page=1, *args, **kwargs):
-    title = 'лучи света: каталог, светильники'
+    title = 'лучи света: каталог, продукция, светильники'
     links_menu = ProductCategory.objects.all()
     type_menu = ProductType.objects.all()
     type2_menu = ProductType_2.objects.all().select_related('parent_type')
@@ -161,7 +161,7 @@ def contacts(request):
 def product(request, pk):
     product_item = get_object_or_404(Product, pk=pk)
     type2_menu = ProductType_2.objects.all().select_related('parent_type')
-    title = product_item.name
+    title = f'{product_item.name}'
     content = {
         'title': title,
         'basket': get_basket(request.user),
