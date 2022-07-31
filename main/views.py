@@ -319,7 +319,7 @@ def price_mw(request):
     content = {
         'title': "Прайс mw",
     }
-    return render(request, 'main/stock_files.php.xml', content)
+    return render(request, 'main/vam-svetaa.xml', content)
 
 
 def price_lussole(request):
