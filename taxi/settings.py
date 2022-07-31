@@ -26,7 +26,6 @@ SECRET_KEY = 'ujb77)i%*q0qw611@u9(wjvaakqs)n8wx!fjhh-0l1fn*bj^8-'
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-quit()
 
 # Application definition
 
