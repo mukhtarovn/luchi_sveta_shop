@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.db import transaction
-from django.forms import inlineformset_factory
+from django.forms import inlineformset_factory, formset_factory
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
@@ -27,6 +27,7 @@ class OrderItemsCreate(CreateView):
     def get_context_data(self, **kwargs):
         data = super(OrderItemsCreate, self).get_context_data(**kwargs)
         OrderFormSet= inlineformset_factory(Order, OrderItem, form=OrderItemForm, extra=1)
+        # OrderFormSet=formset_factory(OrderItem)
 
         if self.request.POST:
             formset = OrderFormSet(self.request.POST)
@@ -41,7 +42,7 @@ class OrderItemsCreate(CreateView):
                     form.initial['quantity'] = basket_items[num].quantity
                     form.initial['price'] = basket_items[num].product.price
 
-                #basket_items.delete ()
+                # basket_items.delete ()
             else:
                 formset = OrderFormSet()
         data['orderitems'] = formset

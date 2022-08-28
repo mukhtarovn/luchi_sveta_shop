@@ -32,8 +32,8 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['name', 'article', 'category', 'price', 'quantity']
     ordering = ('category',)
     search_fields = ['article', 'name']
-    list_filter = (
-        'category',)
+    list_filter = ('quantity', admin.EmptyFieldListFilter)
+
 
 
 
