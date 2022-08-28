@@ -332,4 +332,4 @@ def price_stluce(request):
     content = {
         'title': "Прайс stluce",
     }
-    return render(request, 'main/new', content)
+    return render(request, 'main/new.html', content)
